@@ -40,14 +40,16 @@ jobs:
           fetch-depth: 0
       -
         name: set the ENV
-        run:  source clogrc/_cfg.sh \
+        run:  |
+              source clogrc/_cfg.sh
               echo "building version $vCODE ($bMSG)"
       -
         name: Bark some context vairables
         uses: mrmxf/action-bark@0.2.05
       -
         name: check the ENV
-        run:  source clogrc/_cfg.sh ;\
+        run:  |
+              source clogrc/_cfg.sh ;
               echo "building version $vCODE ($bMSG)"
       -
         name: Set up Go
