@@ -5,7 +5,7 @@
 #  \__, | |_||_|       |_.__/ \__,_| |_|   |_\_\
 #  |___/
 # shellcheck source=/dev/null
-source <(clog Inc)
+[ -n "$(clog -v 2>/dev/null)" ] && source <(clog Inc)
 export PROJECT=mrx-demo-svc
 export bEXE="mrx-demo-svc"
 export callingSCRIPT="${0##*/}"
