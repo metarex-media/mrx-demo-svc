@@ -1,5 +1,7 @@
 /tmp/*
+gh-mrx-demo-svc
 gl-mrx-demo-svc
+mrx-demo-svc
 api/api
 demodata/output.mrx
 vendor/*

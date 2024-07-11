@@ -3,13 +3,13 @@
 FROM golang:1.22
 
 # Set destination for
-WORKDIR /workspace/gl-mrx-demo-svc
+WORKDIR /workspace/mrx-demo-svc
 
 # Copy all files within the repo
 COPY . ./
 
 # Build the main server
-RUN CGO_ENABLED=0 GOOS=linux go build -o mrx-elt-demo
+RUN CGO_ENABLED=0 GOOS=linux go build -o mrx-demo-svc
 # build the services API
 RUN cd api && go build
 

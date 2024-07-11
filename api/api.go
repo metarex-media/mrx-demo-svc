@@ -9,13 +9,13 @@ import (
 	"github.com/labstack/echo/middleware"
 
 	// services
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/api/battery"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/api/gps"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/api/mrx"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/api/ninjs"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/api/qc"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/api/rnf"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/api/wavdraw"
+	"github.com/metarex-media/mrx-demo-svc/api/battery"
+	"github.com/metarex-media/mrx-demo-svc/api/gps"
+	"github.com/metarex-media/mrx-demo-svc/api/mrx"
+	"github.com/metarex-media/mrx-demo-svc/api/ninjs"
+	"github.com/metarex-media/mrx-demo-svc/api/qc"
+	"github.com/metarex-media/mrx-demo-svc/api/rnf"
+	"github.com/metarex-media/mrx-demo-svc/api/wavdraw"
 )
 
 type ErrorMessage struct {

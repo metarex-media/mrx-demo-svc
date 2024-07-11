@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"net/url"
 
-	"gitlab.com/mm-eng/mrx-api-demo/mrxhandle/mrxlog"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/register"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/transformations/api"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/transformations/mapping"
+	"github.com/metarex-media/mrx-demo-handlers/mrxhandle/mrxlog"
+	"github.com/metarex-media/mrx-demo-svc/register"
+	"github.com/metarex-media/mrx-demo-svc/transformations/api"
+	"github.com/metarex-media/mrx-demo-svc/transformations/mapping"
 )
 
 // Action is the method to transform metadata from one type to another.

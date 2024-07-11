@@ -4,7 +4,7 @@ package register
 import (
 	"encoding/json"
 
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/transformations/mapping"
+	"github.com/metarex-media/mrx-demo-svc/transformations/mapping"
 
 	"gorm.io/gorm"
 )

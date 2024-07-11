@@ -1,6 +1,8 @@
-module gitlab.com/mm-eng/gl-mrx-demo-svc
+module github.com/metarex-media/mrx-demo-svc
 
-go 1.22
+go 1.22.0
+
+toolchain go1.22.5
 
 require (
 	aqwari.net/xml v0.0.0-20210331023308-d9421b293817
@@ -8,11 +10,11 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0
 	github.com/go-audio/wav v1.1.0
 	github.com/labstack/echo v3.3.10+incompatible
+	github.com/metarex-media/mrx-demo-handlers v0.0.0-20240711161227-aea36e12d9da
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
 	github.com/smartystreets/goconvey v1.8.1
 	github.com/terminalstatic/go-xsd-validate v0.1.5
 	github.com/wcharczuk/go-chart/v2 v2.1.1
-	gitlab.com/mm-eng/mrx-api-demo v0.0.0-20240226120059-8d9ee0fd510b
 	gopkg.in/yaml.v3 v3.0.1
 	gorm.io/driver/sqlite v1.5.5
 	gorm.io/gorm v1.25.10

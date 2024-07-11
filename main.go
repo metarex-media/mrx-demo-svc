@@ -10,9 +10,9 @@ import (
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"gitlab.com/mm-eng/mrx-api-demo/mrxhandle/mrxlog"
-	"gitlab.com/mm-eng/mrx-api-demo/mrxhandle/mrxlog/utils"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/transformations"
+	"github.com/metarex-media/mrx-demo-handlers/mrxhandle/mrxlog"
+	"github.com/metarex-media/mrx-demo-handlers/mrxhandle/mrxlog/utils"
+	"github.com/metarex-media/mrx-demo-svc/transformations"
 )
 
 func init() {
@@ -27,7 +27,7 @@ func init() {
 }
 
 // ErrorMessage is the same format as in
-// gitlab.com/mm-eng/gl-mrx-demo-svc/api/
+// github.com/metarex-media/mrx-demo-svc/api/
 type ErrorMessage struct {
 	Error string `json:"error"`
 }

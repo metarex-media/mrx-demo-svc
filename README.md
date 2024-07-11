@@ -81,7 +81,7 @@ Run the following commands to build the self contained demo image using the Dock
 This exposes a service on port 8080 that does all the auto ETL transformations.
 
 ```cmd
-docker build --tag mrx-demo-svc .docker
+docker build --tag mrx-demo-svc .
 docker run --publish 8080:8080 mrx-demo-svc
 ```
 
@@ -113,9 +113,9 @@ localhost:8080.
 
 ```cmd
 # build the auto ETL server
-go build -o mrx-demos
+go build -o mrx-demo-svc
 # build the services API
-cd api && go build api || cd ..
+cd api && go build -o api && cd ..
 
 # Run both servers using the run script
 chmod u+x ./clogrc/run.sh && ./clogrc/run.sh

@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/metarex-media/mrx-demo-svc/transformations/api"
+	"github.com/metarex-media/mrx-demo-svc/transformations/mapping"
 	. "github.com/smartystreets/goconvey/convey"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/transformations/api"
-	"gitlab.com/mm-eng/gl-mrx-demo-svc/transformations/mapping"
 )
 
 func TestXxx(t *testing.T) {

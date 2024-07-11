@@ -50,5 +50,6 @@
         "xsltproc",
         "xtract",
         "Zucchi"
-    ]
+    ],
+    "markdown.preview.fontSize": 14
 }
