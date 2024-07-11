@@ -44,7 +44,7 @@ jobs:
               echo "building version $vCODE ($bMSG)"
       -
         name: Bark some context vairables
-        uses: mrmxf/action-bark
+        uses: mrmxf/action-bark@0.2
       -
         name: check the ENV
         run:  source clogrc/_cfg.sh ;\
