@@ -1,0 +1,75 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name></name>
+        </copyrightHolder>
+        <copyrightNotice></copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="http://www.businesswire.com/news/home/20130731006140/en"></provider>
+        <versionCreated>2013-07-31T15:32:00Z</versionCreated>
+        <pubStatus qcode="stat:unknown"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2013-07-31T15:32:00Z</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="en"></language>
+        <subject>
+            <name>Other Consumer</name>
+        </subject>
+        <subject>
+            <name>United States</name>
+        </subject>
+        <subject>
+            <name>North America</name>
+        </subject>
+        <subject>
+            <name>Restaurant/Bar</name>
+        </subject>
+        <subject>
+            <name>Product/Service</name>
+        </subject>
+        <subject>
+            <name>Photo/Multimedia</name>
+        </subject>
+        <subject>
+            <name>Missouri</name>
+        </subject>
+        <subject>
+            <name>Retail</name>
+        </subject>
+        <subject>
+            <name>Food/Beverage</name>
+        </subject>
+        <subject>
+            <name>Consumer</name>
+        </subject>
+        <slugline></slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>Lunch Taking a Toll? Let Applebee’s® Industrial Strength Lunch Decoy Stand In</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p></p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

@@ -1,0 +1,40 @@
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:00:00.000 -t 00:00:28.800 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0000.wav
+ffmpeg -y -start_number 0 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0000.wav -frames:v 720 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0000_clock,clock,clock.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:00:28.800 -t 00:00:43.200 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0001.wav
+ffmpeg -y -start_number 721 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0001.wav -frames:v 1080 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0001_Janina-Ramirez,sting,scene001,segment001,close-up,sting.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:00:43.200 -t 00:00:59.160 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0002.wav
+ffmpeg -y -start_number 1081 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0002.wav -frames:v 1479 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0002_Janina-Ramirez,sting,scene001,segment002,close-up,sting.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:00:59.160 -t 00:01:55.200 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0003.wav
+ffmpeg -y -start_number 1480 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0003.wav -frames:v 2880 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0003_Janina-Ramirez,sting,scene001,segment003,close-up,sting.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:01:55.200 -t 00:02:14.880 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0004.wav
+ffmpeg -y -start_number 2881 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0004.wav -frames:v 3372 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0004_Janina-Ramirez,title,scene002,segment004,title,title.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:02:14.880 -t 00:03:24.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0005.wav
+ffmpeg -y -start_number 3373 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0005.wav -frames:v 5099 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0005_Janina-Ramirez,tutankhamun,scene002,segment005,aerial,tutankhamun.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:03:24.000 -t 00:03:24.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0006.wav
+ffmpeg -y -start_number 5100 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0006.wav -frames:v 5099 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0006_Janina-Ramirez,tutankhamun,scene002,segment006,talking-heads,tutankhamun.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:03:24.000 -t 00:03:39.800 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0007.wav
+ffmpeg -y -start_number 5100 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0007.wav -frames:v 5495 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0007_Janina-Ramirez,howard-carter,scene002,segment007,close-up,howard-carter.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:03:39.800 -t 00:04:10.520 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0008.wav
+ffmpeg -y -start_number 5496 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0008.wav -frames:v 6263 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0008_Janina-Ramirez,howard-carter,scene002,segment008,close-up,hc-childhood.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:04:10.520 -t 00:04:41.600 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0009.wav
+ffmpeg -y -start_number 6264 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0009.wav -frames:v 7040 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0009_Janina-Ramirez,howard-carter,scene002,segment009,close-up,hc-family.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:04:41.600 -t 00:05:13.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0010.wav
+ffmpeg -y -start_number 7041 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0010.wav -frames:v 7842 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0010_Janina-Ramirez,howard-carter,scene002,segment010,close-up,hc-painting.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:05:13.680 -t 00:05:49.360 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0011.wav
+ffmpeg -y -start_number 7843 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0011.wav -frames:v 8734 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0011_Janina-Ramirez,howard-carter,scene003,segment011,close-up,benefactors.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:05:49.360 -t 00:06:17.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0012.wav
+ffmpeg -y -start_number 8735 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0012.wav -frames:v 9444 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0012_Janina-Ramirez,howard-carter,scene004,segment012,aerial,nile-adventure.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:06:17.760 -t 00:06:29.080 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0013.wav
+ffmpeg -y -start_number 9445 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0013.wav -frames:v 9727 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0013_Janina-Ramirez,howard-carter,scene004,segment013,nest,west-bank.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:06:29.080 -t 00:06:49.600 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0014.wav
+ffmpeg -y -start_number 9728 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0014.wav -frames:v 10240 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0014_Janina-Ramirez,howard-carter,scene004,segment014,nest,young-Howards.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:06:49.600 -t 00:07:28.600 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0015.wav
+ffmpeg -y -start_number 10241 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0015.wav -frames:v 11215 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0015_Janina-Ramirez,Stephen-Harvey,howard-carter,scene004,segment015,talking-heads,artist-waffle---use-of-artist.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:07:28.600 -t 00:08:20.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0016.wav
+ffmpeg -y -start_number 11216 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0016.wav -frames:v 12499 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0016_Janina-Ramirez,Stephen-Harvey,howard-carter,scene004,segment016,talking-heads,Howard's-traits.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:08:20.000 -t 00:08:58.480 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0017.wav
+ffmpeg -y -start_number 12500 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0017.wav -frames:v 13462 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0017_Janina-Ramirez,howard-carter,scene005,segment017,talking-heads,artisty.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:08:58.480 -t 00:09:55.280 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0018.wav
+ffmpeg -y -start_number 13463 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0018.wav -frames:v 14882 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0018_Janina-Ramirez,howard-carter,scene005,segment018,close-up,Howard's-graft.mp4 
+ffmpeg -y -i ./rnf/LostPast/audio.wav -ss 00:09:55.280 -t 00:10:01.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0019.wav
+ffmpeg -y -start_number 14883 -framerate 25 -i ./rnf/LostPast/frame%05d.jpg -i /segment0019.wav -frames:v 15025 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/LostPast_0019_Janina-Ramirez,howard-carter,scene005,segment019,close-up,Sudden-Cut.mp4 

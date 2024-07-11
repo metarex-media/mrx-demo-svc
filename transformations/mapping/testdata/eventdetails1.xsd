@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Studio (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://iptc.org/std/nar/2006-10-01/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="/workspace/gl-mrx-demo-svc/transformations/mapping/eventdetails0.xsd" namespace="http://www.w3.org/XML/1998/namespace" />
+  <xs:element name="knowledgeItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="itemMeta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" name="itemClass"   />
+              <xs:element minOccurs="1" name="provider" />
+              <xs:element minOccurs="0" name="versionCreated" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="pubStatus" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="contentMeta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="urgency" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="contentCreated" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="contentModified" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="subject">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="name" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="conceptSet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="concept">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="1" name="conceptId" />
+                    <xs:element minOccurs="1" name="name" type="xs:string" />
+                    <xs:element minOccurs="0" name="broader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="eventDetails">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="1" name="dates">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="start" type="xs:dateTime" />
+                                <xs:element minOccurs="0" name="end" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="registration">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="a" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="participationRequirement">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="name" type="xs:string" />
+                                <xs:element minOccurs="0" name="definition" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="accessStatus" />
+                          <xs:element minOccurs="0" name="organiser">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="name" type="xs:string" />
+                                <xs:element minOccurs="0" name="organisationDetails">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="founded" type="xs:unsignedShort" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="contactInfo">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="email" type="xs:string" />
+                                <xs:element minOccurs="0" name="note" type="xs:string" />
+                                <xs:element minOccurs="0" name="web" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="location">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="name" type="xs:string" />
+                                <xs:element minOccurs="0" name="related" />
+                                <xs:element minOccurs="0" name="POIDetails">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="contactInfo">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="web" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="participant">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="name" type="xs:string" />
+                                <xs:element minOccurs="0" name="definition" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="guid" type="xs:string" use="required" />
+      <xs:attribute name="version" type="xs:unsignedByte" use="optional" />
+      <xs:attribute name="standard" type="xs:string" use="required" />
+      <xs:attribute name="standardversion" type="xs:decimal" use="required" />
+      <xs:attribute name="conformance" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,45 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name></name>
+        </copyrightHolder>
+        <copyrightNotice></copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="http://example.agency.com/item/TG346285"></provider>
+        <versionCreated>2013-07-08T08:12:00Z</versionCreated>
+        <pubStatus qcode="stat:unknown"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2013-07-08T08:12:00Z</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="unknown"></language>
+        <slugline></slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>MotoGP - Spain - Valentino Rossi</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p>Valentino Rossi (46) of Italy and Petronas Yamaha SRT during the MotoGP test day at Circuito de Jerez - Angel Nieto on May 3, 2021 in Jerez de la Frontera, Spain</p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

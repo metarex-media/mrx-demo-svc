@@ -1,0 +1,26 @@
+{
+    "$id": "https://qri.io/schema/",
+    "$comment" : "sample comment",
+    "title": "Person",
+    "type": "object",
+    "properties": {
+        "Name": {
+            "type": "string"
+        },
+        "year": {
+            "type": "integer"
+        },
+        "action" :{
+            "type": "object",
+            "properties": {
+                "year": {
+                    "type": "integer"
+                },
+                "role": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": ["firstName", "lastName"]
+  }

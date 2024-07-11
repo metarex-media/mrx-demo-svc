@@ -1,0 +1,166 @@
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:00.000 -t 00:00:06.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0000.wav
+ffmpeg -y -start_number 0 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0000.wav -frames:v 167 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0000_Rosana-Prada,intro,intro,sting.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:06.680 -t 00:00:19.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0001.wav
+ffmpeg -y -start_number 168 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0001.wav -frames:v 492 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0001_Rosana-Prada,intro,Rosanna,intro.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:19.680 -t 00:00:27.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0002.wav
+ffmpeg -y -start_number 493 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0002.wav -frames:v 689 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0002_Elfed-Howell,intro,Elfed,intro.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:27.560 -t 00:00:30.240 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0003.wav
+ffmpeg -y -start_number 690 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0003.wav -frames:v 756 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0003_Elfed-Howell,intro,Elfed,intro.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:30.240 -t 00:00:40.080 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0004.wav
+ffmpeg -y -start_number 757 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0004.wav -frames:v 1002 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0004_Werner-Bleisteiner,intro,Werner,intro.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:40.080 -t 00:00:45.040 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0005.wav
+ffmpeg -y -start_number 1003 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0005.wav -frames:v 1126 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0005_Werner-Bleisteiner,intro,Werner,intro.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:45.040 -t 00:00:49.720 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0006.wav
+ffmpeg -y -start_number 1127 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0006.wav -frames:v 1243 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0006_Johan-Bolin,intro,Lucas,intro.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:49.720 -t 00:00:59.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0007.wav
+ffmpeg -y -start_number 1244 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0007.wav -frames:v 1492 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0007_Johan-Bolin,Next-Gen-Audio,Lucas,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:00:59.680 -t 00:01:06.120 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0008.wav
+ffmpeg -y -start_number 1493 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0008.wav -frames:v 1653 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0008_Lucas-Zwicker,Next-Gen-Audio,Rosanna,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:01:06.120 -t 00:01:11.080 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0009.wav
+ffmpeg -y -start_number 1654 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0009.wav -frames:v 1777 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0009_Lucas-Zwicker,Next-Gen-Audio,Rosanna,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:01:11.080 -t 00:01:12.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0010.wav
+ffmpeg -y -start_number 1778 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0010.wav -frames:v 1814 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0010_Rosana-Prada,Next-Gen-Audio,Rosanna,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:01:12.560 -t 00:01:17.120 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0011.wav
+ffmpeg -y -start_number 1815 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0011.wav -frames:v 1928 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0011_Rosana-Prada,Next-Gen-Audio,Rosanna,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:01:17.120 -t 00:01:33.880 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0012.wav
+ffmpeg -y -start_number 1929 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0012.wav -frames:v 2347 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0012_Rosana-Prada,Next-Gen-Audio,tpoic,Rosanna,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:01:33.880 -t 00:01:37.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0013.wav
+ffmpeg -y -start_number 2348 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0013.wav -frames:v 2425 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0013_Rosana-Prada,Next-Gen-Audio,what-is-it,Rosanna,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:01:37.000 -t 00:01:59.080 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0014.wav
+ffmpeg -y -start_number 2426 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0014.wav -frames:v 2977 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0014_Rosana-Prada,Elfed-Howell,Next-Gen-Audio,immersive,Rosanna,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:01:59.080 -t 00:02:05.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0015.wav
+ffmpeg -y -start_number 2978 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0015.wav -frames:v 3144 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0015_Elfed-Howell,Next-Gen-Audio,immersive,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:02:05.760 -t 00:02:15.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0016.wav
+ffmpeg -y -start_number 3145 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0016.wav -frames:v 3374 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0016_Elfed-Howell,Next-Gen-Audio,personalisation,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:02:15.000 -t 00:02:17.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0017.wav
+ffmpeg -y -start_number 3375 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0017.wav -frames:v 3439 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0017_Elfed-Howell,Next-Gen-Audio,personalisation,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:02:17.560 -t 00:02:33.280 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0018.wav
+ffmpeg -y -start_number 3440 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0018.wav -frames:v 3832 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0018_Elfed-Howell,Next-Gen-Audio,adaptive,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:02:33.280 -t 00:02:46.080 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0019.wav
+ffmpeg -y -start_number 3833 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0019.wav -frames:v 4152 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0019_Elfed-Howell,Next-Gen-Audio,adaptive,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:02:46.080 -t 00:02:50.320 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0020.wav
+ffmpeg -y -start_number 4153 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0020.wav -frames:v 4258 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0020_Elfed-Howell,Next-Gen-Audio,accessibility,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:02:50.320 -t 00:02:58.160 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0021.wav
+ffmpeg -y -start_number 4259 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0021.wav -frames:v 4454 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0021_Elfed-Howell,Next-Gen-Audio,accessibility,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:02:58.160 -t 00:03:22.320 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0022.wav
+ffmpeg -y -start_number 4455 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0022.wav -frames:v 5058 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0022_Elfed-Howell,Next-Gen-Audio,accessibility,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:03:22.320 -t 00:03:25.800 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0023.wav
+ffmpeg -y -start_number 5059 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0023.wav -frames:v 5145 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0023_Rosana-Prada,Elfed-Howell,Next-Gen-Audio,adoption,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:03:25.800 -t 00:03:33.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0024.wav
+ffmpeg -y -start_number 5146 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0024.wav -frames:v 5348 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0024_Elfed-Howell,Next-Gen-Audio,adoption,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:03:33.920 -t 00:03:44.440 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0025.wav
+ffmpeg -y -start_number 5349 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0025.wav -frames:v 5611 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0025_Elfed-Howell,Next-Gen-Audio,adoption-device,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:03:44.440 -t 00:04:01.360 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0026.wav
+ffmpeg -y -start_number 5612 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0026.wav -frames:v 6034 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0026_Elfed-Howell,Next-Gen-Audio,adoption-device,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:04:01.360 -t 00:04:17.160 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0027.wav
+ffmpeg -y -start_number 6035 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0027.wav -frames:v 6429 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0027_Elfed-Howell,Next-Gen-Audio,adoption-device,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:04:17.160 -t 00:04:35.200 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0028.wav
+ffmpeg -y -start_number 6430 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0028.wav -frames:v 6880 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0028_Elfed-Howell,Next-Gen-Audio,adoption-content,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:04:35.200 -t 00:04:44.440 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0029.wav
+ffmpeg -y -start_number 6881 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0029.wav -frames:v 7111 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0029_Elfed-Howell,Next-Gen-Audio,adoption-content,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:04:44.440 -t 00:05:01.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0030.wav
+ffmpeg -y -start_number 7112 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0030.wav -frames:v 7539 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0030_Elfed-Howell,Next-Gen-Audio,adoption-content,Elfed,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:05:01.560 -t 00:06:04.160 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0031.wav
+ffmpeg -y -start_number 7540 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0031.wav -frames:v 9104 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0031_Rosana-Prada,Elfed-Howell,Next-Gen-Audio,industry-status,group,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:06:04.160 -t 00:06:37.040 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0032.wav
+ffmpeg -y -start_number 9105 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0032.wav -frames:v 9926 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0032_Rosana-Prada,Next-Gen-Audio,consumer-use,group,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:06:37.040 -t 00:08:19.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0033.wav
+ffmpeg -y -start_number 9927 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0033.wav -frames:v 12494 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0033_Elfed-Howell,Next-Gen-Audio,consumer-use,group,Next-Gen-Audio.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:08:19.760 -t 00:08:35.440 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0034.wav
+ffmpeg -y -start_number 12495 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0034.wav -frames:v 12886 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0034_Rosana-Prada,Next-Gen-Audio,orpheus-project,group,Orpheus.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:08:35.440 -t 00:09:11.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0035.wav
+ffmpeg -y -start_number 12887 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0035.wav -frames:v 13792 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0035_Werner-Bleisteiner,Next-Gen-Audio,orpheus-project,group,Orpheus.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:09:11.680 -t 00:09:33.440 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0036.wav
+ffmpeg -y -start_number 13793 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0036.wav -frames:v 14336 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0036_Werner-Bleisteiner,Next-Gen-Audio,orpheus-project,group,Orpheus.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:09:33.440 -t 00:12:52.120 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0037.wav
+ffmpeg -y -start_number 14337 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0037.wav -frames:v 19303 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0037_Rosana-Prada,Next-Gen-Audio,swiss-football,group,live-sport.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:12:52.120 -t 00:12:58.720 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0038.wav
+ffmpeg -y -start_number 19304 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0038.wav -frames:v 19468 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0038_Werner-Bleisteiner,Next-Gen-Audio,swiss-football,group,live-sport.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:12:58.720 -t 00:14:38.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0039.wav
+ffmpeg -y -start_number 19469 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0039.wav -frames:v 21964 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0039_Rosana-Prada,Next-Gen-Audio,swiss-football,group,live-sport.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:14:38.560 -t 00:14:44.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0040.wav
+ffmpeg -y -start_number 21965 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0040.wav -frames:v 22119 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0040_Werner-Bleisteiner,Next-Gen-Audio,what-is-needed,group,tooling.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:14:44.760 -t 00:14:54.160 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0041.wav
+ffmpeg -y -start_number 22120 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0041.wav -frames:v 22354 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0041_Rosana-Prada,Next-Gen-Audio,what-is-needed,group,tooling.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:14:54.160 -t 00:15:39.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0042.wav
+ffmpeg -y -start_number 22355 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0042.wav -frames:v 23494 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0042_Werner-Bleisteiner,Next-Gen-Audio,what-is-needed,group,tooling.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:15:39.760 -t 00:16:09.360 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0043.wav
+ffmpeg -y -start_number 23495 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0043.wav -frames:v 24234 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0043_Elfed-Howell,Werner-Bleisteiner,Next-Gen-Audio,what-is-needed,group,tooling.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:16:09.360 -t 00:16:17.520 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0044.wav
+ffmpeg -y -start_number 24235 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0044.wav -frames:v 24438 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0044_Rosana-Prada,Next-Gen-Audio,adm-&-Sadm,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:16:17.520 -t 00:16:23.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0045.wav
+ffmpeg -y -start_number 24439 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0045.wav -frames:v 24589 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0045_Werner-Bleisteiner,Next-Gen-Audio,adm-&-Sadm,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:16:24.000 -t 00:16:31.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0046.wav
+ffmpeg -y -start_number 24600 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0046.wav -frames:v 24789 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0046_Werner-Bleisteiner,Next-Gen-Audio,adm-&-Sadm,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:16:31.560 -t 00:17:10.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0047.wav
+ffmpeg -y -start_number 24790 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0047.wav -frames:v 25769 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0047_Werner-Bleisteiner,Next-Gen-Audio,adm-&-Sadm,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:17:10.760 -t 00:17:57.040 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0048.wav
+ffmpeg -y -start_number 25770 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0048.wav -frames:v 26926 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0048_Elfed-Howell,Next-Gen-Audio,adm-&-Sadm,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:17:57.040 -t 00:18:05.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0049.wav
+ffmpeg -y -start_number 26927 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0049.wav -frames:v 27148 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0049_Rosana-Prada,Next-Gen-Audio,do-users-want-it,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:18:05.920 -t 00:19:53.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0050.wav
+ffmpeg -y -start_number 27149 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0050.wav -frames:v 29839 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0050_Elfed-Howell,Next-Gen-Audio,do-users-want-it,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:19:53.560 -t 00:20:20.160 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0051.wav
+ffmpeg -y -start_number 29840 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0051.wav -frames:v 30504 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0051_Rosana-Prada,Next-Gen-Audio,personaliszation,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:20:20.160 -t 00:21:46.720 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0052.wav
+ffmpeg -y -start_number 30505 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0052.wav -frames:v 32668 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0052_Elfed-Howell,Next-Gen-Audio,personaliszation,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:21:46.720 -t 00:22:27.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0053.wav
+ffmpeg -y -start_number 32669 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0053.wav -frames:v 33689 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0053_Rosana-Prada,Next-Gen-Audio,creatores-perspective,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:22:27.560 -t 00:23:20.280 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0054.wav
+ffmpeg -y -start_number 33690 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0054.wav -frames:v 35007 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0054_Werner-Bleisteiner,Next-Gen-Audio,creatores-perspective,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:23:20.280 -t 00:24:14.800 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0055.wav
+ffmpeg -y -start_number 35008 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0055.wav -frames:v 36370 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0055_Rosana-Prada,Next-Gen-Audio,mixing-in-the-cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:24:14.800 -t 00:29:07.240 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0056.wav
+ffmpeg -y -start_number 36371 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0056.wav -frames:v 43681 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0056_Johan-Bolin,Next-Gen-Audio,mixing-in-the-cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:29:07.240 -t 00:29:12.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0057.wav
+ffmpeg -y -start_number 43682 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0057.wav -frames:v 43799 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0057_Rosana-Prada,Next-Gen-Audio,timing-&-clocking,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:29:12.000 -t 00:29:48.400 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0058.wav
+ffmpeg -y -start_number 43800 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0058.wav -frames:v 44710 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0058_Johan-Bolin,Next-Gen-Audio,timing-&-clocking,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:29:48.400 -t 00:29:59.720 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0059.wav
+ffmpeg -y -start_number 44711 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0059.wav -frames:v 44993 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0059_Rosana-Prada,Next-Gen-Audio,cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:29:59.720 -t 00:33:20.520 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0060.wav
+ffmpeg -y -start_number 44994 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0060.wav -frames:v 50013 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0060_Lucas-Zwicker,Next-Gen-Audio,cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:33:20.520 -t 00:33:28.880 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0061.wav
+ffmpeg -y -start_number 50014 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0061.wav -frames:v 50222 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0061_Rosana-Prada,Next-Gen-Audio,cloud-tech-challenges,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:33:28.880 -t 00:35:45.520 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0062.wav
+ffmpeg -y -start_number 50223 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0062.wav -frames:v 53638 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0062_Lucas-Zwicker,Next-Gen-Audio,cloud-tech-challenges,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:35:45.520 -t 00:35:54.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0063.wav
+ffmpeg -y -start_number 53639 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0063.wav -frames:v 53873 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0063_Rosana-Prada,Next-Gen-Audio,beyond-cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:35:54.920 -t 00:36:45.040 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0064.wav
+ffmpeg -y -start_number 53874 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0064.wav -frames:v 55126 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0064_Lucas-Zwicker,Next-Gen-Audio,beyond-cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:36:45.040 -t 00:39:02.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0065.wav
+ffmpeg -y -start_number 55127 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0065.wav -frames:v 58550 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0065_Johan-Bolin,Next-Gen-Audio,beyond-cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:39:02.000 -t 00:40:02.200 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0066.wav
+ffmpeg -y -start_number 58551 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0066.wav -frames:v 60055 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0066_Elfed-Howell,Next-Gen-Audio,beyond-cloud,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:40:02.200 -t 00:40:21.200 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0067.wav
+ffmpeg -y -start_number 60056 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0067.wav -frames:v 60530 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0067_deutche-telekom,Next-Gen-Audio,too-much-automation,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:40:21.200 -t 00:40:27.840 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0068.wav
+ffmpeg -y -start_number 60531 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0068.wav -frames:v 60696 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0068_Rosana-Prada,Next-Gen-Audio,ml/ai,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:40:27.840 -t 00:41:23.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0069.wav
+ffmpeg -y -start_number 60697 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0069.wav -frames:v 62092 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0069_Elfed-Howell,Next-Gen-Audio,ml/ai,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:41:23.680 -t 00:41:58.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0070.wav
+ffmpeg -y -start_number 62093 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0070.wav -frames:v 62950 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0070_Elfed-Howell,deutche-telekom,Next-Gen-Audio,consumers,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:41:58.000 -t 00:42:26.040 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0071.wav
+ffmpeg -y -start_number 62951 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0071.wav -frames:v 63651 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0071_Werner-Bleisteiner,Next-Gen-Audio,consumers,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:42:26.040 -t 00:42:42.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0072.wav
+ffmpeg -y -start_number 63652 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0072.wav -frames:v 64073 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0072_Next-Gen-Audio,gap,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:42:42.920 -t 00:44:04.640 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0073.wav
+ffmpeg -y -start_number 64074 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0073.wav -frames:v 66116 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0073_Elfed-Howell,anonymous,Next-Gen-Audio,codecs,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:44:04.640 -t 00:45:15.720 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0074.wav
+ffmpeg -y -start_number 66117 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0074.wav -frames:v 67893 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0074_Elfed-Howell,anonymous,Next-Gen-Audio,environment-adaptation,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:45:15.720 -t 00:45:33.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0075.wav
+ffmpeg -y -start_number 67894 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0075.wav -frames:v 68325 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0075_Werner-Bleisteiner,Next-Gen-Audio,environment-adaptation,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:45:33.000 -t 00:45:41.320 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0076.wav
+ffmpeg -y -start_number 68326 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0076.wav -frames:v 68533 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0076_Rosana-Prada,Next-Gen-Audio,loudness,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:45:41.320 -t 00:46:19.400 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0077.wav
+ffmpeg -y -start_number 68534 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0077.wav -frames:v 69485 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0077_Elfed-Howell,Next-Gen-Audio,loudness,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:46:19.400 -t 00:46:29.640 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0078.wav
+ffmpeg -y -start_number 69486 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0078.wav -frames:v 69741 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0078_Werner-Bleisteiner,Next-Gen-Audio,loudness,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:46:29.640 -t 00:46:54.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0079.wav
+ffmpeg -y -start_number 69742 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0079.wav -frames:v 70373 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0079_Elfed-Howell,Next-Gen-Audio,loudness,group,adm.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:46:54.920 -t 00:47:05.040 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0080.wav
+ffmpeg -y -start_number 70374 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0080.wav -frames:v 70626 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0080_Rosana-Prada,Next-Gen-Audio,loudness,group,wrap-up.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:47:05.040 -t 00:47:12.280 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0081.wav
+ffmpeg -y -start_number 70627 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0081.wav -frames:v 70807 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0081_Next-Gen-Audio,loudness,logo,close.mp4 
+ffmpeg -y -i ./rnf/IET_Panel/audio.wav -ss 00:47:12.280 -t 00:47:12.320 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0082.wav
+ffmpeg -y -start_number 70808 -framerate 25 -i ./rnf/IET_Panel/frame%05d.jpg -i /segment0082.wav -frames:v 70808 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0082_Next-Gen-Audio,loudness,logo,close.mp4 

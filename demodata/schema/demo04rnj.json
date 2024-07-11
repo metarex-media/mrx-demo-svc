@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Metarex NAB Demo 04 json input schema",
+    "description": "The Schema for metadata tagging in json",
+    "type": "array",
+    "items": [
+      {
+        "type": "object",
+        "properties": {
+          "In": {
+            "type": "integer"
+          },
+          "Out": {
+            "type": "integer"
+          },
+          "Chapter": {
+            "type": "string"
+          },
+          "Topics": {
+            "type": "object",
+            "properties": {
+              "Subject": {
+                "type": "string"
+              },
+              "Shot": {
+                "type": "string"
+              },
+              "Primary": {
+                "type": "string"
+              },
+              "Secondary": {
+                "type": "string"
+              }
+            }
+          },
+          "Warnings": {
+            "type": "object",
+            "properties": {
+              "Violence": {
+                "type": "boolean"
+              },
+              "Threat": {
+                "type": "boolean"
+              },
+              "Drugs": {
+                "type": "boolean"
+              },
+              "Suicide": {
+                "type": "boolean"
+              }
+            }
+          },
+          "Importance": {
+            "type": "integer"
+          }
+        }, "additionalProperties": false
+      }
+    ]
+  }

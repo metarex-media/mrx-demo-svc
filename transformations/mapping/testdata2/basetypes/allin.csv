@@ -1,0 +1,2 @@
+bool,boolArray,float,floatArray,integer,integerArray,string,stringArray
+true,[true true false false true],20.24,[0.1 0.2232314 2000.000002 2e+08],2024,[0 20 20000 2000000002],string of some sort,[Matthew Mark Luke John]

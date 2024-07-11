@@ -1,0 +1,232 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Demo Posts",
+    "dateExported": "2024-04-04T14:25:52.880Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a3983660-bbd6-4197-8d29-c62a87985c42",
+            "colId": "e7029018-fe40-4b80-a6ec-a1f7cec75da5",
+            "containerId": "",
+            "name": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.jpg&outputMRXID=MRX.123.456.789.c2p",
+            "url": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.jpg&outputMRXID=extractHeaderc2pa",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-04T14:22:07.946Z",
+            "modified": "2024-04-04T14:22:07.946Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inputMRXID",
+                    "value": "MRX.123.456.789.jpg",
+                    "isPath": false
+                },
+                {
+                    "name": "outputMRXID",
+                    "value": "extractHeaderc2pa",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "binary",
+                "raw": "",
+                "form": [],
+                "binary": "/workspace/gl-mrx-demo-svc/api/mrx/c2pa-jpeg/manifests/adobe-20220124-CACA/detailed.json"
+            },
+            "tests": []
+        },
+        {
+            "_id": "731de635-240c-4618-aaa2-e4e51564fb86",
+            "colId": "e7029018-fe40-4b80-a6ec-a1f7cec75da5",
+            "containerId": "",
+            "name": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.rnf&outputMRXID=generateFFmpeg&title=IET",
+            "url": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.rnf&outputMRXID=generateFFmpeg&title=IET",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-04T14:22:38.560Z",
+            "modified": "2024-04-04T14:22:38.560Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inputMRXID",
+                    "value": "MRX.123.456.789.rnf",
+                    "isPath": false
+                },
+                {
+                    "name": "outputMRXID",
+                    "value": "generateFFmpeg",
+                    "isPath": false
+                },
+                {
+                    "name": "title",
+                    "value": "IET",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "binary",
+                "raw": "",
+                "form": [],
+                "binary": "/workspace/gl-mrx-demo-svc/demodata/demo12/IET.csv"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3c84718c-5f38-48e7-beca-c1735480a5a4",
+            "colId": "e7029018-fe40-4b80-a6ec-a1f7cec75da5",
+            "containerId": "",
+            "name": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.rnc&outputMRXID=MRX.123.456.789.rnf&mapping=true",
+            "url": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.rny&outputMRXID=MRX.123.456.789.rnf&mapping=true",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-04T14:22:49.974Z",
+            "modified": "2024-04-04T14:22:49.974Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inputMRXID",
+                    "value": "MRX.123.456.789.rny",
+                    "isPath": false
+                },
+                {
+                    "name": "outputMRXID",
+                    "value": "MRX.123.456.789.rnf",
+                    "isPath": false
+                },
+                {
+                    "name": "mapping",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "binary",
+                "raw": "",
+                "form": [],
+                "binary": "/workspace/gl-mrx-demo-svc/api/rnf/demodata/inputs/IET.yaml"
+            },
+            "tests": []
+        },
+        {
+            "_id": "15b73379-7d3a-4a43-aa8a-e362eb1bf9cf",
+            "colId": "e7029018-fe40-4b80-a6ec-a1f7cec75da5",
+            "containerId": "",
+            "name": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.njs&outputMRXID=toNewsML",
+            "url": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.njs&outputMRXID=toNewsML",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-04T14:23:20.476Z",
+            "modified": "2024-04-04T14:23:20.476Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inputMRXID",
+                    "value": "MRX.123.456.789.njs",
+                    "isPath": false
+                },
+                {
+                    "name": "outputMRXID",
+                    "value": "toNewsML",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"uri\": \"http://example.agency.com/item/TG346285\",\n  \"type\": \"picture\",\n  \"versioncreated\": \"2013-07-08T08:12:00Z\",\n  \"by\": \"John Smith\",\n  \"rightsinfo\": {\n    \"langid\": \"http://w3.org/ns/odrl/2/\",\n    \"linkedrights\": \"http://example.agency.com/rights/editorialUseOnly\"\n  },\n  \"headlines\": [\n    {\n      \"role\": \"main\",\n      \"value\": \"MotoGP - Spain - Valentino Rossi\"\n    }\n  ],\n  \"descriptions\": [\n    {\n      \"role\": \"text\",\n      \"value\": \"Valentino Rossi (46) of Italy and Petronas Yamaha SRT during the MotoGP test day at Circuito de Jerez - Angel Nieto on May 3, 2021 in Jerez de la Frontera, Spain\"\n    }\n  ],\n  \"renditions\": [\n    {\n      \"name\": \"main\",\n      \"href\": \"https://images.static.press.net/v2/image/preview/99bf1cf9b8c917876bf1ce7ac31a85c7/2.59562475.jpg?1\",\n      \"contenttype\": \"image/jpg\",\n      \"title\": \"Mid Resolution\",\n      \"height\": 342,\n      \"width\": 512\n    },\n    {\n      \"name\": \"small\",\n      \"href\": \"https://images.static.press.net/v2/image/webpreview/d3e2a59c08821d87d2c491c814c56f58/2.59562458.jpg\",\n      \"contenttype\": \"image/jpg\",\n      \"title\": \"Low Resolution\",\n      \"height\": 300,\n      \"width\": 450\n    }\n  ]\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2e89da47-1d49-43f9-9146-8db1e8c7489b",
+            "colId": "e7029018-fe40-4b80-a6ec-a1f7cec75da5",
+            "containerId": "",
+            "name": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.gpx&outputMRXID=fill",
+            "url": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.gpx&outputMRXID=fill",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-04T14:23:51.348Z",
+            "modified": "2024-04-04T14:23:51.348Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inputMRXID",
+                    "value": "MRX.123.456.789.gpx",
+                    "isPath": false
+                },
+                {
+                    "name": "outputMRXID",
+                    "value": "fill",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "xml",
+                "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<gpx xmlns=\"http://www.topografix.com/GPX/1/1\" version=\"1.1\" creator=\"Wikipedia\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\">\n <!-- Comments look like this -->\n <metadata>\n  <name>Data name</name>\n  <desc>Valid GPX example without special characters</desc>\n  <author>\n   <name>Author name</name>\n  </author>\n </metadata>\n <wpt lat=\"52.518611\" lon=\"13.376111\">\n  <ele>35.0</ele>\n  <time>2011-12-31T23:59:59Z</time>\n  <name>Reichstag (Berlin)</name>\n  <sym>City</sym>\n </wpt>\n <wpt lat=\"48.208031\" lon=\"16.358128\">\n  <ele>179</ele>\n  <time>2011-12-31T23:59:59Z</time>\n  <name>Parlament (Wien)</name>\n  <sym>City</sym>\n </wpt>\n <wpt lat=\"46.9466\" lon=\"7.44412\">\n  <time>2011-12-31T23:59:59Z</time>\n  <name>Bundeshaus (Bern)</name>\n  <sym>City</sym>\n </wpt>\n</gpx>",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "11dd1f2f-2c9b-46f7-8512-e820f3f6aacf",
+            "colId": "e7029018-fe40-4b80-a6ec-a1f7cec75da5",
+            "containerId": "",
+            "name": "localhost:9000/batteryFault",
+            "url": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.bat&outputMRXID=fault",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-04-04T14:24:46.690Z",
+            "modified": "2024-04-04T14:24:46.690Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inputMRXID",
+                    "value": "MRX.123.456.789.bat",
+                    "isPath": false
+                },
+                {
+                    "name": "outputMRXID",
+                    "value": "fault",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"percentage\":80,\n    \"status\":\"E00P\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "88963974-1a10-4bdb-9367-a400aa7016a1",
+            "colId": "e7029018-fe40-4b80-a6ec-a1f7cec75da5",
+            "containerId": "",
+            "name": "localhost:8000/autoelt?inputMRXID=MRX.123.456.789.bat&outputMRXID=stagger",
+            "url": "localhost:8080/autoelt?inputMRXID=MRX.123.456.789.bat&outputMRXID=fill",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-04-04T14:25:27.542Z",
+            "modified": "2024-04-04T14:25:27.542Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inputMRXID",
+                    "value": "MRX.123.456.789.bat",
+                    "isPath": false
+                },
+                {
+                    "name": "outputMRXID",
+                    "value": "fill",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"percentage\": 97\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

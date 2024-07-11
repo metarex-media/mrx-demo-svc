@@ -1,0 +1,23 @@
+<baseTypes xmlns="">
+    <string>string of some sort</string>
+    <float>20.24</float>
+    <integer>2024</integer>
+    <bool>true</bool>
+    <stringArray>Matthew</stringArray>
+    <stringArray>Mark</stringArray>
+    <stringArray>Luke</stringArray>
+    <stringArray>John</stringArray>
+    <integerArray>0</integerArray>
+    <integerArray>20</integerArray>
+    <integerArray>20000</integerArray>
+    <integerArray>2000000002</integerArray>
+    <boolArray>true</boolArray>
+    <boolArray>true</boolArray>
+    <boolArray>false</boolArray>
+    <boolArray>false</boolArray>
+    <boolArray>true</boolArray>
+    <floatArray>0.1</floatArray>
+    <floatArray>0.2232314</floatArray>
+    <floatArray>2000.000002</floatArray>
+    <floatArray>2e+08</floatArray>
+</baseTypes>

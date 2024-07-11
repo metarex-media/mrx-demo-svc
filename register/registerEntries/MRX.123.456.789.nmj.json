@@ -1,0 +1,42 @@
+{
+    "metarexId": "MRX.123.456.789.nmj",
+    "mediaType": "application/xml",
+    "name": "NAB NewsML",
+    "description": "The full newsItem of the Newsml specification",
+    "timingIs": "clocked",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "https://www.iptc.org/std/NewsML-G2/2.33/specification/individual/NewsML-G2_2.33-spec-NewsItem-Power.xsd",
+        "mapping": {
+            "convertTypes": false,
+            "MissedFieldsKey": "tag",
+            "mappingDefinitions": {
+                "contentCreated": [
+                    "contentcreated"
+                ],
+                "end": [
+                    "enddate"
+                ],
+                "lang": [
+                    "language"
+                ],
+                "name": [
+                    "name",
+                    "literal"
+                ],
+                "note": [
+                    "ednote"
+                ],
+                "standardversion": [
+                    "version"
+                ],
+                "start": [
+                    "startdate"
+                ],
+                "versionCreated": [
+                    "versioncreated"
+                ]
+            }
+        }
+    }
+}

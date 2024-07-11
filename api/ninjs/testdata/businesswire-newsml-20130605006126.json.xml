@@ -1,0 +1,84 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name></name>
+        </copyrightHolder>
+        <copyrightNotice></copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="http://www.businesswire.com/news/home/20130605006126/zh"></provider>
+        <versionCreated>2013-06-05T21:00:00Z</versionCreated>
+        <pubStatus qcode="stat:unknown"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2013-06-05T21:00:00Z</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="zh"></language>
+        <subject>
+            <name>United States</name>
+        </subject>
+        <subject>
+            <name>Technology</name>
+        </subject>
+        <subject>
+            <name>Consumer Electronics</name>
+        </subject>
+        <subject>
+            <name>North America</name>
+        </subject>
+        <subject>
+            <name>Hardware</name>
+        </subject>
+        <subject>
+            <name>Audio/Video</name>
+        </subject>
+        <subject>
+            <name>Nanotechnology</name>
+        </subject>
+        <subject>
+            <name>Semiconductor</name>
+        </subject>
+        <subject>
+            <name>California</name>
+        </subject>
+        <subject>
+            <name>Award</name>
+        </subject>
+        <subject>
+            <name>Manufacturing</name>
+        </subject>
+        <subject>
+            <name>Chemicals/Plastics</name>
+        </subject>
+        <subject>
+            <name>Engineering</name>
+        </subject>
+        <slugline></slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>Cambrios被Gartner評選為「最酷供應商」</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p></p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

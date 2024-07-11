@@ -1,0 +1,11 @@
+{
+    "metarexId": "MRX.123.456.789.nmd",
+    "mediaType": "application/json",
+    "name": "NAB News Markdown",
+    "description": "A simple version of ninjs that can be used to write markdown",
+    "timingIs": "clocked",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/demo01output.json"
+    }
+}

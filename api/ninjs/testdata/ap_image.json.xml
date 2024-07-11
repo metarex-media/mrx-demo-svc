@@ -1,0 +1,54 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name></name>
+        </copyrightHolder>
+        <copyrightNotice></copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="http://api.ap.org/media/v/content/b2b6c3f4642f46deac7509d4db315ca0?qt=H1Kdh42orF&amp;et=0a1aza3c0"></provider>
+        <versionCreated>2019-11-15T14:39:44Z</versionCreated>
+        <pubStatus qcode="stat:usable"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2019-11-15T14:39:44Z</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="en"></language>
+        <subject>
+            <name>International News</name>
+        </subject>
+        <subject>
+            <name>File photo</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/86aad5207dac100488ecba7fa5283c3e">
+            <name>Government and politics</name>
+        </subject>
+        <slugline>Turkey Islamic State</slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>Turkey Islamic State</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p></p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

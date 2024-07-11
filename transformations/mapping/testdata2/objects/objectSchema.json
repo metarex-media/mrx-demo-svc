@@ -1,0 +1,63 @@
+{
+    "$id": "https://qri.io/schema/",
+    "$comment": "sample comment",
+    "title": "Person",
+    "type": "object",
+    "properties": {
+        "objectArrayCheck": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "field1": {
+                        "type": "string"
+                    },
+                    "field2": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "Reversefield1": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Reversefield2": {
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "floats": {
+            "type": "array",
+            "items": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "float2d": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        },
+        "floats2d": {
+            "type": "array",
+            "items": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                }
+            }
+        },
+        "float1d": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "metarexId": "MRX.123.456.789.jpg",
+    "mediaType": "application/octet-stream",
+    "name": "NAB MRX",
+    "description": "A pseudo identity for jpeg files loaded with c2pa header metadata",
+    "timingIs": "embedded",
+    "treatAs": "binary",
+    "mrx": {
+        "specification": "",
+        "services": [
+            {
+                "API": "http://localhost:9000/C2PAExtract",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "MRX.123.456.789.c2p",
+                "description": "Extract the header data of an mrx as json",
+                "serviceID": "extractHeaderc2pa"
+            }
+        ]
+    }
+}

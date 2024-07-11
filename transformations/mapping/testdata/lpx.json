@@ -1,0 +1,561 @@
+{
+    "uri": "string",
+    "type": "text",
+    "representationtype": "full",
+    "profile": "string",
+    "version": "string",
+    "versioncreated": "2024-03-08T13:06:21.040Z",
+    "contentcreated": "2024-03-08T13:06:21.040Z",
+    "embargoed": "2024-03-08T13:06:21.040Z",
+    "urgency": 1,
+    "copyrightholder": "string",
+    "copyrightnotice": "string",
+    "usageterms": "string",
+    "ednote": "string",
+    "language": "string",
+    "descriptions": [
+        [
+            {
+                "role": "string",
+                "contenttype": "string",
+                "value": "string"
+            }
+        ]
+    ],
+    "bodies": [
+        [
+            {
+                "role": "string",
+                "contenttype": "string",
+                "charcount": 1,
+                "wordcount": 1,
+                "value": "string"
+            }
+        ]
+    ],
+    "headlines": [
+        [
+            {
+                "role": "string",
+                "contenttype": "string",
+                "value": "string"
+            }
+        ]
+    ],
+    "people": [
+        [
+            {
+                "name": "string",
+                "rel": "string",
+                "uri": "string",
+                "literal": "string",
+                "contactinfo": [
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    }
+                ]
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "name": "string",
+            "rel": "string",
+            "uri": "string",
+            "literal": "string",
+            "symbols": [
+                {
+                    "ticker": "string",
+                    "exchange": "string",
+                    "symboltype": "string",
+                    "symbol": "string"
+                }
+            ],
+            "contactinfo": [
+                {
+                    "type": "string",
+                    "role": "string",
+                    "lang": "string",
+                    "name": "string",
+                    "value": "string",
+                    "address": {
+                        "lines": [
+                            "string"
+                        ],
+                        "locality": "string",
+                        "area": "string",
+                        "postalcode": "string",
+                        "country": "string"
+                    }
+                },
+                {
+                    "type": "string",
+                    "role": "string",
+                    "lang": "string",
+                    "name": "string",
+                    "value": "string",
+                    "address": {
+                        "lines": [
+                            "string"
+                        ],
+                        "locality": "string",
+                        "area": "string",
+                        "postalcode": "string",
+                        "country": "string"
+                    }
+                }
+            ]
+        }
+    ],
+    "places": [
+        [
+            {
+                "name": "string",
+                "rel": "string",
+                "uri": "string",
+                "literal": "string",
+                "contactinfo": [
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    }
+                ],
+                "geojson": {
+                    "type": "Point",
+                    "coordinates": [
+                        1,
+                        1
+                    ],
+                    "bbox": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            }
+        ]
+    ],
+    "subjects": [
+        [
+            {
+                "name": "string",
+                "rel": "string",
+                "uri": "string",
+                "literal": "string",
+                "creator": "string",
+                "relevance": 100,
+                "confidence": 100
+            }
+        ]
+    ],
+    "events": [
+        [
+            {
+                "id": "string",
+                "name": "string",
+                "rel": "string",
+                "uri": "string",
+                "literal": "string"
+            }
+        ]
+    ],
+    "eventdetails": [
+        {
+            "eventstatus": "pre-event",
+            "dates": {
+                "startdate": "string",
+                "enddate": "string",
+                "duration": "string",
+                "recurrence": {
+                    "recurrence-dates": [
+                        "string"
+                    ],
+                    "recurrence-rules": [
+                        {
+                            "frequency": "secondly",
+                            "interval": "string",
+                            "until": "string",
+                            "count": "string"
+                        }
+                    ]
+                }
+            },
+            "organiser": {
+                "name": "string",
+                "rel": "string",
+                "uri": "string",
+                "literal": "string",
+                "symbols": [
+                    {
+                        "ticker": "string",
+                        "exchange": "string",
+                        "symboltype": "string",
+                        "symbol": "string"
+                    }
+                ],
+                "contactinfo": [
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "plannedcoverage": [
+        [
+            {
+                "uri": "string",
+                "title": "string",
+                "pubstatus": "usable",
+                "commissioned": {
+                    "by": "string",
+                    "on": "2024-03-08T13:06:21.040Z",
+                    "references": [
+                        {
+                            "name": "string",
+                            "value": "string"
+                        }
+                    ]
+                },
+                "dates": {
+                    "startdate": "string",
+                    "enddate": "string",
+                    "duration": "string",
+                    "recurrence": {
+                        "recurrence-dates": [
+                            "string"
+                        ],
+                        "recurrence-rules": [
+                            {
+                                "frequency": "secondly",
+                                "interval": "string",
+                                "until": "string",
+                                "count": "string"
+                            }
+                        ]
+                    }
+                },
+                "type": "string",
+                "event": "string",
+                "audiences": [
+                    {
+                        "audience": "string",
+                        "significance": 1
+                    }
+                ],
+                "exclaudience": [
+                    "string"
+                ],
+                "headline": "string",
+                "ednote": "string",
+                "urgency": "string",
+                "language": "string",
+                "scheduled": "string",
+                "services": [
+                    "string"
+                ],
+                "assignedto": "string",
+                "itemcount": {
+                    "rangefrom": 1,
+                    "rangeto": 1
+                },
+                "wordcount": 1,
+                "renditions": [
+                    {
+                        "items": [
+                            {}
+                        ],
+                        "name": "string",
+                        "uri": "string",
+                        "version": 1,
+                        "versionguid": "string",
+                        "href": "string",
+                        "code": "string",
+                        "signal": "string",
+                        "transportprotocol": "srtlistener",
+                        "maxbitrate": 1,
+                        "cidr": "string",
+                        "port": 1,
+                        "srtpassword": "string",
+                        "listeneraddress": "string",
+                        "streamid": "string",
+                        "minlatency": 1,
+                        "codec": "string",
+                        "scantype": "progressive",
+                        "bitrate": 1,
+                        "gop": 1,
+                        "ratecontrolmode": "CBR",
+                        "contenttype": "string",
+                        "title": "string",
+                        "generated": "2024-03-08T13:06:21.040Z",
+                        "height": 1,
+                        "width": 1,
+                        "sizeinbytes": 1,
+                        "duration": 1,
+                        "averagebitrate": 1,
+                        "format": "string",
+                        "originalfilename": "string",
+                        "fileextension": "string",
+                        "digest": "string",
+                        "samplerate": 1,
+                        "audiochannels": 1,
+                        "audiobitrate": 1,
+                        "aspectratio": "string",
+                        "colourspace": "string",
+                        "backgroundcolour": "string",
+                        "orientation": "string",
+                        "videocodec": "string",
+                        "videoscaling": "string",
+                        "framerate": 1,
+                        "resolution": "string",
+                        "audiocodec": "string",
+                        "scene": "string",
+                        "printsize": 1,
+                        "poi": {
+                            "x": 1,
+                            "y": 1
+                        }
+                    }
+                ]
+            }
+        ]
+    ],
+    "objects": [
+        [
+            {
+                "name": "string",
+                "rel": "string",
+                "uri": "string",
+                "literal": "string"
+            }
+        ]
+    ],
+    "infosources": [
+        [
+            {
+                "name": "string",
+                "role": "string",
+                "uri": "string",
+                "literal": "string",
+                "contactinfo": [
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "role": "string",
+                        "lang": "string",
+                        "name": "string",
+                        "value": "string",
+                        "address": {
+                            "lines": [
+                                "string"
+                            ],
+                            "locality": "string",
+                            "area": "string",
+                            "postalcode": "string",
+                            "country": "string"
+                        }
+                    }
+                ]
+            }
+        ]
+    ],
+    "title": "string",
+    "by": "string",
+    "slugline": "string",
+    "located": "string",
+    "renditions": [
+        {
+            "items": [
+                {}
+            ],
+            "name": "string",
+            "uri": "string",
+            "version": 1,
+            "versionguid": "string",
+            "href": "string",
+            "code": "string",
+            "signal": "string",
+            "transportprotocol": "srtlistener",
+            "maxbitrate": 1,
+            "cidr": "string",
+            "port": 1,
+            "srtpassword": "string",
+            "listeneraddress": "string",
+            "streamid": "string",
+            "minlatency": 1,
+            "codec": "string",
+            "scantype": "progressive",
+            "bitrate": 1,
+            "gop": 1,
+            "ratecontrolmode": "CBR",
+            "contenttype": "string",
+            "title": "string",
+            "generated": "2024-03-08T13:06:21.040Z",
+            "height": 1,
+            "width": 1,
+            "sizeinbytes": 1,
+            "duration": 1,
+            "averagebitrate": 1,
+            "format": "string",
+            "originalfilename": "string",
+            "fileextension": "string",
+            "digest": "string",
+            "samplerate": 1,
+            "audiochannels": 1,
+            "audiobitrate": 1,
+            "aspectratio": "string",
+            "colourspace": "string",
+            "backgroundcolour": "string",
+            "orientation": "string",
+            "videocodec": "string",
+            "videoscaling": "string",
+            "framerate": 1,
+            "resolution": "string",
+            "audiocodec": "string",
+            "scene": "string",
+            "printsize": 1,
+            "poi": {
+                "x": 1,
+                "y": 1
+            }
+        }
+    ],
+    "associations": [
+        [
+            {
+                "name": "string"
+            }
+        ]
+    ],
+    "altids": [
+        [
+            {
+                "role": "string",
+                "value": "string"
+            }
+        ]
+    ],
+    "trustindicators": [
+        [
+            {
+                "role": "string",
+                "title": "string",
+                "href": "string"
+            }
+        ]
+    ],
+    "standard": {},
+    "genres": [
+        [
+            {
+                "name": "string",
+                "uri": "string",
+                "literal": "string"
+            }
+        ]
+    ],
+    "expires": "2024-03-08T13:06:21.040Z",
+    "rightsinfo": {}
+}

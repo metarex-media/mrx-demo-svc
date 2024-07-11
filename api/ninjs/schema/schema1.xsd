@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://iptc.org/std/NITF/2006-10-18/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://iptc.org/std/NITF/2006-10-18/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="nitf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="body">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="body.head">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="hedline">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="hl1" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="byline">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element name="byttl" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="body.content">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="p" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,22 @@
+<camera xmlns="">
+    <cameraItem>
+        <intrinsicMatrix>5440.000226592928</intrinsicMatrix>
+        <intrinsicMatrix>0</intrinsicMatrix>
+        <intrinsicMatrix>960</intrinsicMatrix>
+        <intrinsicMatrix>0</intrinsicMatrix>
+        <intrinsicMatrix>5440.000226592928</intrinsicMatrix>
+        <intrinsicMatrix>540</intrinsicMatrix>
+        <intrinsicMatrix>0</intrinsicMatrix>
+        <intrinsicMatrix>0</intrinsicMatrix>
+        <intrinsicMatrix>1</intrinsicMatrix>
+        <SceneWidth></SceneWidth>
+        <SceneHeight></SceneHeight>
+        <cameraRotation>0</cameraRotation>
+        <cameraRotation>0</cameraRotation>
+        <cameraRotation>0</cameraRotation>
+        <cameraRotation>1</cameraRotation>
+        <translation>0</translation>
+        <translation>0</translation>
+        <translation>0</translation>
+    </cameraItem>
+</camera>

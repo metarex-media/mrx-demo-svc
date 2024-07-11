@@ -1,0 +1,11 @@
+{
+    "metarexId": "MRX.123.456.789.c2p",
+    "mediaType": "application/json",
+    "name": "C2PA manifest",
+    "description": "The c2pa manifest",
+    "timingIs": "clocked",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "https://github.com/contentauth/c2patool/blob/main/schemas/manifest-definition.json"
+    }
+}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://iptc.org/std/nar/2006-10-01/">
+  <xs:import schemaLocation="schema1.xsd" namespace="http://www.w3.org/XML/1998/namespace" />
+  <xs:element name="newsItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="catalogRef">
+          <xs:complexType>
+            <xs:attribute name="href" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rightsInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="copyrightHolder">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="uri" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="copyrightNotice" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="itemMeta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="itemClass">
+                <xs:complexType>
+                  <xs:attribute name="qcode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="provider">
+                <xs:complexType>
+                  <xs:attribute name="uri" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="versionCreated" type="xs:dateTime" />
+              <xs:element name="embargoed" type="xs:dateTime" />
+              <xs:element name="pubStatus">
+                <xs:complexType>
+                  <xs:attribute name="qcode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contentMeta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contentCreated" type="xs:dateTime" />
+              <xs:element name="contentModified" type="xs:dateTime" />
+              <xs:element name="located">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="qcode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="creator">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="uri" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="infoSource">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="qcode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="language">
+                <xs:complexType>
+                  <xs:attribute name="tag" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="subject">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="qcode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="slugline" type="xs:string" />
+              <xs:element name="headline" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contentSet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="inlineXML">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nitf">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="body">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="body.head">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="hedline">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="hl1" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="byline">
+                                        <xs:complexType mixed="true">
+                                          <xs:sequence>
+                                            <xs:element name="byttl" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="body.content">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="p" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="contenttype" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="guid" type="xs:string" use="required" />
+      <xs:attribute name="version" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="standard" type="xs:string" use="required" />
+      <xs:attribute name="standardversion" type="xs:decimal" use="required" />
+      <xs:attribute ref="xml:lang" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

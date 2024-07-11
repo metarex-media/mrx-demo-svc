@@ -1,0 +1,740 @@
+[
+    {
+        "In": 0,
+        "Out": 291,
+        "Chapter": "logo",
+        "Topics": {
+            "Subject": "titles",
+            "Shot": "blender",
+            "Primary": "intro",
+            "Secondary": ""
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 1
+    },
+    {
+        "In": 292,
+        "Out": 414,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "titles",
+            "Primary": "intro",
+            "Secondary": ""
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 415,
+        "Out": 661,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "sheep feet",
+            "Primary": "despair",
+            "Secondary": ""
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": true,
+            "Drugs": false,
+            "Suicide": true
+        },
+        "Importance": 10
+    },
+    {
+        "In": 662,
+        "Out": 1105,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "suicide",
+            "Primary": "despair",
+            "Secondary": ""
+        },
+        "Warnings": {
+            "Violence": true,
+            "Threat": true,
+            "Drugs": false,
+            "Suicide": true
+        },
+        "Importance": 8
+    },
+    {
+        "In": 1106,
+        "Out": 1396,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "main title",
+            "Primary": "despair",
+            "Secondary": ""
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 1397,
+        "Out": 1750,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "log drag",
+            "Primary": "despair",
+            "Secondary": "isolation"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 8
+    },
+    {
+        "In": 1751,
+        "Out": 2071,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "sheep",
+            "Primary": "despair",
+            "Secondary": "loneliness"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 2072,
+        "Out": 2374,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "struggle",
+            "Primary": "despair",
+            "Secondary": "struggle"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 2375,
+        "Out": 3169,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "struggle",
+            "Primary": "despair",
+            "Secondary": "struggle"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 3170,
+        "Out": 3573,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "excuse me",
+            "Primary": "despair",
+            "Secondary": "disturbance"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 3574,
+        "Out": 4010,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "disturbance"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 4011,
+        "Out": 4317,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "victor"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 4318,
+        "Out": 4556,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "victor"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 4557,
+        "Out": 4747,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "victor"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 4748,
+        "Out": 5792,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "victor"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 5793,
+        "Out": 5948,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "one more minute"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 5949,
+        "Out": 6687,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "won't regret this"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 6688,
+        "Out": 7079,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "device"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 7080,
+        "Out": 7294,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "better be good"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 7295,
+        "Out": 7791,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "turn it on"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 7792,
+        "Out": 8099,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "don't move"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 8100,
+        "Out": 8585,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "come back"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 8586,
+        "Out": 9510,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "loading"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 9511,
+        "Out": 9920,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "cloud"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 9921,
+        "Out": 10189,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "starting"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 10190,
+        "Out": 10764,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "lights"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 10765,
+        "Out": 10984,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "awe"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 10985,
+        "Out": 11300,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "crowd"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 11301,
+        "Out": 11589,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "run"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 11590,
+        "Out": 11753,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "arise"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 11754,
+        "Out": 11948,
+        "Chapter": "chapter001",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "despair",
+            "Secondary": "arise"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 11949,
+        "Out": 12542,
+        "Chapter": "chapter002",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "awake"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 12543,
+        "Out": 12721,
+        "Chapter": "chapter002",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "discovery"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 12722,
+        "Out": 13027,
+        "Chapter": "chapter002",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "discovery"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 13028,
+        "Out": 13226,
+        "Chapter": "chapter002",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "discovery"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 13227,
+        "Out": 13468,
+        "Chapter": "chapter002",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "zoom"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 13469,
+        "Out": 13691,
+        "Chapter": "chapter003",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "pan"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 6
+    },
+    {
+        "In": 13692,
+        "Out": 13890,
+        "Chapter": "chapter003",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "pan"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 10
+    },
+    {
+        "In": 13891,
+        "Out": 13953,
+        "Chapter": "chapter003",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "pan"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 13954,
+        "Out": 14473,
+        "Chapter": "chapter003",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "cliff hanger"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    },
+    {
+        "In": 14474,
+        "Out": 17531,
+        "Chapter": "chapter003",
+        "Topics": {
+            "Subject": "first cycle",
+            "Shot": "frank",
+            "Primary": "hope",
+            "Secondary": "end"
+        },
+        "Warnings": {
+            "Violence": false,
+            "Threat": false,
+            "Drugs": false,
+            "Suicide": false
+        },
+        "Importance": 3
+    }
+]

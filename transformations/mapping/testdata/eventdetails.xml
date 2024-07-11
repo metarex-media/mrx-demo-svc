@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Studio (https://www.liquid-technologies.com) -->
+<ns:eventDetails xmlns:iptc-ms="http://iptc.org/std/mergeschemas/" xmlns:iptc-x="http://iptc.org/std/nar/schemaextensions/" xmlns:ns="http://iptc.org/std/nar/2006-10-01/" xmlns:nsA="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://iptc.org/std/nar/2006-10-01/ C:\Users\mmTri\Downloads\NewsML.xsd" creator="ugG3 xb3&quot;M}:u~u" creatoruri="https://www.liquid-technologies.com" custom="true" how="!IptN^t:&amp;'" howuri="https://www.liquid-technologies.com" pubconstrainturi="https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com">
+    <ns:dates creator="zt:|a" creatoruri="https://www.liquid-technologies.com" custom="1" why="|_S8x0(:tfw" whyuri="https://www.liquid-technologies.com" pubconstraint="Ky:y wC6:Q||x Ozz:} 0mt.m9:t" pubconstrainturi="https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com">
+        <ns:start creatoruri="https://www.liquid-technologies.com" modified="2007-05-08" custom="0" how="4h4u:@yyu" howuri="https://www.liquid-technologies.com" why="&quot;:w|{~">--10-24</ns:start>
+        <ns:end approxend="1996-02-27">--07</ns:end>
+        <ns:rRule freq="YEARLY" />
+        <ns:exDate>1992-07-18</ns:exDate>
+        <ns:confirmation modified="1986-12-25T17:34:33.18" custom="true" why="2:pxy" whyuri="https://www.liquid-technologies.com" />
+    </ns:dates>
+    <ns:occurStatus dir="ltr" custom="true" why="z$6w_t}:t{%o2pY" whyuri="https://www.liquid-technologies.com" qcode="Nx}u7R@ltut0:|w}." uri="https://www.liquid-technologies.com">
+        <ns:hierarchyInfo id="AAAAA" custom="0">string</ns:hierarchyInfo>
+    </ns:occurStatus>
+    <ns:newsCoverageStatus xsi:type="ns:TypedQualPropType" typeuri="https://www.liquid-technologies.com" xml:lang="en-GB" id="AAAAB" creator="4l/#:~}" how="$:{w" howuri="https://www.liquid-technologies.com" why="~9uS:t" qcode="}6:/" uri="https://www.liquid-technologies.com">
+        <ns:name role="t}:- (:_ ~z?:dw vH:k y{:ztc/{e y:ur|rwt" part="&amp;c:v" parturi="https://www.liquid-technologies.com">  S    S</ns:name>
+        <ns:hierarchyInfo creator="{:xu" why="2:*6|Vw%yzx}{w|Z">string</ns:hierarchyInfo>
+        <ns:hierarchyInfo creatoruri="https://www.liquid-technologies.com" modified="2012-04-21T23:48:35.91" why="c!]GvmF:=" pubconstraint="hut}}:Vc {8:4} {ptFC:{G">string</ns:hierarchyInfo>
+    </ns:newsCoverageStatus>
+    <ns:participationRequirement roleuri="https://www.liquid-technologies.com" id="AAAAC" custom="0" why="B*:A" whyuri="https://www.liquid-technologies.com" qcode="J=;:80WNx" uri="https://www.liquid-technologies.com" xml:lang="en-GB" dir="rtl">
+        <ns:definition />
+    </ns:participationRequirement>
+    <ns:accessStatus xsi:type="ns:TypedQualPropType" type="q:/{v{" xml:lang="en-GB" id="AAAAD" modified="2002-03-08T21:43:15.39" custom="true" how="^C~:u" howuri="https://www.liquid-technologies.com" why="H}]nv:v" qcode="SS:e" uri="https://www.liquid-technologies.com">
+        <ns:hierarchyInfo>string</ns:hierarchyInfo>
+        <ns:name>S S </ns:name>
+    </ns:accessStatus>
+    <ns:organiser role="7v:xu (Eyw'%:vr @&lt;GT:zvg 0u:z }:~T#w~ 7:xxh}p|" roleuri="https://www.liquid-technologies.com" creator="r:*x" creatoruri="https://www.liquid-technologies.com" howuri="https://www.liquid-technologies.com" why="]:yn%{wfxKuH" whyuri="https://www.liquid-technologies.com" pubconstraint="1#:VBt (:m rvz'*V~:|~}" pubconstrainturi="https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com" uri="https://www.liquid-technologies.com" literal="S" />
+    <ns:registration creator="G,:~" creatoruri="https://www.liquid-technologies.com" modified="2000-02-07" how="Guv:x.w" howuri="https://www.liquid-technologies.com" pubconstraint="1u`:&lt; .t:` 4$4V`=-4y:GL ]KB(*zpxm?9((:}u&amp;vv ?t2&quot;v{wkZ:wz" pubconstrainturi="https://www.liquid-technologies.com https://www.liquid-technologies.com https://www.liquid-technologies.com" dir="ltr" media="string" role="}:~&quot; !#5%z:3" roleuri="https://www.liquid-technologies.com">
+        <ns:br />
+        <ns:a href="https://www.liquid-technologies.com" hreflang="string" rel="string">
+            <ns:span xmnls="ns">
+                <ns:ruby>
+                    <ns:rb>string</ns:rb>
+                    <ns:rt>string</ns:rt>
+                </ns:ruby>
+            </ns:span>
+            <ns:ruby>
+                <ns:rb>string</ns:rb>
+                <ns:rp>string</ns:rp>
+                <ns:rt>string</ns:rt>
+                <ns:rp>string</ns:rp>
+            </ns:ruby>
+        </ns:a>
+        <ns:ruby>
+            <ns:rb>string</ns:rb>
+            <ns:rp>string</ns:rp>
+            <ns:rt>string</ns:rt>
+            <ns:rp>string</ns:rp>
+        </ns:ruby>
+        <ns:ruby>
+            <ns:rb>string</ns:rb>
+            <ns:rp>string</ns:rp>
+            <ns:rt>string</ns:rt>
+            <ns:rp>string</ns:rp>
+        </ns:ruby>
+    </ns:registration>
+    <ns:subject confidence="76" derivedfrom="2):w ##{q)W:pCw d9#;~:yw ~E|)g*H9:0 Y:x`x I}:~z&lt;Q" id="AAAAE" modified="1998-02-27" custom="1" how="7ax&lt;vx7xY:xZt" whyuri="https://www.liquid-technologies.com" pubconstraint="U:u 8k:]y x$:Vz +7:tc" qcode="&amp;|zG:~;#~" uri="https://www.liquid-technologies.com" literal="SS" dir="ltr">
+        <ns:sameAs />
+        <ns:sameAs />
+        <ns:mainConcept reluri="https://www.liquid-technologies.com">
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:name>S</ns:name>
+            <ns:name>S </ns:name>
+            <ns:sameAs />
+            <ns:sameAs />
+        </ns:mainConcept>
+        <ns:facetConcept rel="w:vwKy&lt;Q~" reluri="https://www.liquid-technologies.com">
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:name></ns:name>
+            <ns:name></ns:name>
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:sameAs />
+            <ns:sameAs />
+            <ns:sameAs />
+            <ns:related />
+        </ns:facetConcept>
+        <ns:facetConcept rank="2898">
+            <ns:name></ns:name>
+            <ns:name>SSSS </ns:name>
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:sameAs />
+            <ns:related />
+            <ns:sameAs />
+        </ns:facetConcept>
+        <ns:facetConcept reluri="https://www.liquid-technologies.com">
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:sameAs />
+            <ns:facet />
+        </ns:facetConcept>
+        <ns:facetConcept rel="u$'w2}:u" rank="2585">
+            <ns:name>SS</ns:name>
+            <ns:hierarchyInfo>string</ns:hierarchyInfo>
+            <ns:name> </ns:name>
+            <ns:facet />
+        </ns:facetConcept>
+    </ns:subject>
+</ns:eventDetails>

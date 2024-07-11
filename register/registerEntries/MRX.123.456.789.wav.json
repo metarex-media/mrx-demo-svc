@@ -1,0 +1,22 @@
+{
+    "metarexId": "MRX.123.456.789.wav",
+    "mediaType": "audio/wav",
+    "name": "Wav audio file",
+    "description": "Wav audio file of birdsong",
+    "timingIs": "embedded",
+    "treatAs": "binary",
+    "mrx": {
+        "specification": "",
+        "services": [
+            {
+                "API": "http://localhost:9000/waveform",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "image/png",
+                "description": "Convert wave files to a png visualisation of the audio",
+                "serviceID": "ToWaveform"
+            }
+        ]
+    }
+}

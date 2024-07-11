@@ -1,0 +1,34 @@
+<knowledgeItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" standard="" standardversion="0">
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider></provider>
+        <versionCreated>2024-02-20T10:55:50Z</versionCreated>
+    </itemMeta>
+    <contentMeta>
+        <urgency>1</urgency>
+        <contentCreated>2024-02-20T10:00:00Z</contentCreated>
+        <subject>
+            <name>JMA</name>
+        </subject>
+    </contentMeta>
+    <contentMeta>
+        <subject>
+            <name>Japan Meteorological Agency</name>
+        </subject>
+    </contentMeta>
+    <conceptSet>
+        <concept>
+            <conceptId></conceptId>
+            <name></name>
+            <eventDetails>
+                <dates>
+                    <start>2024-02-20T09:30:00Z</start>
+                    <end>2024-02-20T09:35:00Z</end>
+                </dates>
+                <contactInfo>
+                    <note>Please prioritize this news item</note>
+                </contactInfo>
+            </eventDetails>
+        </concept>
+    </conceptSet>
+</knowledgeItem>

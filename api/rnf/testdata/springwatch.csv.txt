@@ -1,0 +1,312 @@
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:00:00.000 -t 00:00:10.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0000.wav
+ffmpeg -y -start_number 0 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0000.wav -frames:v 250 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0000_clock,clock.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:00:10.375 -t 00:00:18.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0001.wav
+ffmpeg -y -start_number 250 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0001.wav -frames:v 440 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0001_scene001,segment001,close-up,sting.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:00:18.291 -t 00:00:25.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0002.wav
+ffmpeg -y -start_number 440 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0002.wav -frames:v 599 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0002_scene001,segment002,close-up,sting.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:00:24.916 -t 00:00:39.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0003.wav
+ffmpeg -y -start_number 599 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0003.wav -frames:v 940 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0003_scene001,segment003,close-up,sting.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:00:39.125 -t 00:00:58.458 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0004.wav
+ffmpeg -y -start_number 940 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0004.wav -frames:v 1403 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0004_Chris-Packham,Michaela-Strachan,scene002,segment004,title,title.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:00:58.416 -t 00:01:07.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0005.wav
+ffmpeg -y -start_number 1403 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0005.wav -frames:v 1616 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0005_Chris-Packham,Michaela-Strachan,scene002,segment005,title,title.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:01:07.291 -t 00:01:44.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0006.wav
+ffmpeg -y -start_number 1616 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0006.wav -frames:v 2506 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0006_Michaela-Strachan,cuckoo,scene002,segment006,talking-heads,intro.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:01:44.375 -t 00:01:54.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0007.wav
+ffmpeg -y -start_number 2506 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0007.wav -frames:v 2753 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0007_Michaela-Strachan,fight,cuckoo,scene002,segment007,aerial,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:01:54.666 -t 00:02:01.583 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0008.wav
+ffmpeg -y -start_number 2753 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0008.wav -frames:v 2918 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0008_Michaela-Strachan,fight,cuckoo,scene002,segment008,aerial,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:02:01.541 -t 00:02:33.625 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0009.wav
+ffmpeg -y -start_number 2918 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0009.wav -frames:v 3687 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0009_Michaela-Strachan,cuckoo,scene002,segment009,aerial,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:02:33.583 -t 00:02:46.750 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0010.wav
+ffmpeg -y -start_number 3687 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0010.wav -frames:v 4002 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0010_Chris-Packham,Michaela-Strachan,cuckoo,scene002,segment010,talking-heads,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:02:46.708 -t 00:03:49.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0011.wav
+ffmpeg -y -start_number 4002 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0011.wav -frames:v 5516 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0011_Chris-Packham,Michaela-Strachan,cuckoo,scene003,quiz,segment011,talking-heads,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:03:49.791 -t 00:04:06.083 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0012.wav
+ffmpeg -y -start_number 5516 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0012.wav -frames:v 5906 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0012_Chris-Packham,Michaela-Strachan,cuckoo,scene004,segment012,nest,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:04:06.041 -t 00:04:27.750 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0013.wav
+ffmpeg -y -start_number 5906 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0013.wav -frames:v 6426 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0013_Chris-Packham,Michaela-Strachan,cuckoo,scene004,segment013,nest,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:04:27.708 -t 00:04:50.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0014.wav
+ffmpeg -y -start_number 6426 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0014.wav -frames:v 6968 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0014_Chris-Packham,Michaela-Strachan,cuckoo,scene004,segment014,nest,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:04:50.291 -t 00:04:55.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0015.wav
+ffmpeg -y -start_number 6968 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0015.wav -frames:v 7084 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0015_Chris-Packham,Michaela-Strachan,cuckoo,scene004,segment015,talking-heads,cuckoo.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:04:55.125 -t 00:05:08.875 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0016.wav
+ffmpeg -y -start_number 7084 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0016.wav -frames:v 7413 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0016_Chris-Packham,Michaela-Strachan,meadow-pippet,scene004,segment016,talking-heads,meadow-pippet.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:05:08.833 -t 00:05:11.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0017.wav
+ffmpeg -y -start_number 7413 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0017.wav -frames:v 7484 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0017_Chris-Packham,Michaela-Strachan,meadow-pippet,scene005,segment017,talking-heads,meadow-pippet.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:05:11.791 -t 00:05:26.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0018.wav
+ffmpeg -y -start_number 7484 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0018.wav -frames:v 7841 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0018_Chris-Packham,Michaela-Strachan,meadow-pippet,scene005,segment018,nest,meadow-pippet.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:05:26.666 -t 00:05:46.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0019.wav
+ffmpeg -y -start_number 7841 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0019.wav -frames:v 8321 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0019_Chris-Packham,Michaela-Strachan,meadow-pippet,scene005,segment019,nest,meadow-pippet.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:05:46.666 -t 00:06:17.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0020.wav
+ffmpeg -y -start_number 8321 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0020.wav -frames:v 9064 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0020_Chris-Packham,Michaela-Strachan,meadow-pippet,scene005,segment020,nest,meadow-pippet.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:06:17.625 -t 00:06:34.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0021.wav
+ffmpeg -y -start_number 9064 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0021.wav -frames:v 9456 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0021_predation,meadow-pippet,scene005,fox,segment021,nest,meadow-pippet,threat.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:06:34.000 -t 00:06:55.500 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0022.wav
+ffmpeg -y -start_number 9456 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0022.wav -frames:v 9972 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0022_predation,meadow-pippet,scene005,fox,segment022,nest,meadow-pippet,threat.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:06:55.458 -t 00:07:01.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0023.wav
+ffmpeg -y -start_number 9972 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0023.wav -frames:v 10114 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0023_predation,meadow-pippet,scene005,fox,segment023,nest,meadow-pippet,threat.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:07:01.375 -t 00:07:29.291 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0024.wav
+ffmpeg -y -start_number 10114 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0024.wav -frames:v 10783 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0024_predation,meadow-pippet,scene005,fox,segment024,nest,meadow-pippet,threat.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:07:29.250 -t 00:07:43.375 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0025.wav
+ffmpeg -y -start_number 10783 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0025.wav -frames:v 11121 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0025_Chris-Packham,Michaela-Strachan,predation,meadow-pippet,scene005,fox,segment025,nest,meadow-pippet,threat.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:07:43.333 -t 00:07:54.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0026.wav
+ffmpeg -y -start_number 11121 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0026.wav -frames:v 11396 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0026_Chris-Packham,Michaela-Strachan,meadow-pippet,scene005,fox,segment026,talking-heads,meadow-pippet.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:07:54.791 -t 00:08:58.750 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0027.wav
+ffmpeg -y -start_number 11396 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0027.wav -frames:v 12930 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0027_Chris-Packham,Michaela-Strachan,meadow-pippet,scene006,segment027,talking-heads,predator.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:08:58.708 -t 00:09:14.291 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0028.wav
+ffmpeg -y -start_number 12930 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0028.wav -frames:v 13303 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0028_Chris-Packham,Michaela-Strachan,goshawk,scene006,segment028,talking-heads,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:09:14.250 -t 00:09:23.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0029.wav
+ffmpeg -y -start_number 13303 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0029.wav -frames:v 13532 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0029_Chris-Packham,goshawk,scene006,segment029,nest,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:09:23.791 -t 00:09:32.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0030.wav
+ffmpeg -y -start_number 13532 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0030.wav -frames:v 13738 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0030_Chris-Packham,goshawk,scene006,segment030,nest,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:09:32.375 -t 00:10:05.791 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0031.wav
+ffmpeg -y -start_number 13738 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0031.wav -frames:v 14539 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0031_Chris-Packham,goshawk,scene006,segment031,nest,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:10:05.750 -t 00:10:20.291 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0032.wav
+ffmpeg -y -start_number 14539 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0032.wav -frames:v 14887 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0032_Chris-Packham,goshawk,scene006,segment032,nest,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:10:20.250 -t 00:10:35.791 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0033.wav
+ffmpeg -y -start_number 14887 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0033.wav -frames:v 15259 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0033_Chris-Packham,goshawk,scene006,segment033,nest,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:10:35.750 -t 00:11:14.375 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0034.wav
+ffmpeg -y -start_number 15259 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0034.wav -frames:v 16185 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0034_Chris-Packham,goshawk,scene006,segment034,nest,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:11:14.333 -t 00:11:21.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0035.wav
+ffmpeg -y -start_number 16185 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0035.wav -frames:v 16364 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0035_Chris-Packham,goshawk,scene006,segment035,nest,goshawk.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:11:21.791 -t 00:11:36.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0036.wav
+ffmpeg -y -start_number 16364 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0036.wav -frames:v 16704 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0036_Chris-Packham,Michaela-Strachan,bats,scene006,segment036,talking-heads,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:11:36.000 -t 00:11:47.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0037.wav
+ffmpeg -y -start_number 16704 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0037.wav -frames:v 16984 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0037_Chris-Packham,Megan-McCubbin,bats,scene006,segment037,aerial,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:11:47.625 -t 00:12:34.291 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0038.wav
+ffmpeg -y -start_number 16984 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0038.wav -frames:v 18103 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0038_Chris-Packham,Megan-McCubbin,bats,scene006,segment038,motage,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:12:34.250 -t 00:12:43.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0039.wav
+ffmpeg -y -start_number 18103 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0039.wav -frames:v 18332 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0039_Megan-McCubbin,bats,scene006,segment039,archive,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:12:43.791 -t 00:12:55.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0040.wav
+ffmpeg -y -start_number 18332 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0040.wav -frames:v 18604 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0040_Megan-McCubbin,bats,scene006,segment040,archive,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:12:55.125 -t 00:13:12.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0041.wav
+ffmpeg -y -start_number 18604 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0041.wav -frames:v 19012 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0041_Megan-McCubbin,bats,scene006,segment041,archive,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:13:12.125 -t 00:13:19.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0042.wav
+ffmpeg -y -start_number 19012 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0042.wav -frames:v 19196 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0042_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment042,interview,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:13:19.791 -t 00:13:50.083 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0043.wav
+ffmpeg -y -start_number 19196 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0043.wav -frames:v 19922 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0043_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment043,bat-box,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:13:50.041 -t 00:13:56.750 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0044.wav
+ffmpeg -y -start_number 19922 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0044.wav -frames:v 20082 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0044_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment044,bat-handling,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:13:56.708 -t 00:14:32.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0045.wav
+ffmpeg -y -start_number 20082 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0045.wav -frames:v 20945 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0045_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment045,bat-handling,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:14:32.666 -t 00:14:46.750 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0046.wav
+ffmpeg -y -start_number 20945 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0046.wav -frames:v 21282 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0046_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment046,bat-handling,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:14:46.708 -t 00:15:11.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0047.wav
+ffmpeg -y -start_number 21282 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0047.wav -frames:v 21864 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0047_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment047,bat-handling,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:15:11.000 -t 00:15:44.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0048.wav
+ffmpeg -y -start_number 21864 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0048.wav -frames:v 22660 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0048_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment048,bat-handling,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:15:44.125 -t 00:16:20.375 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0049.wav
+ffmpeg -y -start_number 22660 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0049.wav -frames:v 23529 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0049_Mark-Warne,Forestry-England,Megan-McCubbin,bats,scene006,segment049,bat-handling,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:16:20.333 -t 00:17:34.916 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0050.wav
+ffmpeg -y -start_number 23529 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0050.wav -frames:v 25318 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0050_Megan-McCubbin,bats,scene006,segment050,talking-heads,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:17:34.875 -t 00:17:54.541 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0051.wav
+ffmpeg -y -start_number 25318 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0051.wav -frames:v 25789 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0051_Megan-McCubbin,terns,scene006,segment051,intro,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:17:54.500 -t 00:18:47.458 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0052.wav
+ffmpeg -y -start_number 25789 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0052.wav -frames:v 27059 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0052_Gillian-Burke,Megan-McCubbin,terns,scene006,segment052,talking-heads,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:18:47.416 -t 00:19:02.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0053.wav
+ffmpeg -y -start_number 27059 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0053.wav -frames:v 27428 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0053_Gillian-Burke,terns,scene006,segment053,long-shot,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:19:02.791 -t 00:19:19.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0054.wav
+ffmpeg -y -start_number 27428 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0054.wav -frames:v 27824 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0054_Gillian-Burke,terns,scene006,segment054,long-shot,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:19:19.291 -t 00:19:33.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0055.wav
+ffmpeg -y -start_number 27824 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0055.wav -frames:v 28151 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0055_Gillian-Burke,terns,scene006,segment055,long-shot,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:19:32.916 -t 00:19:47.375 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0056.wav
+ffmpeg -y -start_number 28151 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0056.wav -frames:v 28497 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0056_Gillian-Burke,sand-eels,scene006,segment056,underwater,sand-eels.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:19:47.333 -t 00:20:05.541 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0057.wav
+ffmpeg -y -start_number 28497 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0057.wav -frames:v 28933 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0057_Gillian-Burke,sand-eels,scene006,segment057,underwater,sand-eels.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:20:05.500 -t 00:20:26.375 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0058.wav
+ffmpeg -y -start_number 28933 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0058.wav -frames:v 29433 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0058_Gillian-Burke,sand-eels,scene006,segment058,talking-heads,sand-eels.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:20:26.333 -t 00:21:00.500 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0059.wav
+ffmpeg -y -start_number 29433 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0059.wav -frames:v 30252 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0059_Gillian-Burke,sand-eels,scene006,segment059,montage,sand-eels.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:21:00.458 -t 00:21:35.291 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0060.wav
+ffmpeg -y -start_number 30252 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0060.wav -frames:v 31087 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0060_Gillian-Burke,sand-eels,scene006,climate-change,segment060,montage,sand-eels.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:21:35.250 -t 00:22:09.375 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0061.wav
+ffmpeg -y -start_number 31087 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0061.wav -frames:v 31905 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0061_Gillian-Burke,sand-eels,scene006,climate-change,segment061,underwater,sand-eels.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:22:09.333 -t 00:22:25.458 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0062.wav
+ffmpeg -y -start_number 31905 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0062.wav -frames:v 32291 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0062_Marianne-Hill,Artist,insects,scene006,climate-change,segment062,intro,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:22:25.416 -t 00:23:26.625 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0063.wav
+ffmpeg -y -start_number 32291 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0063.wav -frames:v 33759 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0063_Marianne-Hill,Artist,insects,scene006,segment063,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:23:26.583 -t 00:23:51.500 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0064.wav
+ffmpeg -y -start_number 33759 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0064.wav -frames:v 34356 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0064_Gillian-Burke,Marianne-Hill,Artist,insects,scene006,segment064,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:23:51.458 -t 00:24:09.500 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0065.wav
+ffmpeg -y -start_number 34356 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0065.wav -frames:v 34788 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0065_Marianne-Hill,Artist,insects,scene006,segment065,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:24:09.458 -t 00:24:35.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0066.wav
+ffmpeg -y -start_number 34788 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0066.wav -frames:v 35399 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0066_Marianne-Hill,Artist,insects,scene006,segment066,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:24:34.916 -t 00:24:51.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0067.wav
+ffmpeg -y -start_number 35399 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0067.wav -frames:v 35800 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0067_Marianne-Hill,Artist,insects,scene006,segment067,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:24:51.625 -t 00:25:08.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0068.wav
+ffmpeg -y -start_number 35800 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0068.wav -frames:v 36200 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0068_Marianne-Hill,Mike-Willliams,Artist,-Ecologist,insects,scene006,segment068,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:25:08.291 -t 00:25:55.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0069.wav
+ffmpeg -y -start_number 36200 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0069.wav -frames:v 37328 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0069_Marianne-Hill,Mike-Willliams,Artist,-Ecologist,insects,scene006,segment069,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:25:55.291 -t 00:26:47.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0070.wav
+ffmpeg -y -start_number 37328 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0070.wav -frames:v 38578 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0070_Marianne-Hill,Mike-Willliams,Artist,-Ecologist,insects,scene006,segment070,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:26:47.375 -t 00:27:02.791 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0071.wav
+ffmpeg -y -start_number 38578 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0071.wav -frames:v 38947 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0071_Marianne-Hill,Mike-Willliams,Artist,-Ecologist,insects,scene006,segment071,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:27:02.750 -t 00:27:46.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0072.wav
+ffmpeg -y -start_number 38947 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0072.wav -frames:v 40000 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0072_Marianne-Hill,Mike-Willliams,Artist,-Ecologist,insects,scene006,segment072,montage,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:27:46.625 -t 00:28:18.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0073.wav
+ffmpeg -y -start_number 40000 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0073.wav -frames:v 40772 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0073_Chris-Packham,Michaela-Strachan,insects,scene006,segment073,talking-heads,bugs.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:28:18.791 -t 00:28:34.916 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0074.wav
+ffmpeg -y -start_number 40772 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0074.wav -frames:v 41158 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0074_Chris-Packham,Dan-Lettuce,Michaela-Strachan,humpback,scene006,segment074,underwater,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:28:34.875 -t 00:28:55.791 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0075.wav
+ffmpeg -y -start_number 41158 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0075.wav -frames:v 41659 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0075_Chris-Packham,Michaela-Strachan,humpback,scene006,bubble-fishing,segment075,aerial,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:28:55.750 -t 00:29:13.250 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0076.wav
+ffmpeg -y -start_number 41659 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0076.wav -frames:v 42078 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0076_Chris-Packham,Michaela-Strachan,humpback,scene006,bubble-fishing,segment076,talking-heads,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:29:13.208 -t 00:30:39.125 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0077.wav
+ffmpeg -y -start_number 42078 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0077.wav -frames:v 44139 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0077_Chris-Packham,Michaela-Strachan,humpback,scene006,segment077,talking-heads,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:30:39.083 -t 00:30:57.250 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0078.wav
+ffmpeg -y -start_number 44139 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0078.wav -frames:v 44574 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0078_Chris-Packham,Michaela-Strachan,humpback,scene006,poo,segment078,aerial,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:30:57.208 -t 00:31:08.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0079.wav
+ffmpeg -y -start_number 44574 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0079.wav -frames:v 44842 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0079_Chris-Packham,Michaela-Strachan,humpback,scene006,poo,segment079,talking-heads,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:31:08.375 -t 00:31:27.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0080.wav
+ffmpeg -y -start_number 44842 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0080.wav -frames:v 45298 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0080_Chris-Packham,Michaela-Strachan,humpback,scene006,poo,segment080,poster,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:31:27.375 -t 00:31:44.583 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0081.wav
+ffmpeg -y -start_number 45298 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0081.wav -frames:v 45710 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0081_Chris-Packham,Michaela-Strachan,humpback,scene006,poo-science,segment081,poster,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:31:44.541 -t 00:32:11.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0082.wav
+ffmpeg -y -start_number 45710 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0082.wav -frames:v 46360 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0082_Chris-Packham,Michaela-Strachan,humpback,scene006,poo-science,segment082,poster,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:32:11.625 -t 00:32:35.208 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0083.wav
+ffmpeg -y -start_number 46360 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0083.wav -frames:v 46925 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0083_Chris-Packham,Michaela-Strachan,humpback,scene006,poo-science,segment083,poster,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:32:35.166 -t 00:34:21.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0084.wav
+ffmpeg -y -start_number 46925 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0084.wav -frames:v 49474 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0084_Chris-Packham,Michaela-Strachan,humpback,scene006,poo-science,segment084,poster,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:34:21.375 -t 00:34:36.291 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0085.wav
+ffmpeg -y -start_number 49474 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0085.wav -frames:v 49831 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0085_Chris-Packham,Michaela-Strachan,humpback,scene006,poo-science,segment085,poster,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:34:36.250 -t 00:35:25.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0086.wav
+ffmpeg -y -start_number 49831 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0086.wav -frames:v 51008 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0086_Chris-Packham,Michaela-Strachan,humpback,scene006,poo-science,segment086,poster,humpback-whale.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:35:25.291 -t 00:35:37.541 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0087.wav
+ffmpeg -y -start_number 51008 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0087.wav -frames:v 51301 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0087_Leif-Bersweden,humpback,scene006,segment087,botany-insert,foxgloves.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:35:37.500 -t 00:35:48.083 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0088.wav
+ffmpeg -y -start_number 51301 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0088.wav -frames:v 51554 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0088_Leif-Bersweden,humpback,scene006,segment088,botany-insert,foxgloves.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:35:48.041 -t 00:35:55.916 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0089.wav
+ffmpeg -y -start_number 51554 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0089.wav -frames:v 51742 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0089_Leif-Bersweden,humpback,scene006,segment089,botany-insert,foxgloves.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:35:55.875 -t 00:36:27.500 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0090.wav
+ffmpeg -y -start_number 51742 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0090.wav -frames:v 52500 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0090_Leif-Bersweden,humpback,scene006,segment090,botany-insert,foxgloves.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:36:27.458 -t 00:36:34.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0091.wav
+ffmpeg -y -start_number 52500 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0091.wav -frames:v 52672 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0091_Leif-Bersweden,humpback,scene006,segment091,botany-insert,foxgloves.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:36:34.625 -t 00:37:00.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0092.wav
+ffmpeg -y -start_number 52672 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0092.wav -frames:v 53279 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0092_Leif-Bersweden,humpback,scene006,segment092,botany-insert,foxgloves.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:36:59.916 -t 00:37:23.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0093.wav
+ffmpeg -y -start_number 53279 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0093.wav -frames:v 53849 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0093_Megan-McCubbin,humpback,scene006,segment093,talking-heads,foxgloves.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:37:23.666 -t 00:39:33.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0094.wav
+ffmpeg -y -start_number 53849 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0094.wav -frames:v 56952 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0094_Megan-McCubbin,bats,scene006,sound,segment094,bat-insert,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:39:33.000 -t 00:39:56.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0095.wav
+ffmpeg -y -start_number 56952 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0095.wav -frames:v 57520 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0095_Megan-McCubbin,bats,scene006,ultrasound,segment095,poster,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:39:56.625 -t 00:40:06.541 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0096.wav
+ffmpeg -y -start_number 57520 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0096.wav -frames:v 57757 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0096_Megan-McCubbin,bats,scene006,ultrasound,segment096,poster,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:40:06.500 -t 00:40:11.625 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0097.wav
+ffmpeg -y -start_number 57757 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0097.wav -frames:v 57879 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0097_Megan-McCubbin,bats,scene006,acoustics,segment097,poster,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:40:11.583 -t 00:40:24.750 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0098.wav
+ffmpeg -y -start_number 57879 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0098.wav -frames:v 58194 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0098_Megan-McCubbin,bats,scene006,acoustics,segment098,poster,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:40:24.708 -t 00:41:05.541 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0099.wav
+ffmpeg -y -start_number 58194 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0099.wav -frames:v 59173 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0099_Megan-McCubbin,bats,scene006,acoustics,segment099,poster,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:41:05.500 -t 00:41:47.791 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0100.wav
+ffmpeg -y -start_number 59173 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0100.wav -frames:v 60187 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0100_Megan-McCubbin,bats,scene006,acoustics,segment100,poster,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:41:47.750 -t 00:42:06.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0101.wav
+ffmpeg -y -start_number 60187 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0101.wav -frames:v 60624 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0101_Megan-McCubbin,bats,scene006,acoustics,segment101,talking-heads,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:42:06.000 -t 00:42:23.916 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0102.wav
+ffmpeg -y -start_number 60624 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0102.wav -frames:v 61054 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0102_Megan-McCubbin,bats,scene006,acoustics,segment102,link,bats.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:42:23.875 -t 00:43:43.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0103.wav
+ffmpeg -y -start_number 61054 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0103.wav -frames:v 62960 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0103_Gillian-Burke,terns,scene006,segment103,establishing,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:43:43.291 -t 00:43:59.083 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0104.wav
+ffmpeg -y -start_number 62960 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0104.wav -frames:v 63338 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0104_Gillian-Burke,terns,scene006,segment104,aerial,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:43:59.041 -t 00:44:46.250 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0105.wav
+ffmpeg -y -start_number 63338 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0105.wav -frames:v 64470 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0105_Gillian-Burke,fight,terns,scene006,segment105,fight,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:44:46.208 -t 00:45:17.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0106.wav
+ffmpeg -y -start_number 64470 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0106.wav -frames:v 65216 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0106_Gillian-Burke,terns,scene006,segment106,courtship,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:45:17.291 -t 00:45:58.125 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0107.wav
+ffmpeg -y -start_number 65216 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0107.wav -frames:v 66195 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0107_Gillian-Burke,terns,scene006,peregrin-falcon,segment108,terns,threat.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:45:58.083 -t 00:46:06.916 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0108.wav
+ffmpeg -y -start_number 66195 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0108.wav -frames:v 66406 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0108_Gillian-Burke,terns,scene006,peregrin-falcon,segment109,talking-heads,terns,threat.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:46:06.875 -t 00:46:31.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0109.wav
+ffmpeg -y -start_number 66406 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0109.wav -frames:v 67000 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0109_Gillian-Burke,terns,scene006,pair-bonding,segment110,tern-pairs,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:46:31.625 -t 00:46:47.041 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0110.wav
+ffmpeg -y -start_number 67000 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0110.wav -frames:v 67369 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0110_Gillian-Burke,terns,procreation,scene006,breeding,segment111,tern-pairs,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:46:47.000 -t 00:47:04.083 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0111.wav
+ffmpeg -y -start_number 67369 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0111.wav -frames:v 67778 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0111_Gillian-Burke,terns,scene006,pair-bonding,segment112,tern-pairs,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:47:04.041 -t 00:47:33.250 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0112.wav
+ffmpeg -y -start_number 67778 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0112.wav -frames:v 68478 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0112_Gillian-Burke,terns,scene006,chicks,segment113,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:47:33.208 -t 00:47:46.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0113.wav
+ffmpeg -y -start_number 68478 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0113.wav -frames:v 68792 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0113_Gillian-Burke,terns,scene006,chicks,segment114,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:47:46.291 -t 00:48:12.125 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0114.wav
+ffmpeg -y -start_number 68792 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0114.wav -frames:v 69411 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0114_Gillian-Burke,terns,scene006,chicks,segment115,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:48:12.083 -t 00:48:21.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0115.wav
+ffmpeg -y -start_number 69411 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0115.wav -frames:v 69634 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0115_Gillian-Burke,terns,scene006,chicks,segment116,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:48:21.375 -t 00:48:30.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0116.wav
+ffmpeg -y -start_number 69634 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0116.wav -frames:v 69857 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0116_Gillian-Burke,terns,scene006,chicks,segment117,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:48:30.666 -t 00:48:57.916 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0117.wav
+ffmpeg -y -start_number 69857 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0117.wav -frames:v 70510 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0117_Gillian-Burke,terns,scene006,chicks,segment118,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:48:57.875 -t 00:49:04.458 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0118.wav
+ffmpeg -y -start_number 70510 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0118.wav -frames:v 70667 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0118_Gillian-Burke,terns,scene006,flight,segment119,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:49:04.416 -t 00:49:19.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0119.wav
+ffmpeg -y -start_number 70667 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0119.wav -frames:v 71016 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0119_Gillian-Burke,terns,scene006,flight,segment120,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:49:19.000 -t 00:49:45.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0120.wav
+ffmpeg -y -start_number 71016 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0120.wav -frames:v 71640 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0120_Gillian-Burke,terns,scene006,flight,segment121,chicks,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:49:45.000 -t 00:50:15.666 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0121.wav
+ffmpeg -y -start_number 71640 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0121.wav -frames:v 72376 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0121_Gillian-Burke,terns,scene006,hunting,segment122,talking-heads,terns.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:50:15.625 -t 00:50:50.250 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0122.wav
+ffmpeg -y -start_number 72376 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0122.wav -frames:v 73206 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0122_Gillian-Burke,avocets,scene006,nesting,segment123,avocets,avocets.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:50:50.208 -t 00:50:59.875 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0123.wav
+ffmpeg -y -start_number 73206 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0123.wav -frames:v 73437 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0123_Gillian-Burke,avocets,scene006,nesting,segment124,avocets,avocets.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:50:59.833 -t 00:51:20.541 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0124.wav
+ffmpeg -y -start_number 73437 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0124.wav -frames:v 73933 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0124_Gillian-Burke,avocets,scene006,nesting,segment125,avocets,avocets.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:51:20.500 -t 00:51:44.208 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0125.wav
+ffmpeg -y -start_number 73933 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0125.wav -frames:v 74501 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0125_Chris-Packham,Gillian-Burke,Michaela-Strachan,avocets,scene006,nesting,segment126,talking-heads,avocets.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:51:44.166 -t 00:51:57.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0126.wav
+ffmpeg -y -start_number 74501 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0126.wav -frames:v 74828 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0126_Chris-Packham,nest,scene006,linnets,segment127,nest,linnets.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:51:57.791 -t 00:52:26.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0127.wav
+ffmpeg -y -start_number 74828 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0127.wav -frames:v 75521 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0127_Chris-Packham,nest,scene006,linnets,segment128,nest,linnets.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:52:26.666 -t 00:53:03.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0128.wav
+ffmpeg -y -start_number 75521 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0128.wav -frames:v 76392 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0128_Chris-Packham,Michaela-Strachan,nest,scene006,linnets,segment129,nest,linnets.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:53:03.000 -t 00:53:14.208 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0129.wav
+ffmpeg -y -start_number 76392 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0129.wav -frames:v 76661 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0129_Chris-Packham,Michaela-Strachan,nest,scene006,connor-dove,segment130,nest,connor-dove.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:53:14.166 -t 00:53:22.083 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0130.wav
+ffmpeg -y -start_number 76661 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0130.wav -frames:v 76850 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0130_Michaela-Strachan,nest,scene006,connor-dove,segment131,nest,connor-dove.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:53:22.041 -t 00:53:26.625 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0131.wav
+ffmpeg -y -start_number 76850 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0131.wav -frames:v 76959 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0131_Michaela-Strachan,nest,scene006,connor-dove,segment132,nest,connor-dove.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:53:26.583 -t 00:53:36.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0132.wav
+ffmpeg -y -start_number 76959 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0132.wav -frames:v 77184 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0132_Michaela-Strachan,nest,scene006,connor-dove,segment133,nest,connor-dove.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:53:36.000 -t 00:54:01.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0133.wav
+ffmpeg -y -start_number 77184 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0133.wav -frames:v 77783 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0133_Michaela-Strachan,nest,scene006,connor-dove,segment134,talking-heads,connor-dove.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:54:00.916 -t 00:54:10.291 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0134.wav
+ffmpeg -y -start_number 77783 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0134.wav -frames:v 78007 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0134_Michaela-Strachan,nest,scene006,barn-owl,segment135,talking-heads,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:54:10.250 -t 00:54:17.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0135.wav
+ffmpeg -y -start_number 78007 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0135.wav -frames:v 78188 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0135_Michaela-Strachan,nest,scene006,barn-owl,segment136,nest,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:54:17.791 -t 00:54:28.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0136.wav
+ffmpeg -y -start_number 78188 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0136.wav -frames:v 78442 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0136_Michaela-Strachan,nest,scene006,barn-owl,segment137,nest,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:54:28.375 -t 00:54:55.583 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0137.wav
+ffmpeg -y -start_number 78442 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0137.wav -frames:v 79094 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0137_Michaela-Strachan,nest,scene006,barn-owl,segment138,nest,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:54:55.541 -t 00:55:04.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0138.wav
+ffmpeg -y -start_number 79094 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0138.wav -frames:v 79296 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0138_Michaela-Strachan,fight,nest,scene006,barn-owl,segment139,nest,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:55:04.000 -t 00:55:16.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0139.wav
+ffmpeg -y -start_number 79296 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0139.wav -frames:v 79604 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0139_Michaela-Strachan,nest,scene006,barn-owl,segment140,nest,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:55:16.791 -t 00:55:53.500 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0140.wav
+ffmpeg -y -start_number 79604 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0140.wav -frames:v 80484 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0140_Michaela-Strachan,nest,scene006,barn-owl,segment141,nest,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:55:53.458 -t 00:56:12.416 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0141.wav
+ffmpeg -y -start_number 80484 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0141.wav -frames:v 80938 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0141_Chris-Packham,Michaela-Strachan,nest,scene006,barn-owl,segment142,talking-heads,barn-owls.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:56:12.375 -t 00:56:59.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0142.wav
+ffmpeg -y -start_number 80938 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0142.wav -frames:v 82060 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0142_slime-mold,scene006,time-lapse,segment143,time-lapse,slime-mold.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:56:59.125 -t 00:57:11.333 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0143.wav
+ffmpeg -y -start_number 82060 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0143.wav -frames:v 82352 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0143_slime-mold,scene006,time-lapse,segment144,time-lapse,slime-mold.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:57:11.291 -t 00:57:31.458 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0144.wav
+ffmpeg -y -start_number 82352 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0144.wav -frames:v 82835 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0144_slime-mold,scene006,time-lapse,segment145,time-lapse,slime-mold.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:57:31.416 -t 00:57:52.833 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0145.wav
+ffmpeg -y -start_number 82835 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0145.wav -frames:v 83348 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0145_slime-mold,scene006,time-lapse,segment146,time-lapse,slime-mold.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:57:52.791 -t 00:58:20.791 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0146.wav
+ffmpeg -y -start_number 83348 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0146.wav -frames:v 84019 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0146_Chris-Packham,Michaela-Strachan,wrap-up,scene006,segment147,photos,wrap-up.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:58:20.750 -t 00:58:32.083 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0147.wav
+ffmpeg -y -start_number 84019 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0147.wav -frames:v 84290 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0147_Chris-Packham,wrap-up,scene006,segment148,bird,preview.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:58:32.041 -t 00:58:41.625 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0148.wav
+ffmpeg -y -start_number 84290 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0148.wav -frames:v 84519 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0148_Megan-McCubbin,wrap-up,scene006,segment149,wasp,preview.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:58:41.583 -t 00:58:49.541 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0149.wav
+ffmpeg -y -start_number 84519 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0149.wav -frames:v 84709 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0149_Gillian-Burke,Michaela-Strachan,wrap-up,scene006,segment150,bird,preview.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:58:49.500 -t 00:58:57.750 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0150.wav
+ffmpeg -y -start_number 84709 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0150.wav -frames:v 84906 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0150_Chris-Packham,Michaela-Strachan,scene006,segment151,talking-heads,preview.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:58:57.708 -t 00:59:09.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0151.wav
+ffmpeg -y -start_number 84906 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0151.wav -frames:v 85176 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0151_scene006,segment152,talking-heads,preview.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:59:09.000 -t 00:59:33.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0152.wav
+ffmpeg -y -start_number 85176 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0152.wav -frames:v 85769 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0152_Michaela-Strachan,scene006,segment153,open-university,closing.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 00:59:33.666 -t 01:00:10.708 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0153.wav
+ffmpeg -y -start_number 85769 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0153.wav -frames:v 86657 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0153_scene006,segment154,credits,closing.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 01:00:10.666 -t 01:00:17.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0154.wav
+ffmpeg -y -start_number 86657 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0154.wav -frames:v 86812 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0154_scene006,segment155,still,closing.mp4 
+ffmpeg -y -i ./rnf/SpringWatch/audio.wav -ss 01:00:17.125 -t 01:00:17.166 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0155.wav
+ffmpeg -y -start_number 86812 -framerate 24 -i ./rnf/SpringWatch/frame%05d.jpg -i /segment0155.wav -frames:v 86812 -vcodec mpeg4 -r 24 -q:v 0 ./rnf/SpringWatch_0155_scene006,segment156,black,closing.mp4 

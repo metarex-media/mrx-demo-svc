@@ -1,0 +1,22 @@
+{
+    "metarexId": "MRX.123.456.789.gpx",
+    "mediaType": "application/xml",
+    "name": "topografix gps exchange format",
+    "description": "Open source ",
+    "timingIs": "embedded",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "https://www.topografix.com/GPX/1/1/gpx.xsd",
+        "services": [
+            {
+                "API": "http://localhost:9000/gps",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "MRX.123.456.789.gps",
+                "description": "A service tha converts gps exchange xml to w3c json",
+                "serviceID": "toW3C"
+            }
+        ]
+    }
+}

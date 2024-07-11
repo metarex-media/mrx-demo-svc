@@ -1,0 +1,55 @@
+{
+    "metarexId": "MRX.123.456.789.rnf",
+    "mediaType": "text/csv",
+    "name": "NAB RNF csv ",
+    "description": "The rnf normalised format, which is used to generate the rnf segments",
+    "timingIs": "embedded",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/rnfSchema.json",
+        "mapping": {
+            "convertTypes": false,
+            "MissedFieldsKey": "metadataTags",
+            "mappingDefinitions": {
+                "chapter": [
+                    "chapter",
+                    "Chapter"
+                ],
+                "in": [
+                    "in",
+                    "In",
+                    "in(f)"
+                ],
+                "out": [
+                    "out",
+                    "Out",
+                    "out(f)"
+                ],
+                "storyline-importance": [
+                    "storyline-importance",
+                    "Storyline-importance",
+                    "Importance",
+                    "Story"
+                ]
+            }
+        },
+        "services": [
+            {
+                "API": "http://localhost:9000/ffmpeg",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "text/plain",
+                "description": "Generate the ffmpeg script to build the rnf segments",
+                "serviceID": "generateFFmpeg",
+                "parameters": [
+                    {
+                        "key": "title",
+                        "optional": false,
+                        "description": "the title of film to be segemented for RNF"
+                    }
+                ]
+            }
+        ]
+    }
+}

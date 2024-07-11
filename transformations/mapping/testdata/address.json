@@ -1,0 +1,11 @@
+{
+      "firstName": "Tristan",
+      "lastName": "Larke",
+      "primary job": "video systems architect",
+      "secondary job": "whatever bruce delegates",
+      "year": 2024,
+      "jobs": {
+            "primary job": "lighting assistant",
+            "year": 2020
+      }
+}

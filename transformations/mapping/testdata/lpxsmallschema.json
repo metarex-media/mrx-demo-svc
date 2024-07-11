@@ -1,0 +1,271 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "bodies": {
+      "type": "array",
+      "items": [
+        {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string"
+                },
+                "contenttype": {
+                  "type": "string"
+                },
+                "charcount": {
+                  "type": "integer"
+                },
+                "wordcount": {
+                  "type": "integer"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "role",
+                "contenttype",
+                "charcount",
+                "wordcount",
+                "value"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "outs": {
+      "type": "array",
+      "items": [
+        {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string"
+                },
+                "contenttype": {
+                  "type": "string"
+                },
+                "charcount": {
+                  "type": "integer"
+                },
+                "wordcount": {
+                  "type": "integer"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "role",
+                "contenttype",
+                "charcount",
+                "wordcount",
+                "value"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "organisations": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "rel": {
+              "type": "string"
+            },
+            "uri": {
+              "type": "string"
+            },
+            "literal": {
+              "type": "string"
+            },
+            "symbols": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "ticker": {
+                      "type": "string"
+                    },
+                    "exchange": {
+                      "type": "string"
+                    },
+                    "symboltype": {
+                      "type": "string"
+                    },
+                    "symbol": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ticker",
+                    "exchange",
+                    "symboltype",
+                    "symbol"
+                  ]
+                }
+              ]
+            },
+            "contactinfo": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "lang": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "lines": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        },
+                        "locality": {
+                          "type": "string"
+                        },
+                        "area": {
+                          "type": "string"
+                        },
+                        "postalcode": {
+                          "type": "string"
+                        },
+                        "country": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "lines",
+                        "locality",
+                        "area",
+                        "postalcode",
+                        "country"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "role",
+                    "lang",
+                    "name",
+                    "value",
+                    "address"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "lang": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "lines": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        },
+                        "locality": {
+                          "type": "string"
+                        },
+                        "area": {
+                          "type": "string"
+                        },
+                        "postalcode": {
+                          "type": "string"
+                        },
+                        "country": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "lines",
+                        "locality",
+                        "area",
+                        "postalcode",
+                        "country"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "role",
+                    "lang",
+                    "name",
+                    "value",
+                    "address"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "rel",
+            "uri",
+            "literal",
+            "symbols",
+            "contactinfo"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "bodies",
+    "outs",
+    "organisations"
+  ]
+}
+

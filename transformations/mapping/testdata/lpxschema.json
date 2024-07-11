@@ -1,0 +1,2056 @@
+
+
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "uri": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "representationtype": {
+        "type": "string"
+      },
+      "profile": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "versioncreated": {
+        "type": "string"
+      },
+      "contentcreated": {
+        "type": "string"
+      },
+      "embargoed": {
+        "type": "string"
+      },
+      "urgency": {
+        "type": "integer"
+      },
+      "copyrightholder": {
+        "type": "string"
+      },
+      "copyrightnotice": {
+        "type": "string"
+      },
+      "usageterms": {
+        "type": "string"
+      },
+      "ednote": {
+        "type": "string"
+      },
+      "language": {
+        "type": "string"
+      },
+      "descriptions": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string"
+                  },
+                  "contenttype": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "role",
+                  "contenttype",
+                  "value"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "bodies": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string"
+                  },
+                  "contenttype": {
+                    "type": "string"
+                  },
+                  "charcount": {
+                    "type": "integer"
+                  },
+                  "wordcount": {
+                    "type": "integer"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "role",
+                  "contenttype",
+                  "charcount",
+                  "wordcount",
+                  "value"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headlines": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string"
+                  },
+                  "contenttype": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "role",
+                  "contenttype",
+                  "value"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "people": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "rel": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  },
+                  "contactinfo": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "rel",
+                  "uri",
+                  "literal",
+                  "contactinfo"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "organisations": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "rel": {
+                "type": "string"
+              },
+              "uri": {
+                "type": "string"
+              },
+              "literal": {
+                "type": "string"
+              },
+              "symbols": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "ticker": {
+                        "type": "string"
+                      },
+                      "exchange": {
+                        "type": "string"
+                      },
+                      "symboltype": {
+                        "type": "string"
+                      },
+                      "symbol": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "ticker",
+                      "exchange",
+                      "symboltype",
+                      "symbol"
+                    ]
+                  }
+                ]
+              },
+              "contactinfo": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "role": {
+                        "type": "string"
+                      },
+                      "lang": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      },
+                      "address": {
+                        "type": "object",
+                        "properties": {
+                          "lines": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          "locality": {
+                            "type": "string"
+                          },
+                          "area": {
+                            "type": "string"
+                          },
+                          "postalcode": {
+                            "type": "string"
+                          },
+                          "country": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "lines",
+                          "locality",
+                          "area",
+                          "postalcode",
+                          "country"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "role",
+                      "lang",
+                      "name",
+                      "value",
+                      "address"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "role": {
+                        "type": "string"
+                      },
+                      "lang": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      },
+                      "address": {
+                        "type": "object",
+                        "properties": {
+                          "lines": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          "locality": {
+                            "type": "string"
+                          },
+                          "area": {
+                            "type": "string"
+                          },
+                          "postalcode": {
+                            "type": "string"
+                          },
+                          "country": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "lines",
+                          "locality",
+                          "area",
+                          "postalcode",
+                          "country"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "role",
+                      "lang",
+                      "name",
+                      "value",
+                      "address"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "rel",
+              "uri",
+              "literal",
+              "symbols",
+              "contactinfo"
+            ]
+          }
+        ]
+      },
+      "places": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "rel": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  },
+                  "contactinfo": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      }
+                    ]
+                  },
+                  "geojson": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "coordinates": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "integer"
+                          }
+                        ]
+                      },
+                      "bbox": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "integer"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "coordinates",
+                      "bbox"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "rel",
+                  "uri",
+                  "literal",
+                  "contactinfo",
+                  "geojson"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "subjects": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "rel": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  },
+                  "creator": {
+                    "type": "string"
+                  },
+                  "relevance": {
+                    "type": "integer"
+                  },
+                  "confidence": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "name",
+                  "rel",
+                  "uri",
+                  "literal",
+                  "creator",
+                  "relevance",
+                  "confidence"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "events": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "rel": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "rel",
+                  "uri",
+                  "literal"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eventdetails": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "eventstatus": {
+                "type": "string"
+              },
+              "dates": {
+                "type": "object",
+                "properties": {
+                  "startdate": {
+                    "type": "string"
+                  },
+                  "enddate": {
+                    "type": "string"
+                  },
+                  "duration": {
+                    "type": "string"
+                  },
+                  "recurrence": {
+                    "type": "object",
+                    "properties": {
+                      "recurrence-dates": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      },
+                      "recurrence-rules": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "frequency": {
+                                "type": "string"
+                              },
+                              "interval": {
+                                "type": "string"
+                              },
+                              "until": {
+                                "type": "string"
+                              },
+                              "count": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "frequency",
+                              "interval",
+                              "until",
+                              "count"
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "recurrence-dates",
+                      "recurrence-rules"
+                    ]
+                  }
+                },
+                "required": [
+                  "startdate",
+                  "enddate",
+                  "duration",
+                  "recurrence"
+                ]
+              },
+              "organiser": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "rel": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  },
+                  "symbols": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "ticker": {
+                            "type": "string"
+                          },
+                          "exchange": {
+                            "type": "string"
+                          },
+                          "symboltype": {
+                            "type": "string"
+                          },
+                          "symbol": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "ticker",
+                          "exchange",
+                          "symboltype",
+                          "symbol"
+                        ]
+                      }
+                    ]
+                  },
+                  "contactinfo": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "rel",
+                  "uri",
+                  "literal",
+                  "symbols",
+                  "contactinfo"
+                ]
+              }
+            },
+            "required": [
+              "eventstatus",
+              "dates",
+              "organiser"
+            ]
+          }
+        ]
+      },
+      "plannedcoverage": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "uri": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "pubstatus": {
+                    "type": "string"
+                  },
+                  "commissioned": {
+                    "type": "object",
+                    "properties": {
+                      "by": {
+                        "type": "string"
+                      },
+                      "on": {
+                        "type": "string"
+                      },
+                      "references": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "value": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "name",
+                              "value"
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "by",
+                      "on",
+                      "references"
+                    ]
+                  },
+                  "dates": {
+                    "type": "object",
+                    "properties": {
+                      "startdate": {
+                        "type": "string"
+                      },
+                      "enddate": {
+                        "type": "string"
+                      },
+                      "duration": {
+                        "type": "string"
+                      },
+                      "recurrence": {
+                        "type": "object",
+                        "properties": {
+                          "recurrence-dates": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          "recurrence-rules": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "frequency": {
+                                    "type": "string"
+                                  },
+                                  "interval": {
+                                    "type": "string"
+                                  },
+                                  "until": {
+                                    "type": "string"
+                                  },
+                                  "count": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "frequency",
+                                  "interval",
+                                  "until",
+                                  "count"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "recurrence-dates",
+                          "recurrence-rules"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "startdate",
+                      "enddate",
+                      "duration",
+                      "recurrence"
+                    ]
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "event": {
+                    "type": "string"
+                  },
+                  "audiences": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "audience": {
+                            "type": "string"
+                          },
+                          "significance": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "audience",
+                          "significance"
+                        ]
+                      }
+                    ]
+                  },
+                  "exclaudience": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "headline": {
+                    "type": "string"
+                  },
+                  "ednote": {
+                    "type": "string"
+                  },
+                  "urgency": {
+                    "type": "string"
+                  },
+                  "language": {
+                    "type": "string"
+                  },
+                  "scheduled": {
+                    "type": "string"
+                  },
+                  "services": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "assignedto": {
+                    "type": "string"
+                  },
+                  "itemcount": {
+                    "type": "object",
+                    "properties": {
+                      "rangefrom": {
+                        "type": "integer"
+                      },
+                      "rangeto": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "rangefrom",
+                      "rangeto"
+                    ]
+                  },
+                  "wordcount": {
+                    "type": "integer"
+                  },
+                  "renditions": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "items": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "uri": {
+                            "type": "string"
+                          },
+                          "version": {
+                            "type": "integer"
+                          },
+                          "versionguid": {
+                            "type": "string"
+                          },
+                          "href": {
+                            "type": "string"
+                          },
+                          "code": {
+                            "type": "string"
+                          },
+                          "signal": {
+                            "type": "string"
+                          },
+                          "transportprotocol": {
+                            "type": "string"
+                          },
+                          "maxbitrate": {
+                            "type": "integer"
+                          },
+                          "cidr": {
+                            "type": "string"
+                          },
+                          "port": {
+                            "type": "integer"
+                          },
+                          "srtpassword": {
+                            "type": "string"
+                          },
+                          "listeneraddress": {
+                            "type": "string"
+                          },
+                          "streamid": {
+                            "type": "string"
+                          },
+                          "minlatency": {
+                            "type": "integer"
+                          },
+                          "codec": {
+                            "type": "string"
+                          },
+                          "scantype": {
+                            "type": "string"
+                          },
+                          "bitrate": {
+                            "type": "integer"
+                          },
+                          "gop": {
+                            "type": "integer"
+                          },
+                          "ratecontrolmode": {
+                            "type": "string"
+                          },
+                          "contenttype": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "generated": {
+                            "type": "string"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "sizeinbytes": {
+                            "type": "integer"
+                          },
+                          "duration": {
+                            "type": "integer"
+                          },
+                          "averagebitrate": {
+                            "type": "integer"
+                          },
+                          "format": {
+                            "type": "string"
+                          },
+                          "originalfilename": {
+                            "type": "string"
+                          },
+                          "fileextension": {
+                            "type": "string"
+                          },
+                          "digest": {
+                            "type": "string"
+                          },
+                          "samplerate": {
+                            "type": "integer"
+                          },
+                          "audiochannels": {
+                            "type": "integer"
+                          },
+                          "audiobitrate": {
+                            "type": "integer"
+                          },
+                          "aspectratio": {
+                            "type": "string"
+                          },
+                          "colourspace": {
+                            "type": "string"
+                          },
+                          "backgroundcolour": {
+                            "type": "string"
+                          },
+                          "orientation": {
+                            "type": "string"
+                          },
+                          "videocodec": {
+                            "type": "string"
+                          },
+                          "videoscaling": {
+                            "type": "string"
+                          },
+                          "framerate": {
+                            "type": "integer"
+                          },
+                          "resolution": {
+                            "type": "string"
+                          },
+                          "audiocodec": {
+                            "type": "string"
+                          },
+                          "scene": {
+                            "type": "string"
+                          },
+                          "printsize": {
+                            "type": "integer"
+                          },
+                          "poi": {
+                            "type": "object",
+                            "properties": {
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "x",
+                              "y"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "items",
+                          "name",
+                          "uri",
+                          "version",
+                          "versionguid",
+                          "href",
+                          "code",
+                          "signal",
+                          "transportprotocol",
+                          "maxbitrate",
+                          "cidr",
+                          "port",
+                          "srtpassword",
+                          "listeneraddress",
+                          "streamid",
+                          "minlatency",
+                          "codec",
+                          "scantype",
+                          "bitrate",
+                          "gop",
+                          "ratecontrolmode",
+                          "contenttype",
+                          "title",
+                          "generated",
+                          "height",
+                          "width",
+                          "sizeinbytes",
+                          "duration",
+                          "averagebitrate",
+                          "format",
+                          "originalfilename",
+                          "fileextension",
+                          "digest",
+                          "samplerate",
+                          "audiochannels",
+                          "audiobitrate",
+                          "aspectratio",
+                          "colourspace",
+                          "backgroundcolour",
+                          "orientation",
+                          "videocodec",
+                          "videoscaling",
+                          "framerate",
+                          "resolution",
+                          "audiocodec",
+                          "scene",
+                          "printsize",
+                          "poi"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "uri",
+                  "title",
+                  "pubstatus",
+                  "commissioned",
+                  "dates",
+                  "type",
+                  "event",
+                  "audiences",
+                  "exclaudience",
+                  "headline",
+                  "ednote",
+                  "urgency",
+                  "language",
+                  "scheduled",
+                  "services",
+                  "assignedto",
+                  "itemcount",
+                  "wordcount",
+                  "renditions"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "objects": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "rel": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "rel",
+                  "uri",
+                  "literal"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "infosources": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  },
+                  "contactinfo": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "lang": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "lines": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "locality": {
+                                "type": "string"
+                              },
+                              "area": {
+                                "type": "string"
+                              },
+                              "postalcode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "lines",
+                              "locality",
+                              "area",
+                              "postalcode",
+                              "country"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "role",
+                          "lang",
+                          "name",
+                          "value",
+                          "address"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "role",
+                  "uri",
+                  "literal",
+                  "contactinfo"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "title": {
+        "type": "string"
+      },
+      "by": {
+        "type": "string"
+      },
+      "slugline": {
+        "type": "string"
+      },
+      "located": {
+        "type": "string"
+      },
+      "renditions": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "items": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "uri": {
+                "type": "string"
+              },
+              "version": {
+                "type": "integer"
+              },
+              "versionguid": {
+                "type": "string"
+              },
+              "href": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "signal": {
+                "type": "string"
+              },
+              "transportprotocol": {
+                "type": "string"
+              },
+              "maxbitrate": {
+                "type": "integer"
+              },
+              "cidr": {
+                "type": "string"
+              },
+              "port": {
+                "type": "integer"
+              },
+              "srtpassword": {
+                "type": "string"
+              },
+              "listeneraddress": {
+                "type": "string"
+              },
+              "streamid": {
+                "type": "string"
+              },
+              "minlatency": {
+                "type": "integer"
+              },
+              "codec": {
+                "type": "string"
+              },
+              "scantype": {
+                "type": "string"
+              },
+              "bitrate": {
+                "type": "integer"
+              },
+              "gop": {
+                "type": "integer"
+              },
+              "ratecontrolmode": {
+                "type": "string"
+              },
+              "contenttype": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "generated": {
+                "type": "string"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "sizeinbytes": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "averagebitrate": {
+                "type": "integer"
+              },
+              "format": {
+                "type": "string"
+              },
+              "originalfilename": {
+                "type": "string"
+              },
+              "fileextension": {
+                "type": "string"
+              },
+              "digest": {
+                "type": "string"
+              },
+              "samplerate": {
+                "type": "integer"
+              },
+              "audiochannels": {
+                "type": "integer"
+              },
+              "audiobitrate": {
+                "type": "integer"
+              },
+              "aspectratio": {
+                "type": "string"
+              },
+              "colourspace": {
+                "type": "string"
+              },
+              "backgroundcolour": {
+                "type": "string"
+              },
+              "orientation": {
+                "type": "string"
+              },
+              "videocodec": {
+                "type": "string"
+              },
+              "videoscaling": {
+                "type": "string"
+              },
+              "framerate": {
+                "type": "integer"
+              },
+              "resolution": {
+                "type": "string"
+              },
+              "audiocodec": {
+                "type": "string"
+              },
+              "scene": {
+                "type": "string"
+              },
+              "printsize": {
+                "type": "integer"
+              },
+              "poi": {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "type": "integer"
+                  },
+                  "y": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "x",
+                  "y"
+                ]
+              }
+            },
+            "required": [
+              "items",
+              "name",
+              "uri",
+              "version",
+              "versionguid",
+              "href",
+              "code",
+              "signal",
+              "transportprotocol",
+              "maxbitrate",
+              "cidr",
+              "port",
+              "srtpassword",
+              "listeneraddress",
+              "streamid",
+              "minlatency",
+              "codec",
+              "scantype",
+              "bitrate",
+              "gop",
+              "ratecontrolmode",
+              "contenttype",
+              "title",
+              "generated",
+              "height",
+              "width",
+              "sizeinbytes",
+              "duration",
+              "averagebitrate",
+              "format",
+              "originalfilename",
+              "fileextension",
+              "digest",
+              "samplerate",
+              "audiochannels",
+              "audiobitrate",
+              "aspectratio",
+              "colourspace",
+              "backgroundcolour",
+              "orientation",
+              "videocodec",
+              "videoscaling",
+              "framerate",
+              "resolution",
+              "audiocodec",
+              "scene",
+              "printsize",
+              "poi"
+            ]
+          }
+        ]
+      },
+      "associations": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "altids": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "role",
+                  "value"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "trustindicators": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "href": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "role",
+                  "title",
+                  "href"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "standard": {
+        "type": "object"
+      },
+      "genres": {
+        "type": "array",
+        "items": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "uri": {
+                    "type": "string"
+                  },
+                  "literal": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "uri",
+                  "literal"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "expires": {
+        "type": "string"
+      },
+      "rightsinfo": {
+        "type": "object"
+      }
+    },
+    "required": [
+      "uri",
+      "type",
+      "representationtype",
+      "profile",
+      "version",
+      "versioncreated",
+      "contentcreated",
+      "embargoed",
+      "urgency",
+      "copyrightholder",
+      "copyrightnotice",
+      "usageterms",
+      "ednote",
+      "language",
+      "descriptions",
+      "bodies",
+      "headlines",
+      "people",
+      "organisations",
+      "places",
+      "subjects",
+      "events",
+      "eventdetails",
+      "plannedcoverage",
+      "objects",
+      "infosources",
+      "title",
+      "by",
+      "slugline",
+      "located",
+      "renditions",
+      "associations",
+      "altids",
+      "trustindicators",
+      "standard",
+      "genres",
+      "expires",
+      "rightsinfo"
+    ]
+  }
+  
+  

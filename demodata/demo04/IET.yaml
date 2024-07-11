@@ -1,0 +1,1411 @@
+- frames:
+    in(f): 0
+    out(f): 167
+  chapter: logo
+  segment: ""
+  topics:
+    subject: sting
+    shot: intro
+    primary: intro
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 10
+- frames:
+    in(f): 168
+    out(f): 492
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: intro
+    shot: Rosanna
+    primary: intro
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 493
+    out(f): 689
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: intro
+    shot: Elfed
+    primary: intro
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 10
+- frames:
+    in(f): 690
+    out(f): 756
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: intro
+    shot: Elfed
+    primary: intro
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 757
+    out(f): 1002
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: intro
+    shot: Werner
+    primary: intro
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 10
+- frames:
+    in(f): 1003
+    out(f): 1126
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: intro
+    shot: Werner
+    primary: intro
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 1127
+    out(f): 1243
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: intro
+    shot: Lucas
+    primary: intro
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Johan Bolin
+  Story: 10
+- frames:
+    in(f): 1244
+    out(f): 1492
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Lucas
+    primary: Next Gen Audio
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Johan Bolin
+  Story: 3
+- frames:
+    in(f): 1493
+    out(f): 1653
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Rosanna
+    primary: Next Gen Audio
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Lucas Zwicker
+  Story: 10
+- frames:
+    in(f): 1654
+    out(f): 1777
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Rosanna
+    primary: Next Gen Audio
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Lucas Zwicker
+  Story: 3
+- frames:
+    in(f): 1778
+    out(f): 1814
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Rosanna
+    primary: Next Gen Audio
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 1815
+    out(f): 1928
+  chapter: chapter001
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Rosanna
+    primary: Next Gen Audio
+    secondary: ""
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 10
+- frames:
+    in(f): 1929
+    out(f): 2347
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Rosanna
+    primary: Next Gen Audio
+    secondary: tpoic
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 2348
+    out(f): 2425
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Rosanna
+    primary: Next Gen Audio
+    secondary: what is it
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 2426
+    out(f): 2977
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Rosanna
+    primary: Next Gen Audio
+    secondary: immersive
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+    - Elfed Howell
+  Story: 10
+- frames:
+    in(f): 2978
+    out(f): 3144
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: immersive
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 6
+- frames:
+    in(f): 3145
+    out(f): 3374
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: personalisation
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 10
+- frames:
+    in(f): 3375
+    out(f): 3439
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: personalisation
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 6
+- frames:
+    in(f): 3440
+    out(f): 3832
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adaptive
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 10
+- frames:
+    in(f): 3833
+    out(f): 4152
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adaptive
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 6
+- frames:
+    in(f): 4153
+    out(f): 4258
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: accessibility
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 10
+- frames:
+    in(f): 4259
+    out(f): 4454
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: accessibility
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 6
+- frames:
+    in(f): 4455
+    out(f): 5058
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: accessibility
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 5059
+    out(f): 5145
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+    - Elfed Howell
+  Story: 6
+- frames:
+    in(f): 5146
+    out(f): 5348
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 5349
+    out(f): 5611
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption-device
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 10
+- frames:
+    in(f): 5612
+    out(f): 6034
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption-device
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 6
+- frames:
+    in(f): 6035
+    out(f): 6429
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption-device
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 6430
+    out(f): 6880
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption-content
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 10
+- frames:
+    in(f): 6881
+    out(f): 7111
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption-content
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 6
+- frames:
+    in(f): 7112
+    out(f): 7539
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: Elfed
+    primary: Next Gen Audio
+    secondary: adoption-content
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 7540
+    out(f): 9104
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: group
+    primary: Next Gen Audio
+    secondary: industry status
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 9105
+    out(f): 9926
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: group
+    primary: Next Gen Audio
+    secondary: consumer use
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 9927
+    out(f): 12494
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Next Gen Audio
+    shot: group
+    primary: Next Gen Audio
+    secondary: consumer use
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 12495
+    out(f): 12886
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Orpheus
+    shot: group
+    primary: Next Gen Audio
+    secondary: orpheus project
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 6
+- frames:
+    in(f): 12887
+    out(f): 13792
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Orpheus
+    shot: group
+    primary: Next Gen Audio
+    secondary: orpheus project
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 10
+- frames:
+    in(f): 13793
+    out(f): 14336
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: Orpheus
+    shot: group
+    primary: Next Gen Audio
+    secondary: orpheus project
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 14337
+    out(f): 19303
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: live sport
+    shot: group
+    primary: Next Gen Audio
+    secondary: swiss football
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 19304
+    out(f): 19468
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: live sport
+    shot: group
+    primary: Next Gen Audio
+    secondary: swiss football
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 19469
+    out(f): 21964
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: live sport
+    shot: group
+    primary: Next Gen Audio
+    secondary: swiss football
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 21965
+    out(f): 22119
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: tooling
+    shot: group
+    primary: Next Gen Audio
+    secondary: what is needed
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 6
+- frames:
+    in(f): 22120
+    out(f): 22354
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: tooling
+    shot: group
+    primary: Next Gen Audio
+    secondary: what is needed
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 6
+- frames:
+    in(f): 22355
+    out(f): 23494
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: tooling
+    shot: group
+    primary: Next Gen Audio
+    secondary: what is needed
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 23495
+    out(f): 24234
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: tooling
+    shot: group
+    primary: Next Gen Audio
+    secondary: what is needed
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 24235
+    out(f): 24438
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: adm & Sadm
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 10
+- frames:
+    in(f): 24439
+    out(f): 24589
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: adm & Sadm
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 2
+- frames:
+    in(f): 24600
+    out(f): 24789
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: adm & Sadm
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 10
+- frames:
+    in(f): 24790
+    out(f): 25769
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: adm & Sadm
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 6
+- frames:
+    in(f): 25770
+    out(f): 26926
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: adm & Sadm
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 26927
+    out(f): 27148
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: do users want it
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 27149
+    out(f): 29839
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: do users want it
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 29840
+    out(f): 30504
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: personaliszation
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 30505
+    out(f): 32668
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: personaliszation
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 32669
+    out(f): 33689
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: creatores perspective
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 33690
+    out(f): 35007
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: creatores perspective
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 35008
+    out(f): 36370
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: mixing in the cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 36371
+    out(f): 43681
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: mixing in the cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Johan Bolin
+  Story: 3
+- frames:
+    in(f): 43682
+    out(f): 43799
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: timing & clocking
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 43800
+    out(f): 44710
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: timing & clocking
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Johan Bolin
+  Story: 3
+- frames:
+    in(f): 44711
+    out(f): 44993
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 44994
+    out(f): 50013
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Lucas Zwicker
+  Story: 3
+- frames:
+    in(f): 50014
+    out(f): 50222
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: cloud tech challenges
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 50223
+    out(f): 53638
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: cloud tech challenges
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Lucas Zwicker
+  Story: 3
+- frames:
+    in(f): 53639
+    out(f): 53873
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: beyond cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 53874
+    out(f): 55126
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: beyond cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Lucas Zwicker
+  Story: 3
+- frames:
+    in(f): 55127
+    out(f): 58550
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: beyond cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Johan Bolin
+  Story: 3
+- frames:
+    in(f): 58551
+    out(f): 60055
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: beyond cloud
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 60056
+    out(f): 60530
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: too much automation
+    Audience_Question: deutche telekom
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Story: 3
+- frames:
+    in(f): 60531
+    out(f): 60696
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: ml/ai
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 60697
+    out(f): 62092
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: ml/ai
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 62093
+    out(f): 62950
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: consumers
+    Audience_Question: deutche telekom
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 62951
+    out(f): 63651
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: consumers
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 63652
+    out(f): 64073
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: gap
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Story: 3
+- frames:
+    in(f): 64074
+    out(f): 66116
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: codecs
+    Audience_Question: anonymous
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 66117
+    out(f): 67893
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: environment-adaptation
+    Audience_Question: anonymous
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 67894
+    out(f): 68325
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: environment-adaptation
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 68326
+    out(f): 68533
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: loudness
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 3
+- frames:
+    in(f): 68534
+    out(f): 69485
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: loudness
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 69486
+    out(f): 69741
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: loudness
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Werner Bleisteiner
+  Story: 3
+- frames:
+    in(f): 69742
+    out(f): 70373
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: adm
+    shot: group
+    primary: Next Gen Audio
+    secondary: loudness
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Elfed Howell
+  Story: 3
+- frames:
+    in(f): 70374
+    out(f): 70626
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: wrap up
+    shot: group
+    primary: Next Gen Audio
+    secondary: loudness
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Speaker:
+    - Rosana Prada
+  Story: 10
+- frames:
+    in(f): 70627
+    out(f): 70807
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: close
+    shot: logo
+    primary: Next Gen Audio
+    secondary: loudness
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Story: 10
+- frames:
+    in(f): 70808
+    out(f): 70808
+  chapter: chapter002
+  segment: ""
+  topics:
+    subject: close
+    shot: logo
+    primary: Next Gen Audio
+    secondary: loudness
+  warnings:
+    predation: false
+    procreation: false
+    threat: false
+  Story: 10

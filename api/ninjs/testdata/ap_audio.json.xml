@@ -1,0 +1,60 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name></name>
+        </copyrightHolder>
+        <copyrightNotice>Copyright 2019 The Associated Press, though the copyright in some contents and materials incorporated herein may be owned by third parties where so indicated. All rights reserved. This material may not be published, broadcast, rewritten or redistributed without permission.</copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="http://api.ap.org/media/v/content/8c9f92e2a4414c709a295b449f459a74?qt=H1Kdh42orF&amp;et=0a3aza2c0"></provider>
+        <versionCreated>2019-11-14T16:17:53Z</versionCreated>
+        <pubStatus qcode="stat:usable"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2019-11-14T16:17:53Z</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="en"></language>
+        <subject>
+            <name>Political News</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/86aad5207dac100488ecba7fa5283c3e">
+            <name>Government and politics</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/86c17a007dac1004898fba7fa5283c3e">
+            <name>Impeachments</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/86bc3e287dac1004895dba7fa5283c3e">
+            <name>Political issues</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/17092930618f41079a063c02851881a1">
+            <name>Trump impeachment inquiry</name>
+        </subject>
+        <slugline></slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>Next up in impeachment hearings: A parade of key witnesses</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p></p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

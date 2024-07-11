@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="./StylesheetAndSchema/Title/PackageMedia.xsl"?>
+<PackageMediaReport xmlns:xsi="http://w3.org/2001/SMLSchema-instance" xsi:noNamespaceSchemaLocation="./StylesheetAndSchema/Pulsar_Report.xsd"><GeneralInfo><PackageInfo Type="IMF Package" src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" JobTemplateName="BASIC TESTS" ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0" Version="7.5.0.10" FolderSize="2.26 GB" JobID="2008" ShowTemplateDetail="0"/><File src="Complete Package" PackageFileType="1" Path="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/" Accessible="Yes" size="0" TemplateUsed="BASIC TESTS" ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0" Status="No" Description="Job completed successfully"/><File src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" PackageFileType="1" Path="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" Accessible="Yes" size="0" TemplateUsed="BASIC TESTS" ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0" Status="No" Description="Job completed successfully"/></GeneralInfo><PulsarReport src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" ReportPath="C:\ProgramData\Pulsar\VU\TempDownload\8090\Qsr_2008">
+		<StreamInfo JobID="2008" Version="7.5.0.10" VREMode="1" JobAnalysisMode="1" DongleVersion="8" PulsarDeploymentMode="0" Filepath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05" FileName="ABCD123E_05" FilePathTypeToShow="1" FileType="IMF Package" VideoCodec="None" AudioCodec="None" Length="Not Available" UserNotes="" TemplateNotes="" JobTemplateName="BASIC TESTS" FileSize="2.26 GB" ShowTemplateDetail="0" FirstFrameTimeCode="00:00:00:00" TimeCodeMode="1" QCPlayer="0"></StreamInfo>
+		<JobInfo Start="2024-04-05T11:41:47" End="2024-04-05T11:41:50" Duration="3 Sec" Status="Completed" TotalErrors="0" TotalWarnings="0" TotalCorrections="0" TotalCriticalAlerts="0" TotalInfos="0"></JobInfo>
+		<ContainerInfo Count="9" RefConIndex="0" Type="Top" ContainerType="IMF Package">
+			<FileInfo>
+				<FileInfo FileNames="ABCD123E_01_AS-11.xml" FileType="Sidecar Asset" Id="urn:uuid:649821db-f313-525b-a515-16033c981d14" Size="2824" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="ABCD123E_05_RDD6.xml" FileType="Sidecar Asset" Id="urn:uuid:1e7dfdb4-dfce-5c28-a130-6f64277af588" Size="2425" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="ASSETMAP.xml" FileType="Asset map" Id="urn:uuid:4d2b5473-0200-423e-b42e-4b73b7a4c3ec" Size="2833" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" FileType="Audio Track" Id="urn:uuid:26cde83b-b5f6-4b96-a5ea-19c6920e0f0e" Size="16302664" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" FileType="Audio Track" Id="urn:uuid:dc1ed1aa-832a-4247-9631-0e0f13d6bed2" Size="48374344" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" FileType="Composition play list" Id="urn:uuid:88f37b1d-bd19-4f16-8085-e4e49802167b" Size="19799" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="PKL_c1a19c2e-0b69-47dc-a4de-60a9f9757bf4.xml" FileType="Packing list" Id="urn:uuid:c1a19c2e-0b69-47dc-a4de-60a9f9757bf4" Size="3890" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="SCM_cf67b284-4573-45c0-a2bd-9271a34892cd.xml" FileType="Sidecar Composition Map" Id="urn:uuid:cf67b284-4573-45c0-a2bd-9271a34892cd" Size="1653" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" FileType="Image Track" Id="urn:uuid:3a1128b3-5f46-4652-b1eb-85899e7f0e45" Size="2359853221" ReportingFormat="0"></FileInfo>
+			</FileInfo>
+			<SpecNames Name="1. SMPTE STANDARD D-Cinema Packaging - Asset Mapping and File Segmentation SMPTE 429-9-2014"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD D-Cinema Packaging - Packing List SMPTE 429-8-2007"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD Interoperable Master Format - Composition Playlist SMPTE ST 2067-3:2020"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD Interoperable Master Format - Essence Component SMPTE ST 2067-5:2020"></SpecNames>
+			<SpecNames Name="5. SMPTE STANDARD Interoperable Master Format - Core Constraints SMPTE ST 2067-2:2020"></SpecNames>
+			<MediasInfo Count="0" IsAudioLanguage="0"></MediasInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors></ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+		</ContainerInfo>
+		<BasebandCrossCheck>
+			<QualityVideoAudioCrossCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<QualityVideoAudioCrossCheckErrors></QualityVideoAudioCrossCheckErrors>
+				<QualityVideoAudioCrossCheckWarnings></QualityVideoAudioCrossCheckWarnings>
+				<QualityVideoAudioCrossCheckCriticalAlerts></QualityVideoAudioCrossCheckCriticalAlerts>
+				<QualityVideoAudioCrossCheckInfos></QualityVideoAudioCrossCheckInfos>
+			</QualityVideoAudioCrossCheck>
+		</BasebandCrossCheck>
+		<PlayList IsSubJob="0" ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+			<PlayListErrors ErrorsNum="0"></PlayListErrors>
+			<PlayListWarnings WarningsNum="0"></PlayListWarnings>
+			<PlayListCriticalAlerts CriticalAlertsNum="0"></PlayListCriticalAlerts>
+			<PlayListInfos InfosNum="0"></PlayListInfos>
+		</PlayList>
+	</PulsarReport>
+	<PulsarReport src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" ReportPath="C:\ProgramData\Pulsar\VU\TempDownload\8090\Qsr_2008\1249835485144_">
+		<StreamInfo JobID="1249835485144" Version="7.5.0.10" VREMode="1" JobAnalysisMode="1" DongleVersion="8" PulsarDeploymentMode="0" Filepath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" FileName="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" FilePathTypeToShow="1" FileType="IMF Package" VideoCodec="None" AudioCodec="BWF (wav)" Length="00:00:55:640" UserNotes="" TemplateNotes="" JobTemplateName="BASIC TESTS" FileSize="2.26 GB" ShowTemplateDetail="0" FirstFrameTimeCode="09:59:30:00" TimeCodeMode="1" QCPlayer="0"></StreamInfo>
+		<JobInfo Start="2024-04-05T11:39:25" End="2024-04-05T11:41:36" Duration="2 Min 11 Sec" Status="Completed" TotalErrors="0" TotalWarnings="0" TotalCorrections="0" TotalCriticalAlerts="0" TotalInfos="0"></JobInfo>
+		<ContainerInfo RefConIndex="1" Type="Top" AssetID="urn:uuid:88f37b1d-bd19-4f16-8085-e4e49802167b" ContainerType="IMF Package">
+			<FileInfo></FileInfo>
+			<SpecNames Name="1. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<CPLTimeLineInfo IsSupplementalPackage="0">
+				<AssetInfo StreamID="2" TrackType="Video" AssetName="VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" AssetPath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" UUID="3a1128b3-5f46-4652-b1eb-85899e7f0e45" Accessible="Yes" StartTime="09:59:30:00" EndTime="10:00:25:17" EntryPoint="0" Duration="1392"></AssetInfo>
+				<AssetInfo StreamID="3" TrackType="Audio" AssetName="AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" AssetPath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" UUID="26cde83b-b5f6-4b96-a5ea-19c6920e0f0e" Accessible="Yes" StartTime="09:59:30:00" EndTime="09:60:25:17" EntryPoint="0" Duration="2672640"></AssetInfo>
+				<AssetInfo StreamID="4" TrackType="Audio" AssetName="AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" AssetPath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" UUID="dc1ed1aa-832a-4247-9631-0e0f13d6bed2" Accessible="Yes" StartTime="09:59:30:00" EndTime="09:60:25:17" EntryPoint="0" Duration="2672640"></AssetInfo>
+			</CPLTimeLineInfo>
+			<MediasInfo Count="0" IsAudioLanguage="0"></MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:88f37b1d-bd19-4f16-8085-e4e49802167b</Id>
+				<Size>19799</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors></ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+		</ContainerInfo>
+		<ContainerInfo OpPattern="OP1A" MXFFileStatus="Closed, Complete" CompanyName="Blackmagic Design" ProductName="DaVinci Resolve" ProductVersion="NA" VersionString="18.6.5" ModificationDate="2024-03-01 15:15:48.032" RunIn="Not Available" RandomIndexPack="Available" IndexTable="Available" FileName="VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" RefConIndex="1" TrackID="4294967295" Type="Ref" AssetID="urn:uuid:3a1128b3-5f46-4652-b1eb-85899e7f0e45" ContainerType="Material Exchange Format">
+			<SpecNames Name="1. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<SpecNames Name="5. AMWA AS-02 MXF Versioning November 18, 2011 (version 1.0)"></SpecNames>
+			<MediasInfo Count="1" IsAudioLanguage="0">
+				<MediaInfo Codec="ProRes" Type="Video" ID="1" TrackNo="352392961" TrackID="2" MPTrackNo="0" Duration="00:00:55:680" MediaAttribute="Supported" TrackDisabled="No"></MediaInfo>
+			</MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:3a1128b3-5f46-4652-b1eb-85899e7f0e45</Id>
+				<Size>2359853221</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors></ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+		</ContainerInfo>
+		<ContainerInfo OpPattern="OP1A" MXFFileStatus="Closed, Complete" CompanyName="Blackmagic Design" ProductName="DaVinci Resolve" ProductVersion="NA" VersionString="18.6.5" ModificationDate="2024-03-01 15:15:48.036" RunIn="Not Available" RandomIndexPack="Available" IndexTable="Available" FileName="AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" RefConIndex="2" TrackID="4294967295" Type="Ref" AssetID="urn:uuid:26cde83b-b5f6-4b96-a5ea-19c6920e0f0e" ContainerType="Material Exchange Format">
+			<SpecNames Name="1. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<MediasInfo Count="1" IsAudioLanguage="0">
+				<MediaInfo Codec="BWF (wav)" Type="Audio" ID="1" TrackNo="369164801" TrackID="2" MPTrackNo="0" Duration="00:00:55:680" MediaAttribute="Supported" TrackDisabled="No"></MediaInfo>
+			</MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:26cde83b-b5f6-4b96-a5ea-19c6920e0f0e</Id>
+				<Size>16302664</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors></ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+			<MCALabelInfo>
+				<SoundfieldGroupLabelSubDescriptor InstanceID="00e2dd176f554e98819149eeafb76de7" MCALabelDictionaryID="060e2b340401010d0302022001000000" TrackLinkedID="2" MCALinkID="5be4ba07417a4e7d97b43f80a1994bdb" MCATagSymbol="sgST" MCATagName="Standard Stereo" SpokenLanguage="en" MCATitleVersion="n/a" MCAAudioContentKind="PRM" MCAAudioElementKind="FCMP" MCATitle="n/a">
+					<AudioChannelLabelSubDescriptor InstanceID="37eda8e6683b45fbb4fe74f329219c30" MCALabelDictionaryID="060e2b340401010d0302010100000000" TrackLinkedID="2" MCALinkID="fe5e715fa453423db8853602562a07a6" MCATagSymbol="chL" MCATagName="Left" MCAChannelID="1"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="c6f092673e094d67be6e10c7d119502b" MCALabelDictionaryID="060e2b340401010d0302010200000000" TrackLinkedID="2" MCALinkID="65f1443add9346b7bedc423f0ba8e3d0" MCATagSymbol="chR" MCATagName="Right" MCAChannelID="2"></AudioChannelLabelSubDescriptor>
+				</SoundfieldGroupLabelSubDescriptor>
+			</MCALabelInfo>
+		</ContainerInfo>
+		<ContainerInfo OpPattern="OP1A" MXFFileStatus="Closed, Complete" CompanyName="Blackmagic Design" ProductName="DaVinci Resolve" ProductVersion="NA" VersionString="18.6.5" ModificationDate="2024-03-01 15:15:48.040" RunIn="Not Available" RandomIndexPack="Available" IndexTable="Available" FileName="AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" RefConIndex="3" TrackID="4294967295" Type="Ref" AssetID="urn:uuid:dc1ed1aa-832a-4247-9631-0e0f13d6bed2" ContainerType="Material Exchange Format">
+			<SpecNames Name="1. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<MediasInfo Count="1" IsAudioLanguage="0">
+				<MediaInfo Codec="BWF (wav)" Type="Audio" ID="1" TrackNo="369164801" TrackID="2" MPTrackNo="0" Duration="00:00:55:680" MediaAttribute="Supported" TrackDisabled="No"></MediaInfo>
+			</MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:dc1ed1aa-832a-4247-9631-0e0f13d6bed2</Id>
+				<Size>48374344</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors></ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+			<MCALabelInfo>
+				<SoundfieldGroupLabelSubDescriptor InstanceID="0002bb2b15204429aebe05f38c67ccbb" MCALabelDictionaryID="060e2b340401010d0302020100000000" TrackLinkedID="2" MCALinkID="4e5e88173fb84d23afc2cbbe62ce9f7b" MCATagSymbol="sg51" MCATagName="5.1" SpokenLanguage="en" MCATitleVersion="n/a" MCAAudioContentKind="PRM" MCAAudioElementKind="FCMP" MCATitle="n/a">
+					<AudioChannelLabelSubDescriptor InstanceID="42d9beb41efb4aa9bd81d9b418e65222" MCALabelDictionaryID="060e2b340401010d0302010100000000" TrackLinkedID="2" MCALinkID="9a4df003dd75467eb91892030cf0d80f" MCATagSymbol="chL" MCATagName="Left" MCAChannelID="1"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="6d4fdc6380d54b3f97a2d9eed90bf400" MCALabelDictionaryID="060e2b340401010d0302010200000000" TrackLinkedID="2" MCALinkID="b2692ea843b44b7eaa345e6ca674b46f" MCATagSymbol="chR" MCATagName="Right" MCAChannelID="2"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="75ec3992f9144bada927aafd10101d27" MCALabelDictionaryID="060e2b340401010d0302010300000000" TrackLinkedID="2" MCALinkID="8a152c9b789840449c3c9797402a5af8" MCATagSymbol="chC" MCATagName="Center" MCAChannelID="3"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="24c7d2684e264ccb94caefe112bf8dbd" MCALabelDictionaryID="060e2b340401010d0302010400000000" TrackLinkedID="2" MCALinkID="403c13fbf9b6495988fd0d04b4031844" MCATagSymbol="chLFE" MCATagName="LFE" MCAChannelID="4"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="ed683ee2b2d34ee8b7d24ae40880b818" MCALabelDictionaryID="060e2b340401010d0302010500000000" TrackLinkedID="2" MCALinkID="b4d241e5a5c04a57b6d1395ef26ad03a" MCATagSymbol="chLs" MCATagName="Left Surround" MCAChannelID="5"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="1f9e9ab8ad814898aa6ce434883dc779" MCALabelDictionaryID="060e2b340401010d0302010600000000" TrackLinkedID="2" MCALinkID="6f2c47206aa548f086f4072991fcb7d1" MCATagSymbol="chRs" MCATagName="Right Surround" MCAChannelID="6"></AudioChannelLabelSubDescriptor>
+				</SoundfieldGroupLabelSubDescriptor>
+			</MCALabelInfo>
+		</ContainerInfo>
+		<BasebandCrossCheck>
+			<QualityVideoAudioCrossCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<QualityVideoAudioCrossCheckErrors></QualityVideoAudioCrossCheckErrors>
+				<QualityVideoAudioCrossCheckWarnings></QualityVideoAudioCrossCheckWarnings>
+				<QualityVideoAudioCrossCheckCriticalAlerts></QualityVideoAudioCrossCheckCriticalAlerts>
+				<QualityVideoAudioCrossCheckInfos></QualityVideoAudioCrossCheckInfos>
+			</QualityVideoAudioCrossCheck>
+		</BasebandCrossCheck>
+		<ESAudio ID="3" PID="0" TrackNum="369164801" TrackID="2" MXFDolbyTracksMerged="0" Codec="BWF (wav)" RefConIndex="1" Type="Top" ProxyFilePath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/Pawan/1163/2008/audio_3.mp4">
+			<SummaryReport>
+				<SpecInfo FileFormat="0" AudioSpecName="EBU Broadcast Wave Format: Tech 3285 V2" FormatSpecname="Not Available"></SpecInfo>
+				<GeneralInfo Channels="2" BitPacking="24" DolbyEBitPacking="0" SamplingRate="48000" ChannelOrder="L,R" AudioLength="00:00:55:680" AudioFrameRate="None" ChannelConfig="None" FileFormatChecked="Not Checked" CalculatedBitrate="N.A." EndiannessType="Little Endian"></GeneralInfo>
+				<QualityParam Show="false"></QualityParam>
+			</SummaryReport>
+			<AudioComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioComplianceErrors></AudioComplianceErrors>
+				<AudioComplianceWarnings></AudioComplianceWarnings>
+				<AudioComplianceCriticals></AudioComplianceCriticals>
+				<AudioComplianceInfos></AudioComplianceInfos>
+			</AudioComplianceCheck>
+			<AudioUserDefinedCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioUserDefinedErrors></AudioUserDefinedErrors>
+				<AudioUserDefinedWarnings></AudioUserDefinedWarnings>
+				<AudioUserDefinedCriticalAlerts></AudioUserDefinedCriticalAlerts>
+				<AudioUserDefinedInfos></AudioUserDefinedInfos>
+			</AudioUserDefinedCheck>
+			<AudioQualityCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioQualityCheckErrors></AudioQualityCheckErrors>
+				<AudioQualityCheckWarnings></AudioQualityCheckWarnings>
+				<AudioQualityCheckCriticalAlerts></AudioQualityCheckCriticalAlerts>
+				<AudioQualityCheckInfos></AudioQualityCheckInfos>
+			</AudioQualityCheck>
+		</ESAudio>
+		<ESAudio ID="4" PID="0" TrackNum="369164801" TrackID="2" MXFDolbyTracksMerged="0" Codec="BWF (wav)" RefConIndex="1" Type="Top" ProxyFilePath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/Pawan/1163/2008/audio_4.mp4">
+			<SummaryReport>
+				<SpecInfo FileFormat="0" AudioSpecName="EBU Broadcast Wave Format: Tech 3285 V2" FormatSpecname="Not Available"></SpecInfo>
+				<GeneralInfo Channels="6" BitPacking="24" DolbyEBitPacking="0" SamplingRate="48000" ChannelOrder="L,R,C,LFE,Ls,Rs" AudioLength="00:00:55:680" AudioFrameRate="None" ChannelConfig="None" FileFormatChecked="Not Checked" CalculatedBitrate="N.A." EndiannessType="Little Endian"></GeneralInfo>
+				<QualityParam Show="false"></QualityParam>
+			</SummaryReport>
+			<AudioComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioComplianceErrors></AudioComplianceErrors>
+				<AudioComplianceWarnings></AudioComplianceWarnings>
+				<AudioComplianceCriticals></AudioComplianceCriticals>
+				<AudioComplianceInfos></AudioComplianceInfos>
+			</AudioComplianceCheck>
+			<AudioUserDefinedCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioUserDefinedErrors></AudioUserDefinedErrors>
+				<AudioUserDefinedWarnings></AudioUserDefinedWarnings>
+				<AudioUserDefinedCriticalAlerts></AudioUserDefinedCriticalAlerts>
+				<AudioUserDefinedInfos></AudioUserDefinedInfos>
+			</AudioUserDefinedCheck>
+			<AudioQualityCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioQualityCheckErrors></AudioQualityCheckErrors>
+				<AudioQualityCheckWarnings></AudioQualityCheckWarnings>
+				<AudioQualityCheckCriticalAlerts></AudioQualityCheckCriticalAlerts>
+				<AudioQualityCheckInfos></AudioQualityCheckInfos>
+			</AudioQualityCheck>
+		</ESAudio>
+		<ESVideo ID="2" TrackNum="352392961" TrackID="2" Codec="ProRes 422 HQ" QualifiedStreamPath="C:/ProgramData/Pulsar/VU/TempDownload/8090/1249835485144_1712317165/CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" ContainerFrameRate="25.00" RefConIndex="1" Type="Top" ProxyFilePath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/Pawan/1163/2008/video_2.mp4">
+			<SummaryReport>
+				<GOPStructure Type="Unknown" MinLength="0" MaxLength="0"></GOPStructure>
+				<SpecInfo FileFormat="0" VideoSpecName="Apple ProRes" PseHardingSpec="Not Available" FormatSpecname="Not Available"></SpecInfo>
+				<SequenceInfo Profile="ProRes 422 HQ" Level="N.A." ColorSpace="YUV422" ChromaDepth="N.A." LumaDepth="N.A." Width="3840" Height="2160" FrameRate="25.00" MaxFrameSize="3883780" MinFrameSize="85214" AspectRatio="1.778" StreamCodedMode="Frames Only" VideoFormat="3840 x 2160" DisplayWidth="3840" DisplayHeight="2160" FileFormatChecked="Not Checked" CalculatedBitrate="339318.16" ScanMode="Progressive" FieldOrder="N.A." CodecCommercialName="Apple ProRes 422 HQ" ProcessedDuration="00:00:55:17"></SequenceInfo>
+				<LumaValue>
+					<Max Value="0"></Max>
+					<Min Value="0"></Min>
+				</LumaValue>
+				<ChromaValue>
+					<Max Value="0"></Max>
+					<Min Value="0"></Min>
+				</ChromaValue>
+				<QuantValue>
+					<Max Value="0"></Max>
+					<Min Value="0"></Min>
+				</QuantValue>
+				<NValue>
+					<Max Value="0"></Max>
+				</NValue>
+				<MValue>
+					<Max Value="0"></Max>
+				</MValue>
+				<QualityParam Show="0"></QualityParam>
+			</SummaryReport>
+			<VideoComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfoNum="0">
+				<VideoComplianceErrors></VideoComplianceErrors>
+				<VideoComplianceWarnings></VideoComplianceWarnings>
+				<VideoComplianceCriticalAlerts></VideoComplianceCriticalAlerts>
+				<VideoComplianceInfos></VideoComplianceInfos>
+			</VideoComplianceCheck>
+			<VideoUserDefinedCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<VideoUserDefinedErrors></VideoUserDefinedErrors>
+				<VideoUserDefinedWarnings></VideoUserDefinedWarnings>
+				<VideoUserDefinedCriticalAlerts></VideoUserDefinedCriticalAlerts>
+				<VideoUserDefinedInfos></VideoUserDefinedInfos>
+			</VideoUserDefinedCheck>
+			<VideoQualityCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<VideoQualityCheckErrors></VideoQualityCheckErrors>
+				<VideoQualityCheckWarnings></VideoQualityCheckWarnings>
+				<VideoQualityCheckCriticalAlerts></VideoQualityCheckCriticalAlerts>
+				<VideoQualityCheckInfos></VideoQualityCheckInfos>
+			</VideoQualityCheck>
+			<HDR Type="HLG">
+				<HDRSpecsInfo>
+					<HDRSpecInfo SpecName="1. ARIB STD-B67 Version 2.0 - Parameter Values for the Hybrid Log-Gamma(HLG) High Dynamic Range Television(HDR-TV) System for Programme Production"></HDRSpecInfo>
+				</HDRSpecsInfo>
+			</HDR>
+		</ESVideo>
+		<PlayList IsSubJob="1" ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+			<PlayListErrors ErrorsNum="0"></PlayListErrors>
+			<PlayListWarnings WarningsNum="0"></PlayListWarnings>
+			<PlayListCriticalAlerts CriticalAlertsNum="0"></PlayListCriticalAlerts>
+			<PlayListInfos InfosNum="0"></PlayListInfos>
+		</PlayList>
+	</PulsarReport>
+</PackageMediaReport>

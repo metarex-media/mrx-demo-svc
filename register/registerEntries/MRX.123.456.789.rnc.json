@@ -1,0 +1,11 @@
+{
+    "metarexId": "MRX.123.456.789.rnc",
+    "mediaType": "text/csv",
+    "name": "NAB RNF csv",
+    "description": "An input csv of tagged media metadata",
+    "timingIs": "embedded",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/demo04rnc.json"
+    }
+}

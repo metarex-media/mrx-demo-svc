@@ -1,0 +1,21 @@
+chapter,in,metadataTags,out,storyline-importance
+clock,0,"{""elapsed"":""00:00:00"",""primary-topic"":""clock"",""scene"":""clock"",""segment"":""clock""}",720,<nil>
+chapter001,721,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:00:28"",""primary-topic"":""sting"",""scene"":""scene001"",""segment"":""segment001"",""shot"":""close-up"",""subject"":""sting""}",1080,10
+chapter001,1081,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:00:43"",""primary-topic"":""sting"",""scene"":""scene001"",""segment"":""segment002"",""shot"":""close-up"",""subject"":""sting""}",1479,5
+chapter001,1480,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:00:59"",""primary-topic"":""sting"",""scene"":""scene001"",""segment"":""segment003"",""shot"":""close-up"",""subject"":""sting""}",2880,1
+chapter001,2881,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:01:55"",""primary-topic"":""title"",""scene"":""scene002"",""segment"":""segment004"",""shot"":""title"",""subject"":""title""}",3372,8
+chapter002,3373,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:02:14"",""primary-topic"":""tutankhamun"",""scene"":""scene002"",""segment"":""segment005"",""shot"":""aerial"",""subject"":""tutankhamun""}",5099,6
+chapter003,5100,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:03:24"",""primary-topic"":""tutankhamun"",""scene"":""scene002"",""segment"":""segment006"",""shot"":""talking-heads"",""subject"":""tutankhamun""}",5099,6
+chapter004,5100,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:03:24"",""primary-topic"":""howard carter"",""scene"":""scene002"",""segment"":""segment007"",""shot"":""close-up"",""subject"":""howard carter""}",5495,3
+chapter005,5496,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:03:39"",""primary-topic"":""howard carter"",""scene"":""scene002"",""segment"":""segment008"",""shot"":""close-up"",""subject"":""hc childhood""}",6263,3
+chapter006,6264,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:04:10"",""primary-topic"":""howard carter"",""scene"":""scene002"",""segment"":""segment009"",""shot"":""close-up"",""subject"":""hc family""}",7040,1
+chapter007,7041,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:04:41"",""primary-topic"":""howard carter"",""scene"":""scene002"",""segment"":""segment010"",""shot"":""close-up"",""subject"":""hc painting""}",7842,7
+chapter008,7843,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:05:13"",""primary-topic"":""howard carter"",""scene"":""scene003"",""segment"":""segment011"",""shot"":""close-up"",""subject"":""benefactors""}",8734,10
+chapter009,8735,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:05:49"",""primary-topic"":""howard carter"",""scene"":""scene004"",""segment"":""segment012"",""shot"":""aerial"",""subject"":""nile adventure""}",9444,1
+chapter010,9445,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:06:17"",""primary-topic"":""howard carter"",""scene"":""scene004"",""segment"":""segment013"",""shot"":""nest"",""subject"":""west bank""}",9727,3
+chapter011,9728,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:06:29"",""primary-topic"":""howard carter"",""scene"":""scene004"",""segment"":""segment014"",""shot"":""nest"",""subject"":""young Howards""}",10240,10
+chapter012,10241,"{""Janina Ramirez"":""TRUE"",""Stephen Harvey"":""TRUE"",""elapsed"":""00:06:49"",""primary-topic"":""howard carter"",""scene"":""scene004"",""segment"":""segment015"",""shot"":""talking-heads"",""subject"":""artist waffle - use of artist""}",11215,8
+chapter013,11216,"{""Janina Ramirez"":""TRUE"",""Stephen Harvey"":""TRUE"",""elapsed"":""00:07:28"",""primary-topic"":""howard carter"",""scene"":""scene004"",""segment"":""segment016"",""shot"":""talking-heads"",""subject"":""Howard's traits""}",12499,5
+chapter013,12500,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:08:20"",""primary-topic"":""howard carter"",""scene"":""scene005"",""segment"":""segment017"",""shot"":""talking-heads"",""subject"":""artisty""}",13462,1
+chapter013,13463,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:08:58"",""primary-topic"":""howard carter"",""scene"":""scene005"",""segment"":""segment018"",""shot"":""close-up"",""subject"":""Howard's graft""}",14882,5
+chapter013,14883,"{""Janina Ramirez"":""TRUE"",""elapsed"":""00:09:55"",""primary-topic"":""howard carter"",""scene"":""scene005"",""segment"":""segment019"",""shot"":""close-up"",""subject"":""Sudden Cut""}",15025,1

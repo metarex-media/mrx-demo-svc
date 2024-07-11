@@ -1,0 +1,71 @@
+---
+stringCheck: john
+stringArrayCheck:
+- one
+- two
+- three
+- four
+integerArrayCheck:
+- 1
+- 2
+- 3
+- 4
+floatArrayCheck:
+- 1.5
+- 2.5
+- 3.5
+- 4.5
+boolArrayCheck:
+- true
+- false
+- true
+- false
+intCheck: 100
+floatCheck: 50.5
+obejctField1Arr:
+- Matthew
+- Mark
+- Luke
+- John
+obejctField2Arr:
+- 2
+- 7
+- 9
+- 4
+objectReverseArrayCheck:
+- Reversefield1: Matthew
+  Reversefield2: 2
+- Reversefield1: Mark
+  Reversefield2: 7
+- Reversefield1: Luke
+  Reversefield2: 9
+- Reversefield1: John
+  Reversefield2: 4
+multipleObject:
+- integerArrays:
+  - 1
+  - 2
+  - 3
+- integerArrays:
+  - 4
+  - 5
+  - 6
+- integerArrays:
+  - 7
+  - 8
+  - 9
+boolCheck: true
+float2d:
+- - 1.1
+  - 2
+  - 2
+  - 3.3
+- - 4.4
+  - 5.5
+  - 6.6
+- - 7.7
+  - 8.8
+  - 9.9
+- - 10.1
+  - 11.11
+  - 12.12

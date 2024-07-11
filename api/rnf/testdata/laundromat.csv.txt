@@ -1,0 +1,82 @@
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:00:00.000 -t 00:00:11.640 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0000.wav
+ffmpeg -y -start_number 0 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0000.wav -frames:v 291 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0000_intro,blender,titles.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:00:11.640 -t 00:00:16.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0001.wav
+ffmpeg -y -start_number 292 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0001.wav -frames:v 414 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0001_intro,titles,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:00:16.560 -t 00:00:26.440 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0002.wav
+ffmpeg -y -start_number 415 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0002.wav -frames:v 661 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0002_despair,sheep-feet,first-cycle,Suicide,Threat.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:00:26.440 -t 00:00:44.200 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0003.wav
+ffmpeg -y -start_number 662 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0003.wav -frames:v 1105 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0003_despair,suicide,first-cycle,Suicide,Threat,Violence.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:00:44.200 -t 00:00:55.840 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0004.wav
+ffmpeg -y -start_number 1106 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0004.wav -frames:v 1396 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0004_despair,main-title,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:00:55.840 -t 00:01:10.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0005.wav
+ffmpeg -y -start_number 1397 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0005.wav -frames:v 1750 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0005_despair,isolation,log-drag,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:01:10.000 -t 00:01:22.840 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0006.wav
+ffmpeg -y -start_number 1751 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0006.wav -frames:v 2071 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0006_despair,loneliness,sheep,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:01:22.840 -t 00:01:35.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0007.wav
+ffmpeg -y -start_number 2072 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0007.wav -frames:v 2374 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0007_despair,struggle,struggle,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:01:35.000 -t 00:02:06.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0008.wav
+ffmpeg -y -start_number 2375 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0008.wav -frames:v 3169 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0008_despair,struggle,struggle,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:02:06.760 -t 00:02:22.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0009.wav
+ffmpeg -y -start_number 3170 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0009.wav -frames:v 3573 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0009_despair,disturbance,excuse-me,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:02:22.920 -t 00:02:40.400 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0010.wav
+ffmpeg -y -start_number 3574 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0010.wav -frames:v 4010 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0010_despair,disturbance,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:02:40.400 -t 00:02:52.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0011.wav
+ffmpeg -y -start_number 4011 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0011.wav -frames:v 4317 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0011_despair,victor,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:02:52.680 -t 00:03:02.240 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0012.wav
+ffmpeg -y -start_number 4318 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0012.wav -frames:v 4556 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0012_despair,victor,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:03:02.240 -t 00:03:09.880 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0013.wav
+ffmpeg -y -start_number 4557 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0013.wav -frames:v 4747 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0013_despair,victor,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:03:09.880 -t 00:03:51.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0014.wav
+ffmpeg -y -start_number 4748 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0014.wav -frames:v 5792 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0014_despair,victor,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:03:51.680 -t 00:03:57.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0015.wav
+ffmpeg -y -start_number 5793 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0015.wav -frames:v 5948 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0015_despair,one-more-minute,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:03:57.920 -t 00:04:27.480 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0016.wav
+ffmpeg -y -start_number 5949 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0016.wav -frames:v 6687 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0016_despair,won't-regret-this,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:04:27.480 -t 00:04:43.160 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0017.wav
+ffmpeg -y -start_number 6688 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0017.wav -frames:v 7079 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0017_despair,device,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:04:43.160 -t 00:04:51.760 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0018.wav
+ffmpeg -y -start_number 7080 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0018.wav -frames:v 7294 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0018_despair,better-be-good,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:04:51.760 -t 00:05:11.640 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0019.wav
+ffmpeg -y -start_number 7295 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0019.wav -frames:v 7791 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0019_despair,turn-it-on,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:05:11.640 -t 00:05:24.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0020.wav
+ffmpeg -y -start_number 7792 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0020.wav -frames:v 8099 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0020_despair,don't-move,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:05:24.000 -t 00:05:43.400 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0021.wav
+ffmpeg -y -start_number 8100 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0021.wav -frames:v 8585 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0021_despair,come-back,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:05:43.400 -t 00:06:20.400 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0022.wav
+ffmpeg -y -start_number 8586 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0022.wav -frames:v 9510 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0022_despair,loading,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:06:20.400 -t 00:06:36.800 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0023.wav
+ffmpeg -y -start_number 9511 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0023.wav -frames:v 9920 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0023_despair,cloud,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:06:36.800 -t 00:06:47.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0024.wav
+ffmpeg -y -start_number 9921 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0024.wav -frames:v 10189 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0024_despair,starting,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:06:47.560 -t 00:07:10.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0025.wav
+ffmpeg -y -start_number 10190 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0025.wav -frames:v 10764 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0025_despair,lights,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:07:10.560 -t 00:07:19.360 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0026.wav
+ffmpeg -y -start_number 10765 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0026.wav -frames:v 10984 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0026_despair,awe,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:07:19.360 -t 00:07:32.000 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0027.wav
+ffmpeg -y -start_number 10985 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0027.wav -frames:v 11300 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0027_despair,crowd,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:07:32.000 -t 00:07:43.560 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0028.wav
+ffmpeg -y -start_number 11301 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0028.wav -frames:v 11589 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0028_despair,run,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:07:43.560 -t 00:07:50.120 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0029.wav
+ffmpeg -y -start_number 11590 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0029.wav -frames:v 11753 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0029_despair,arise,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:07:50.120 -t 00:07:57.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0030.wav
+ffmpeg -y -start_number 11754 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0030.wav -frames:v 11948 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0030_despair,arise,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:07:57.920 -t 00:08:21.680 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0031.wav
+ffmpeg -y -start_number 11949 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0031.wav -frames:v 12542 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0031_hope,awake,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:08:21.680 -t 00:08:28.840 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0032.wav
+ffmpeg -y -start_number 12543 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0032.wav -frames:v 12721 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0032_hope,discovery,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:08:28.840 -t 00:08:41.080 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0033.wav
+ffmpeg -y -start_number 12722 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0033.wav -frames:v 13027 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0033_hope,discovery,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:08:41.080 -t 00:08:49.040 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0034.wav
+ffmpeg -y -start_number 13028 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0034.wav -frames:v 13226 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0034_hope,discovery,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:08:49.040 -t 00:08:58.720 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0035.wav
+ffmpeg -y -start_number 13227 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0035.wav -frames:v 13468 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0035_hope,zoom,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:08:58.720 -t 00:09:07.640 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0036.wav
+ffmpeg -y -start_number 13469 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0036.wav -frames:v 13691 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0036_hope,pan,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:09:07.640 -t 00:09:15.600 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0037.wav
+ffmpeg -y -start_number 13692 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0037.wav -frames:v 13890 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0037_hope,pan,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:09:15.600 -t 00:09:18.120 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0038.wav
+ffmpeg -y -start_number 13891 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0038.wav -frames:v 13953 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0038_hope,pan,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:09:18.120 -t 00:09:38.920 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0039.wav
+ffmpeg -y -start_number 13954 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0039.wav -frames:v 14473 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0039_hope,cliff-hanger,frank,first-cycle.mp4 
+ffmpeg -y -i ./rnf/Cosmos-Laundromat/audio.wav -ss 00:09:38.920 -t 00:11:41.240 -acodec pcm_s16le -ac 1 -ar 16000 ./rnf/segment0040.wav
+ffmpeg -y -start_number 14474 -framerate 25 -i ./rnf/Cosmos-Laundromat/frame%05d.jpg -i /segment0040.wav -frames:v 17531 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/Cosmos-Laundromat_0040_hope,end,frank,first-cycle.mp4 

@@ -1,0 +1,40 @@
+{
+    "metarexId": "MRX.123.456.789.bat",
+    "mediaType": "application/json",
+    "name": "NAB Battery",
+    "description": "A simple battery format",
+    "timingIs": "clocked",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/demo07input.json",
+        "services": [
+            {
+                "API": "http://localhost:9000/battery",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "image/png",
+                "description": "A service that converts the battery percentage to a scaled image",
+                "serviceID": "fill"
+            },
+            {
+                "API": "http://localhost:9000/batteryFault",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "image/jpeg",
+                "description": "A service that converts the battery information into a visualisation of the fault",
+                "serviceID": "fault"
+            },
+            {
+                "API": "http://localhost:9000/batteryStagger",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "image/png",
+                "description": "A service that converts the battery percentage to a staggered image",
+                "serviceID": "stagger"
+            }
+        ]
+    }
+}

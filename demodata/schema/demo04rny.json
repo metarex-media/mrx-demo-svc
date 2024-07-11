@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Metarex NAB Demo 04 yaml input schema",
+    "description": "The Schema for metadata tagging in yaml",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "frames": {
+                "type": "object",
+                "properties": {
+                    "in(f)": {
+                        "type" :"integer"
+                    },
+                    "out(f)": {
+                        "type" :"integer"
+                    }
+                }
+            },
+            "chapter": {
+                "type": "string"
+            },
+            "segment": {
+                "type": "string"
+            },
+            "topics": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "subject": {
+                        "type": "string"
+                    },
+                    "shot": {
+                        "type": "string"
+                    },
+                    "primary": {
+                        "type": "string"
+                    },
+                    "secondary": {
+                        "type": "string"
+                    },
+                    "Audience_Question" :{
+                        "type":"string"
+                    }
+                }
+            },
+            "warnings": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "predation": {
+                        "type": "boolean"
+                    },
+                    "procreation": {
+                        "type": "boolean"
+                    },
+                    "threat": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "Speaker": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "Story": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "Story",
+            "chapter",
+            "frames",
+            "segment",
+            "topics",
+            "warnings"
+        ]
+    }
+}

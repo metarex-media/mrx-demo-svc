@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="./StylesheetAndSchema/Title/PackageMedia.xsl"?>
+<PackageMediaReport xmlns:xsi="http://w3.org/2001/SMLSchema-instance" xsi:noNamespaceSchemaLocation="./StylesheetAndSchema/Pulsar_Report.xsd"><GeneralInfo><PackageInfo Type="IMF Package" src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" JobTemplateName="BBC_Technical_delivery_updated" ErrorsNum="38" WarningsNum="2" CriticalAlertsNum="2" InfosNum="3" Version="7.5.0.10" FolderSize="2.26 GB" JobID="2005" ShowTemplateDetail="1"/><File src="Complete Package" PackageFileType="1" Path="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/" Accessible="Yes" size="0" TemplateUsed="BBC_Technical_delivery_updated" ErrorsNum="38" WarningsNum="2" CriticalAlertsNum="2" InfosNum="3" Status="No" Description="Job completed with 2 Critical, 38 Error, 2 Warning, 3 Info"/><File src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" PackageFileType="1" Path="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" Accessible="Yes" size="0" TemplateUsed="BBC_Technical_delivery_updated" ErrorsNum="38" WarningsNum="2" CriticalAlertsNum="2" InfosNum="3" Status="No" Description="Job completed with 2 Critical, 38 Error, 2 Warning, 3 Info"/></GeneralInfo><PulsarReport src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" ReportPath="C:\ProgramData\Pulsar\VU\TempDownload\8090\Qsr_2005">
+		<StreamInfo JobID="2005" Version="7.5.0.10" VREMode="1" JobAnalysisMode="0" DongleVersion="8" PulsarDeploymentMode="0" Filepath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05" FileName="ABCD123E_05" FilePathTypeToShow="2" FileType="IMF Package" VideoCodec="None" AudioCodec="None" Length="Not Available" UserNotes="" TemplateNotes="" JobTemplateName="BBC_Technical_delivery_updated" FileSize="2.26 GB" ShowTemplateDetail="1" FirstFrameTimeCode="00:00:00:00" TimeCodeMode="1" QCPlayer="0"></StreamInfo>
+		<JobInfo Start="2024-04-05T11:31:50" End="2024-04-05T11:31:54" Duration="4 Sec" Status="Completed" TotalErrors="0" TotalWarnings="0" TotalCorrections="0" TotalCriticalAlerts="0" TotalInfos="0"></JobInfo>
+		<ContainerInfo Count="9" RefConIndex="0" Type="Top" ContainerType="IMF Package">
+			<FileInfo>
+				<FileInfo FileNames="ABCD123E_01_AS-11.xml" FileType="Sidecar Asset" Id="urn:uuid:649821db-f313-525b-a515-16033c981d14" Size="2824" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="ABCD123E_05_RDD6.xml" FileType="Sidecar Asset" Id="urn:uuid:1e7dfdb4-dfce-5c28-a130-6f64277af588" Size="2425" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="ASSETMAP.xml" FileType="Asset map" Id="urn:uuid:4d2b5473-0200-423e-b42e-4b73b7a4c3ec" Size="2833" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" FileType="Audio Track" Id="urn:uuid:26cde83b-b5f6-4b96-a5ea-19c6920e0f0e" Size="16302664" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" FileType="Audio Track" Id="urn:uuid:dc1ed1aa-832a-4247-9631-0e0f13d6bed2" Size="48374344" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" FileType="Composition play list" Id="urn:uuid:88f37b1d-bd19-4f16-8085-e4e49802167b" Size="19799" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="PKL_c1a19c2e-0b69-47dc-a4de-60a9f9757bf4.xml" FileType="Packing list" Id="urn:uuid:c1a19c2e-0b69-47dc-a4de-60a9f9757bf4" Size="3890" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="SCM_cf67b284-4573-45c0-a2bd-9271a34892cd.xml" FileType="Sidecar Composition Map" Id="urn:uuid:cf67b284-4573-45c0-a2bd-9271a34892cd" Size="1653" ReportingFormat="0"></FileInfo>
+				<FileInfo FileNames="VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" FileType="Image Track" Id="urn:uuid:3a1128b3-5f46-4652-b1eb-85899e7f0e45" Size="2359853221" ReportingFormat="0"></FileInfo>
+			</FileInfo>
+			<SpecNames Name="1. SMPTE STANDARD D-Cinema Packaging - Asset Mapping and File Segmentation SMPTE 429-9-2014"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD D-Cinema Packaging - Packing List SMPTE 429-8-2007"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD Interoperable Master Format - Composition Playlist SMPTE ST 2067-3:2020"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD Interoperable Master Format - Essence Component SMPTE ST 2067-5:2020"></SpecNames>
+			<SpecNames Name="5. SMPTE STANDARD Interoperable Master Format - Core Constraints SMPTE ST 2067-2:2020"></SpecNames>
+			<MediasInfo Count="0" IsAudioLanguage="0"></MediasInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors></ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+		</ContainerInfo>
+		<BasebandCrossCheck>
+			<QualityVideoAudioCrossCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<QualityVideoAudioCrossCheckErrors></QualityVideoAudioCrossCheckErrors>
+				<QualityVideoAudioCrossCheckWarnings></QualityVideoAudioCrossCheckWarnings>
+				<QualityVideoAudioCrossCheckCriticalAlerts></QualityVideoAudioCrossCheckCriticalAlerts>
+				<QualityVideoAudioCrossCheckInfos></QualityVideoAudioCrossCheckInfos>
+			</QualityVideoAudioCrossCheck>
+		</BasebandCrossCheck>
+		<PlayList IsSubJob="0" ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+			<PlayListErrors ErrorsNum="0"></PlayListErrors>
+			<PlayListWarnings WarningsNum="0"></PlayListWarnings>
+			<PlayListCriticalAlerts CriticalAlertsNum="0"></PlayListCriticalAlerts>
+			<PlayListInfos InfosNum="0"></PlayListInfos>
+		</PlayList>
+	</PulsarReport>
+	<PulsarReport src="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" ReportPath="C:\ProgramData\Pulsar\VU\TempDownload\8090\Qsr_2005\1241245550549_">
+		<StreamInfo JobID="1241245550549" Version="7.5.0.10" VREMode="1" JobAnalysisMode="0" DongleVersion="8" PulsarDeploymentMode="0" Filepath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" FileName="CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" FilePathTypeToShow="2" FileType="IMF Package" VideoCodec="None" AudioCodec="BWF (wav)" Length="00:00:55:680" UserNotes="" TemplateNotes="" JobTemplateName="BBC_Technical_delivery_updated" FileSize="2.26 GB" ShowTemplateDetail="0" FirstFrameTimeCode="09:59:30:00" TimeCodeMode="1" QCPlayer="0"></StreamInfo>
+		<JobInfo Start="2024-04-05T11:28:17" End="2024-04-05T11:31:33" Duration="3 Min 16 Sec" Status="Completed, with Critical alerts" TotalErrors="38" TotalWarnings="2" TotalCorrections="0" TotalCriticalAlerts="2" TotalInfos="3"></JobInfo>
+		<ContainerInfo RefConIndex="1" Type="Top" AssetID="urn:uuid:88f37b1d-bd19-4f16-8085-e4e49802167b" ContainerType="IMF Package">
+			<FileInfo></FileInfo>
+			<SpecNames Name="1. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<CPLTimeLineInfo IsSupplementalPackage="0">
+				<AssetInfo StreamID="2" TrackType="Video" AssetName="VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" AssetPath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" UUID="3a1128b3-5f46-4652-b1eb-85899e7f0e45" Accessible="Yes" StartTime="09:59:30:00" EndTime="10:00:25:17" EntryPoint="0" Duration="1392"></AssetInfo>
+				<AssetInfo StreamID="3" TrackType="Audio" AssetName="AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" AssetPath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" UUID="26cde83b-b5f6-4b96-a5ea-19c6920e0f0e" Accessible="Yes" StartTime="09:59:30:00" EndTime="09:60:25:17" EntryPoint="0" Duration="2672640"></AssetInfo>
+				<AssetInfo StreamID="4" TrackType="Audio" AssetName="AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" AssetPath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/ABCD123E_05/AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" UUID="dc1ed1aa-832a-4247-9631-0e0f13d6bed2" Accessible="Yes" StartTime="09:59:30:00" EndTime="09:60:25:17" EntryPoint="0" Duration="2672640"></AssetInfo>
+			</CPLTimeLineInfo>
+			<MediasInfo Count="0" IsAudioLanguage="0"></MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:88f37b1d-bd19-4f16-8085-e4e49802167b</Id>
+				<Size>19799</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors></ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+		</ContainerInfo>
+		<ContainerInfo OpPattern="OP1A" MXFFileStatus="Closed, Complete" CompanyName="Blackmagic Design" ProductName="DaVinci Resolve" ProductVersion="NA" VersionString="18.6.5" ModificationDate="2024-03-01 15:15:48.032" RunIn="Not Available" RandomIndexPack="Available" IndexTable="Available" FileName="VIDEO_3a1128b3-5f46-4652-b1eb-85899e7f0e45.mxf" RefConIndex="1" TrackID="4294967295" Type="Ref" AssetID="urn:uuid:3a1128b3-5f46-4652-b1eb-85899e7f0e45" ContainerType="Material Exchange Format">
+			<IndexTables Count="1">
+				<IndexTable IndexSid="2" BodySid="0" PartitionName="Body Partition" OffsetInFile="2359829895" OffsetInPartition="124"></IndexTable>
+			</IndexTables>
+			<SpecNames Name="1. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<SpecNames Name="5. AMWA AS-02 MXF Versioning November 18, 2011 (version 1.0)"></SpecNames>
+			<MediasInfo Count="1" IsAudioLanguage="0">
+				<MediaInfo Codec="ProRes" Type="Video" ID="1" TrackNo="352392961" TrackID="2" MPTrackNo="0" Duration="00:00:55:680" MediaAttribute="Supported" TrackDisabled="No"></MediaInfo>
+			</MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:3a1128b3-5f46-4652-b1eb-85899e7f0e45</Id>
+				<Size>2359853221</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="6" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors>
+					<ContainerUserDefError RuleNumber="16339" GOPNumber="-1" PicIndex="2" Message="Number of body partitions does not match, user-defined 0 but found 2." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Header Partition found at 0 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Body Partition found at 262144 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Body Partition found at 2359829771 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Footer Partition found at 2359853025 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16343" GOPNumber="-1" PicIndex="3" Message="Essence partition strategy does not match for essence container with BodySID 1, user-defined Multiple but found Single." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+				</ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+		</ContainerInfo>
+		<ContainerInfo OpPattern="OP1A" MXFFileStatus="Closed, Complete" CompanyName="Blackmagic Design" ProductName="DaVinci Resolve" ProductVersion="NA" VersionString="18.6.5" ModificationDate="2024-03-01 15:15:48.036" RunIn="Not Available" RandomIndexPack="Available" IndexTable="Available" FileName="AUDIO_26cde83b-b5f6-4b96-a5ea-19c6920e0f0e.mxf" RefConIndex="2" TrackID="4294967295" Type="Ref" AssetID="urn:uuid:26cde83b-b5f6-4b96-a5ea-19c6920e0f0e" ContainerType="Material Exchange Format">
+			<IndexTables Count="1">
+				<IndexTable IndexSid="2" BodySid="0" PartitionName="Body Partition" OffsetInFile="16298256" OffsetInPartition="124"></IndexTable>
+			</IndexTables>
+			<SpecNames Name="1. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<MediasInfo Count="1" IsAudioLanguage="0">
+				<MediaInfo Codec="BWF (wav)" Type="Audio" ID="1" TrackNo="369164801" TrackID="2" MPTrackNo="0" Duration="00:00:55:680" MediaAttribute="Supported" TrackDisabled="No"></MediaInfo>
+			</MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:26cde83b-b5f6-4b96-a5ea-19c6920e0f0e</Id>
+				<Size>16302664</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="6" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors>
+					<ContainerUserDefError RuleNumber="16339" GOPNumber="-1" PicIndex="2" Message="Number of body partitions does not match, user-defined 0 but found 2." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Header Partition found at 0 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Body Partition found at 262144 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Body Partition found at 16298132 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Footer Partition found at 16302468 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16343" GOPNumber="-1" PicIndex="3" Message="Essence partition strategy does not match for essence container with BodySID 1, user-defined Multiple but found Single." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+				</ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+			<MCALabelInfo>
+				<SoundfieldGroupLabelSubDescriptor InstanceID="00e2dd176f554e98819149eeafb76de7" MCALabelDictionaryID="060e2b340401010d0302022001000000" TrackLinkedID="2" MCALinkID="5be4ba07417a4e7d97b43f80a1994bdb" MCATagSymbol="sgST" MCATagName="Standard Stereo" SpokenLanguage="en" MCATitleVersion="n/a" MCAAudioContentKind="PRM" MCAAudioElementKind="FCMP" MCATitle="n/a">
+					<AudioChannelLabelSubDescriptor InstanceID="37eda8e6683b45fbb4fe74f329219c30" MCALabelDictionaryID="060e2b340401010d0302010100000000" TrackLinkedID="2" MCALinkID="fe5e715fa453423db8853602562a07a6" MCATagSymbol="chL" MCATagName="Left" MCAChannelID="1"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="c6f092673e094d67be6e10c7d119502b" MCALabelDictionaryID="060e2b340401010d0302010200000000" TrackLinkedID="2" MCALinkID="65f1443add9346b7bedc423f0ba8e3d0" MCATagSymbol="chR" MCATagName="Right" MCAChannelID="2"></AudioChannelLabelSubDescriptor>
+				</SoundfieldGroupLabelSubDescriptor>
+			</MCALabelInfo>
+		</ContainerInfo>
+		<ContainerInfo OpPattern="OP1A" MXFFileStatus="Closed, Complete" CompanyName="Blackmagic Design" ProductName="DaVinci Resolve" ProductVersion="NA" VersionString="18.6.5" ModificationDate="2024-03-01 15:15:48.040" RunIn="Not Available" RandomIndexPack="Available" IndexTable="Available" FileName="AUDIO_dc1ed1aa-832a-4247-9631-0e0f13d6bed2.mxf" RefConIndex="3" TrackID="4294967295" Type="Ref" AssetID="urn:uuid:dc1ed1aa-832a-4247-9631-0e0f13d6bed2" ContainerType="Material Exchange Format">
+			<IndexTables Count="1">
+				<IndexTable IndexSid="2" BodySid="0" PartitionName="Body Partition" OffsetInFile="48369936" OffsetInPartition="124"></IndexTable>
+			</IndexTables>
+			<SpecNames Name="1. SMPTE STANDARD for Television MXF-File Format Specification (Standard):SMPTE ST 377-1:2019"></SpecNames>
+			<SpecNames Name="2. SMPTE STANDARD-Data Encoding Protocol Using Key-Length-Value:SMPTE ST 336:2017"></SpecNames>
+			<SpecNames Name="3. SMPTE STANDARD for Television MXF-Operational Pattern 1A(Single Item, Single Package):SMPTE 378M-2004"></SpecNames>
+			<SpecNames Name="4. SMPTE STANDARD-MXF Specialised Operational Pattern 'OP-Atom' SMPTE ST 390-2011"></SpecNames>
+			<MediasInfo Count="1" IsAudioLanguage="0">
+				<MediaInfo Codec="BWF (wav)" Type="Audio" ID="1" TrackNo="369164801" TrackID="2" MPTrackNo="0" Duration="00:00:55:680" MediaAttribute="Supported" TrackDisabled="No"></MediaInfo>
+			</MediasInfo>
+			<AssetInfo>
+				<Id>urn:uuid:dc1ed1aa-832a-4247-9631-0e0f13d6bed2</Id>
+				<Size>48374344</Size>
+			</AssetInfo>
+			<ContainerComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerComplianceErrors></ContainerComplianceErrors>
+				<ContainerComplianceWarnings></ContainerComplianceWarnings>
+				<ContainerComplianceCriticalAlerts></ContainerComplianceCriticalAlerts>
+				<ContainerComplianceInfos></ContainerComplianceInfos>
+			</ContainerComplianceCheck>
+			<ContainerUserDefCheck ErrorsNum="6" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerUserDefErrors>
+					<ContainerUserDefError RuleNumber="16339" GOPNumber="-1" PicIndex="2" Message="Number of body partitions does not match, user-defined 0 but found 2." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Header Partition found at 0 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Body Partition found at 262144 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Body Partition found at 48369812 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16334" GOPNumber="-1" PicIndex="2" Message="Invalid Footer Partition found at 48374148 bytes location (invalid HeaderByteCount value in Partition pack)." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+					<ContainerUserDefError RuleNumber="16343" GOPNumber="-1" PicIndex="3" Message="Essence partition strategy does not match for essence container with BodySID 1, user-defined Multiple but found Single." SpecsName="NA" SectionName="NA" FieldName="NA" TimeCode="NA" Show="1"></ContainerUserDefError>
+				</ContainerUserDefErrors>
+				<ContainerUserDefWarnings></ContainerUserDefWarnings>
+				<ContainerUserDefCriticalAlerts></ContainerUserDefCriticalAlerts>
+				<ContainerUserDefInfos></ContainerUserDefInfos>
+			</ContainerUserDefCheck>
+			<TimeCodeSpecificCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<ContainerTimeCodeSpecificErrors></ContainerTimeCodeSpecificErrors>
+				<ContainerTimeCodeSpecificWarnings></ContainerTimeCodeSpecificWarnings>
+				<ContainerTimeCodeSpecificCriticalAlerts></ContainerTimeCodeSpecificCriticalAlerts>
+				<ContainerTimeCodeSpecificInfos></ContainerTimeCodeSpecificInfos>
+			</TimeCodeSpecificCheck>
+			<MCALabelInfo>
+				<SoundfieldGroupLabelSubDescriptor InstanceID="0002bb2b15204429aebe05f38c67ccbb" MCALabelDictionaryID="060e2b340401010d0302020100000000" TrackLinkedID="2" MCALinkID="4e5e88173fb84d23afc2cbbe62ce9f7b" MCATagSymbol="sg51" MCATagName="5.1" SpokenLanguage="en" MCATitleVersion="n/a" MCAAudioContentKind="PRM" MCAAudioElementKind="FCMP" MCATitle="n/a">
+					<AudioChannelLabelSubDescriptor InstanceID="42d9beb41efb4aa9bd81d9b418e65222" MCALabelDictionaryID="060e2b340401010d0302010100000000" TrackLinkedID="2" MCALinkID="9a4df003dd75467eb91892030cf0d80f" MCATagSymbol="chL" MCATagName="Left" MCAChannelID="1"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="6d4fdc6380d54b3f97a2d9eed90bf400" MCALabelDictionaryID="060e2b340401010d0302010200000000" TrackLinkedID="2" MCALinkID="b2692ea843b44b7eaa345e6ca674b46f" MCATagSymbol="chR" MCATagName="Right" MCAChannelID="2"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="75ec3992f9144bada927aafd10101d27" MCALabelDictionaryID="060e2b340401010d0302010300000000" TrackLinkedID="2" MCALinkID="8a152c9b789840449c3c9797402a5af8" MCATagSymbol="chC" MCATagName="Center" MCAChannelID="3"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="24c7d2684e264ccb94caefe112bf8dbd" MCALabelDictionaryID="060e2b340401010d0302010400000000" TrackLinkedID="2" MCALinkID="403c13fbf9b6495988fd0d04b4031844" MCATagSymbol="chLFE" MCATagName="LFE" MCAChannelID="4"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="ed683ee2b2d34ee8b7d24ae40880b818" MCALabelDictionaryID="060e2b340401010d0302010500000000" TrackLinkedID="2" MCALinkID="b4d241e5a5c04a57b6d1395ef26ad03a" MCATagSymbol="chLs" MCATagName="Left Surround" MCAChannelID="5"></AudioChannelLabelSubDescriptor>
+					<AudioChannelLabelSubDescriptor InstanceID="1f9e9ab8ad814898aa6ce434883dc779" MCALabelDictionaryID="060e2b340401010d0302010600000000" TrackLinkedID="2" MCALinkID="6f2c47206aa548f086f4072991fcb7d1" MCATagSymbol="chRs" MCATagName="Right Surround" MCAChannelID="6"></AudioChannelLabelSubDescriptor>
+				</SoundfieldGroupLabelSubDescriptor>
+			</MCALabelInfo>
+		</ContainerInfo>
+		<BasebandCrossCheck>
+			<QualityVideoAudioCrossCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<QualityVideoAudioCrossCheckErrors></QualityVideoAudioCrossCheckErrors>
+				<QualityVideoAudioCrossCheckWarnings></QualityVideoAudioCrossCheckWarnings>
+				<QualityVideoAudioCrossCheckCriticalAlerts></QualityVideoAudioCrossCheckCriticalAlerts>
+				<QualityVideoAudioCrossCheckInfos></QualityVideoAudioCrossCheckInfos>
+			</QualityVideoAudioCrossCheck>
+		</BasebandCrossCheck>
+		<ESAudio ID="3" PID="0" TrackNum="369164801" TrackID="2" MXFDolbyTracksMerged="0" Codec="BWF (wav)" RefConIndex="1" Type="Top" ProxyFilePath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/Pawan/1163/2005/audio_3.mp4">
+			<SummaryReport>
+				<SpecInfo FileFormat="0" AudioSpecName="EBU Broadcast Wave Format: Tech 3285 V2" FormatSpecname="Not Available"></SpecInfo>
+				<GeneralInfo Channels="2" BitPacking="24" DolbyEBitPacking="0" SamplingRate="48000" ChannelOrder="L,R" AudioLength="00:00:55:680" AudioFrameRate="None" ChannelConfig="None" FileFormatChecked="Not Checked" CalculatedBitrate="N.A." EndiannessType="Little Endian"></GeneralInfo>
+				<QualityParam Show="false"></QualityParam>
+			</SummaryReport>
+			<AudioComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioComplianceErrors></AudioComplianceErrors>
+				<AudioComplianceWarnings></AudioComplianceWarnings>
+				<AudioComplianceCriticals></AudioComplianceCriticals>
+				<AudioComplianceInfos></AudioComplianceInfos>
+			</AudioComplianceCheck>
+			<AudioUserDefinedCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="1">
+				<AudioUserDefinedErrors></AudioUserDefinedErrors>
+				<AudioUserDefinedWarnings></AudioUserDefinedWarnings>
+				<AudioUserDefinedCriticalAlerts></AudioUserDefinedCriticalAlerts>
+				<AudioUserDefinedInfos>
+					<AudioUserDefinedInfo RuleNumber="10000" PicIndex="-1" Message="Audio codec does not match. User-defined value(s) LPCM but found to be BWF." Show="1"></AudioUserDefinedInfo>
+				</AudioUserDefinedInfos>
+			</AudioUserDefinedCheck>
+			<AudioQualityCheck ErrorsNum="2" WarningsNum="0" CriticalAlertsNum="1" InfosNum="0">
+				<AudioQualityCheckErrors>
+					<AudioQualityCheckError id="0" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:50:00 for 10.00 seconds for channel 1." Show="1" StartTimeCode="00:00:20.000" EndTimeCode="00:00:30.000" StartTimeInVideoTimeCode="09:59:50:00" EndTimeInVideoTimeCode="10:00:00:00" StartTimeInMS="20000.00" EndTimeInMS="30000.00" ChannelNumber="1"></AudioQualityCheckError>
+					<AudioQualityCheckError id="1" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:50:00 for 10.00 seconds for channel 2." Show="1" StartTimeCode="00:00:20.000" EndTimeCode="00:00:30.000" StartTimeInVideoTimeCode="09:59:50:00" EndTimeInVideoTimeCode="10:00:00:00" StartTimeInMS="20000.00" EndTimeInMS="30000.00" ChannelNumber="2"></AudioQualityCheckError>
+				</AudioQualityCheckErrors>
+				<AudioQualityCheckWarnings></AudioQualityCheckWarnings>
+				<AudioQualityCheckCriticalAlerts>
+					<AudioQualityCheckCriticalAlert id="2" AlertType="Loudness" RuleNumber="9264" Message="Audio loud zone found using EBU Integrated Absolute method with max loudness value -19.50 LUFS." Show="1" ChannelNumber="-1"></AudioQualityCheckCriticalAlert>
+				</AudioQualityCheckCriticalAlerts>
+				<AudioQualityCheckInfos></AudioQualityCheckInfos>
+			</AudioQualityCheck>
+			<AudioQualityAlertSummary>
+				<AudioQualityAlert Type="Mute" TotalAlertCount="2" CriticalCount="0" ErrorCount="2" WarningCount="0" InfoCount="0"></AudioQualityAlert>
+				<AudioQualityAlert Type="Loudness" TotalAlertCount="1" CriticalCount="1" ErrorCount="0" WarningCount="0" InfoCount="0"></AudioQualityAlert>
+			</AudioQualityAlertSummary>
+		</ESAudio>
+		<ESAudio ID="4" PID="0" TrackNum="369164801" TrackID="2" MXFDolbyTracksMerged="0" Codec="BWF (wav)" RefConIndex="1" Type="Top" ProxyFilePath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/Pawan/1163/2005/audio_4.mp4">
+			<SummaryReport>
+				<SpecInfo FileFormat="0" AudioSpecName="EBU Broadcast Wave Format: Tech 3285 V2" FormatSpecname="Not Available"></SpecInfo>
+				<GeneralInfo Channels="6" BitPacking="24" DolbyEBitPacking="0" SamplingRate="48000" ChannelOrder="L,R,C,LFE,Ls,Rs" AudioLength="00:00:55:680" AudioFrameRate="None" ChannelConfig="None" FileFormatChecked="Not Checked" CalculatedBitrate="N.A." EndiannessType="Little Endian"></GeneralInfo>
+				<QualityParam Show="false"></QualityParam>
+			</SummaryReport>
+			<AudioComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<AudioComplianceErrors></AudioComplianceErrors>
+				<AudioComplianceWarnings></AudioComplianceWarnings>
+				<AudioComplianceCriticals></AudioComplianceCriticals>
+				<AudioComplianceInfos></AudioComplianceInfos>
+			</AudioComplianceCheck>
+			<AudioUserDefinedCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="1">
+				<AudioUserDefinedErrors></AudioUserDefinedErrors>
+				<AudioUserDefinedWarnings></AudioUserDefinedWarnings>
+				<AudioUserDefinedCriticalAlerts></AudioUserDefinedCriticalAlerts>
+				<AudioUserDefinedInfos>
+					<AudioUserDefinedInfo RuleNumber="10000" PicIndex="-1" Message="Audio codec does not match. User-defined value(s) LPCM but found to be BWF." Show="1"></AudioUserDefinedInfo>
+				</AudioUserDefinedInfos>
+			</AudioUserDefinedCheck>
+			<AudioQualityCheck ErrorsNum="8" WarningsNum="0" CriticalAlertsNum="1" InfosNum="0">
+				<AudioQualityCheckErrors>
+					<AudioQualityCheckError id="3" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:33:00 for 13.00 seconds for channel 3." Show="1" StartTimeCode="00:00:03.000" EndTimeCode="00:00:16.000" StartTimeInVideoTimeCode="09:59:33:00" EndTimeInVideoTimeCode="09:59:46:00" StartTimeInMS="3000.00" EndTimeInMS="16000.00" ChannelNumber="3"></AudioQualityCheckError>
+					<AudioQualityCheckError id="4" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:34:00 for 12.00 seconds for channel 5." Show="1" StartTimeCode="00:00:04.000" EndTimeCode="00:00:16.000" StartTimeInVideoTimeCode="09:59:34:00" EndTimeInVideoTimeCode="09:59:46:00" StartTimeInMS="4000.00" EndTimeInMS="16000.00" ChannelNumber="5"></AudioQualityCheckError>
+					<AudioQualityCheckError id="5" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:35:00 for 11.00 seconds for channel 6." Show="1" StartTimeCode="00:00:05.000" EndTimeCode="00:00:16.000" StartTimeInVideoTimeCode="09:59:35:00" EndTimeInVideoTimeCode="09:59:46:00" StartTimeInMS="5000.00" EndTimeInMS="16000.00" ChannelNumber="6"></AudioQualityCheckError>
+					<AudioQualityCheckError id="6" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:50:00 for 10.00 seconds for channel 1." Show="1" StartTimeCode="00:00:20.000" EndTimeCode="00:00:30.000" StartTimeInVideoTimeCode="09:59:50:00" EndTimeInVideoTimeCode="10:00:00:00" StartTimeInMS="20000.00" EndTimeInMS="30000.00" ChannelNumber="1"></AudioQualityCheckError>
+					<AudioQualityCheckError id="7" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:50:00 for 10.00 seconds for channel 2." Show="1" StartTimeCode="00:00:20.000" EndTimeCode="00:00:30.000" StartTimeInVideoTimeCode="09:59:50:00" EndTimeInVideoTimeCode="10:00:00:00" StartTimeInMS="20000.00" EndTimeInMS="30000.00" ChannelNumber="2"></AudioQualityCheckError>
+					<AudioQualityCheckError id="8" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:50:00 for 12.00 seconds for channel 3." Show="1" StartTimeCode="00:00:20.000" EndTimeCode="00:00:32.000" StartTimeInVideoTimeCode="09:59:50:00" EndTimeInVideoTimeCode="10:00:02:00" StartTimeInMS="20000.00" EndTimeInMS="32000.00" ChannelNumber="3"></AudioQualityCheckError>
+					<AudioQualityCheckError id="9" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:50:00 for 12.00 seconds for channel 5." Show="1" StartTimeCode="00:00:20.000" EndTimeCode="00:00:32.000" StartTimeInVideoTimeCode="09:59:50:00" EndTimeInVideoTimeCode="10:00:02:00" StartTimeInMS="20000.00" EndTimeInMS="32000.00" ChannelNumber="5"></AudioQualityCheckError>
+					<AudioQualityCheckError id="10" AlertType="Mute" RuleNumber="9251" Message="Audio mute zone found beginning at 09:59:50:00 for 12.00 seconds for channel 6." Show="1" StartTimeCode="00:00:20.000" EndTimeCode="00:00:32.000" StartTimeInVideoTimeCode="09:59:50:00" EndTimeInVideoTimeCode="10:00:02:00" StartTimeInMS="20000.00" EndTimeInMS="32000.00" ChannelNumber="6"></AudioQualityCheckError>
+				</AudioQualityCheckErrors>
+				<AudioQualityCheckWarnings></AudioQualityCheckWarnings>
+				<AudioQualityCheckCriticalAlerts>
+					<AudioQualityCheckCriticalAlert id="11" AlertType="Loudness" RuleNumber="9264" Message="Audio loud zone found using EBU Integrated Absolute method with max loudness value -19.80 LUFS." Show="1" ChannelNumber="-1"></AudioQualityCheckCriticalAlert>
+				</AudioQualityCheckCriticalAlerts>
+				<AudioQualityCheckInfos></AudioQualityCheckInfos>
+			</AudioQualityCheck>
+			<AudioQualityAlertSummary>
+				<AudioQualityAlert Type="Mute" TotalAlertCount="8" CriticalCount="0" ErrorCount="8" WarningCount="0" InfoCount="0"></AudioQualityAlert>
+				<AudioQualityAlert Type="Loudness" TotalAlertCount="1" CriticalCount="1" ErrorCount="0" WarningCount="0" InfoCount="0"></AudioQualityAlert>
+			</AudioQualityAlertSummary>
+		</ESAudio>
+		<ESVideo ID="2" TrackNum="352392961" TrackID="2" Codec="ProRes 422 HQ" QualifiedStreamPath="C:/ProgramData/Pulsar/VU/TempDownload/8090/1241245550549_1712316497/CPL_88f37b1d-bd19-4f16-8085-e4e49802167b.xml" ContainerFrameRate="25.00" RefConIndex="1" Type="Top" ProxyFilePath="https://ohio-external-role-test.s3.us-east-2.amazonaws.com/Pawan/1163/2005/video_2.mp4">
+			<SummaryReport>
+				<GOPStructure Type="Unknown" MinLength="0" MaxLength="0"></GOPStructure>
+				<SpecInfo FileFormat="0" VideoSpecName="Apple ProRes" PseHardingSpec="Not Available" FormatSpecname="Not Available"></SpecInfo>
+				<SequenceInfo Profile="ProRes 422 HQ" Level="N.A." ColorSpace="YUV422" ChromaDepth="N.A." LumaDepth="N.A." Width="3840" Height="2160" FrameRate="25.00" MaxFrameSize="3883780" MinFrameSize="85214" AspectRatio="1.778" StreamCodedMode="Frames Only" VideoFormat="3840 x 2160" DisplayWidth="3840" DisplayHeight="2160" FileFormatChecked="Not Checked" CalculatedBitrate="339318.16" ScanMode="Progressive" FieldOrder="N.A." CodecCommercialName="Apple ProRes 422 HQ" ProcessedDuration="00:00:55:17"></SequenceInfo>
+				<ActiveRegionInfo ActiveWidth="3840" ActiveHeight="2160" TopPadding="0" BottomPadding="0" LeftPadding="0" RightPadding="0" StartX="0" StartY="0" EndX="3839" EndY="2159" ActiveAspectRation="1.78"></ActiveRegionInfo>
+				<LumaValue>
+					<Max Value="0"></Max>
+					<Min Value="0"></Min>
+				</LumaValue>
+				<ChromaValue>
+					<Max Value="0"></Max>
+					<Min Value="0"></Min>
+				</ChromaValue>
+				<QuantValue>
+					<Max Value="0"></Max>
+					<Min Value="0"></Min>
+				</QuantValue>
+				<NValue>
+					<Max Value="0"></Max>
+				</NValue>
+				<MValue>
+					<Max Value="0"></Max>
+				</MValue>
+				<QualityParam Show="0"></QualityParam>
+			</SummaryReport>
+			<VideoComplianceCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfoNum="0">
+				<VideoComplianceErrors></VideoComplianceErrors>
+				<VideoComplianceWarnings></VideoComplianceWarnings>
+				<VideoComplianceCriticalAlerts></VideoComplianceCriticalAlerts>
+				<VideoComplianceInfos></VideoComplianceInfos>
+			</VideoComplianceCheck>
+			<VideoUserDefinedCheck ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+				<VideoUserDefinedErrors></VideoUserDefinedErrors>
+				<VideoUserDefinedWarnings></VideoUserDefinedWarnings>
+				<VideoUserDefinedCriticalAlerts></VideoUserDefinedCriticalAlerts>
+				<VideoUserDefinedInfos></VideoUserDefinedInfos>
+			</VideoUserDefinedCheck>
+			<VideoQualityCheck ErrorsNum="10" WarningsNum="2" CriticalAlertsNum="0" InfosNum="1">
+				<VideoQualityCheckErrors>
+					<VideoQualityCheckError id="12" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="501" Message="Freeze frames detected from frame index 500 to 524." JpgImagepath="Image1_2/501.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:50:01" StartTimeCode="09:59:50:00" EndTimeCode="09:59:50:24" StartTimeInMS="20000.00" EndTimeInMS="21000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="13" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="526" Message="Freeze frames detected from frame index 525 to 549." JpgImagepath="Image1_2/526.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:51:01" StartTimeCode="09:59:51:00" EndTimeCode="09:59:51:24" StartTimeInMS="21000.00" EndTimeInMS="22000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="14" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="551" Message="Freeze frames detected from frame index 550 to 574." JpgImagepath="Image1_2/551.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:52:01" StartTimeCode="09:59:52:00" EndTimeCode="09:59:52:24" StartTimeInMS="22000.00" EndTimeInMS="23000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="15" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="576" Message="Freeze frames detected from frame index 575 to 599." JpgImagepath="Image1_2/576.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:53:01" StartTimeCode="09:59:53:00" EndTimeCode="09:59:53:24" StartTimeInMS="23000.00" EndTimeInMS="24000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="16" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="601" Message="Freeze frames detected from frame index 600 to 624." JpgImagepath="Image1_2/601.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:54:01" StartTimeCode="09:59:54:00" EndTimeCode="09:59:54:24" StartTimeInMS="24000.00" EndTimeInMS="25000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="17" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="626" Message="Freeze frames detected from frame index 625 to 649." JpgImagepath="Image1_2/626.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:55:01" StartTimeCode="09:59:55:00" EndTimeCode="09:59:55:24" StartTimeInMS="25000.00" EndTimeInMS="26000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="18" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="651" Message="Freeze frames detected from frame index 650 to 674." JpgImagepath="Image1_2/651.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:56:01" StartTimeCode="09:59:56:00" EndTimeCode="09:59:56:24" StartTimeInMS="26000.00" EndTimeInMS="27000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="19" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="680" Message="Freeze frames detected from frame index 679 to 749." JpgImagepath="Image1_2/680.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:57:05" StartTimeCode="09:59:57:04" EndTimeCode="09:59:59:24" StartTimeInMS="27160.00" EndTimeInMS="30000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="20" AlertType="Framing issue" RuleNumber="9036" GOPNumber="-1" PicIndex="750" Message="Active region detected does not match to the user defined region from frame index 750 to 799." JpgImagepath="Image1_2/750.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="10:00:00:00" StartTimeCode="10:00:00:00" EndTimeCode="10:00:01:24" StartTimeInMS="30000.00" EndTimeInMS="32000.00"></VideoQualityCheckError>
+					<VideoQualityCheckError id="21" AlertType="Freeze frame" RuleNumber="9011" GOPNumber="-1" PicIndex="1268" Message="Freeze frames detected from frame index 1267 to 1391." JpgImagepath="Image1_2/1268.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="10:00:20:18" StartTimeCode="10:00:20:17" EndTimeCode="10:00:25:16" StartTimeInMS="50680.00" EndTimeInMS="55680.00"></VideoQualityCheckError>
+				</VideoQualityCheckErrors>
+				<VideoQualityCheckWarnings>
+					<VideoQualityCheckWarning id="22" AlertType="Color bar" RuleNumber="9010" GOPNumber="-1" PicIndex="0" Message="Color bars detected from frame index 0 to 499." JpgImagepath="Image1_2/0.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:30:00" StartTimeCode="09:59:30:00" EndTimeCode="09:59:49:24" StartTimeInMS="0.00" EndTimeInMS="20000.00"></VideoQualityCheckWarning>
+					<VideoQualityCheckWarning id="23" AlertType="Color bar" RuleNumber="9010" GOPNumber="-1" PicIndex="750" Message="Color bars detected from frame index 750 to 799." JpgImagepath="Image1_2/750.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="10:00:00:00" StartTimeCode="10:00:00:00" EndTimeCode="10:00:01:24" StartTimeInMS="30000.00" EndTimeInMS="32000.00"></VideoQualityCheckWarning>
+				</VideoQualityCheckWarnings>
+				<VideoQualityCheckCriticalAlerts></VideoQualityCheckCriticalAlerts>
+				<VideoQualityCheckInfos>
+					<VideoQualityCheckInfo id="24" AlertType="Slate detection" RuleNumber="9052" GOPNumber="-1" PicIndex="500" Message="Slate Frame detected from frame index 500 to 660." JpgImagepath="Image1_2/500.jpeg" ReportFolderName="1241245550549_/" Show="1" TimeCode="09:59:50:00" StartTimeCode="09:59:50:00" EndTimeCode="09:59:56:10" StartTimeInMS="20000.00" EndTimeInMS="26440.00"></VideoQualityCheckInfo>
+				</VideoQualityCheckInfos>
+			</VideoQualityCheck>
+			<VideoQualityAlertSummary>
+				<VideoQualityAlert Type="Color bar" TotalAlertCount="2" CriticalCount="0" ErrorCount="0" WarningCount="2" InfoCount="0"></VideoQualityAlert>
+				<VideoQualityAlert Type="Freeze frame" TotalAlertCount="9" CriticalCount="0" ErrorCount="9" WarningCount="0" InfoCount="0"></VideoQualityAlert>
+				<VideoQualityAlert Type="Slate detection" TotalAlertCount="1" CriticalCount="0" ErrorCount="0" WarningCount="0" InfoCount="1"></VideoQualityAlert>
+				<VideoQualityAlert Type="Framing issue" TotalAlertCount="1" CriticalCount="0" ErrorCount="1" WarningCount="0" InfoCount="0"></VideoQualityAlert>
+			</VideoQualityAlertSummary>
+			<HDR Type="HLG">
+				<HDRSpecsInfo>
+					<HDRSpecInfo SpecName="1. ARIB STD-B67 Version 2.0 - Parameter Values for the Hybrid Log-Gamma(HLG) High Dynamic Range Television(HDR-TV) System for Programme Production"></HDRSpecInfo>
+				</HDRSpecsInfo>
+			</HDR>
+		</ESVideo>
+		<PlayList IsSubJob="1" ErrorsNum="0" WarningsNum="0" CriticalAlertsNum="0" InfosNum="0">
+			<PlayListErrors ErrorsNum="0"></PlayListErrors>
+			<PlayListWarnings WarningsNum="0"></PlayListWarnings>
+			<PlayListCriticalAlerts CriticalAlertsNum="0"></PlayListCriticalAlerts>
+			<PlayListInfos InfosNum="0"></PlayListInfos>
+		</PlayList>
+	</PulsarReport>
+</PackageMediaReport>

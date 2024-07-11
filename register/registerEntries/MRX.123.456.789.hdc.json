@@ -1,0 +1,11 @@
+{
+    "metarexId": "MRX.123.456.789.hdc",
+    "mediaType": "application/json",
+    "name": "NAB MRX",
+    "description": "A pseudo identity for mxf/mrx files",
+    "timing": "embedded",
+    "treatAs": "text",
+    "mrx": {
+        "specification": ""
+    }
+}

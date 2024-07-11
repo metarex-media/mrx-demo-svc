@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Metarex NAB Demo 07 input schema",
+    "description": "The battery schema for demonstrating percentages and error messages",
+    "type": "object",
+    "properties": {
+      "percentage": {
+        "type": "integer"
+      },
+      "status": {
+        "type": "string",
+        "pattern": "^E[\\w\\d]{3}$"
+      }
+    },
+    "required": [
+      "percentage"
+    ]
+  }

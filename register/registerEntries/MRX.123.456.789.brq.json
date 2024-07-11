@@ -1,0 +1,11 @@
+{
+    "metarexId": "MRX.123.456.789.brq",
+    "mediaType": "application/json",
+    "name": "Level Of Quality",
+    "description": "A level of quality log, describing the contents if a .loq or .yuv file(s)",
+    "timingIs": "clocked",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/demo09schema.json"
+    }
+}

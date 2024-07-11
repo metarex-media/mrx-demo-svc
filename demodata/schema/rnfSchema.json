@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "RNF",
+    "description": "The rnf csv schema that is then used to generate the rnf segments",
+    "type": "object",
+    "properties": {
+        "in": {
+            "type": "integer"
+        },
+        "out": {
+            "type": "integer"
+        },
+        "chapter": {
+            "type": "string"
+        },
+        "storyline-importance": {
+            "type": "string"
+        },
+        "metadataTags": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "in",
+        "out",
+        "chapter",
+        "storyline-importance"
+    ]
+}

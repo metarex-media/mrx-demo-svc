@@ -1,0 +1,237 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "knowledgeItem": {
+            "$ref": "#/$defs/knowledgeItem"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "knowledgeItem"
+    ],
+    "$defs": {
+        "knowledgeItem": {
+            "type": "object",
+            "properties": {
+                "guid": {
+                    "type": "string"
+                },
+                "standard": {
+                    "type": "string"
+                },
+                "standardversion": {
+                    "type": "number"
+                },
+                "conformance": {
+                    "type": "string"
+                },
+                "itemMeta": {
+                    "type": "object",
+                    "properties": {
+                        "itemClass": {
+                            "type": "object",
+                            "additionalProperties": false
+                        },
+                        "provider": {
+                            "type": "object",
+                            "additionalProperties": false
+                        },
+                        "versionCreated": {
+                            "type": "string"
+                        },
+                        "pubStatus": {
+                            "type": "object",
+                            "additionalProperties": false
+                        }
+                    },
+                    "required":["itemClass","provider"],
+                    "additionalProperties": false
+                },
+                "contentMeta": {
+                    "type": "object",
+                    "properties": {
+                        "urgency": {
+                            "type": "integer",
+                            "maximum": 255,
+                            "minimum": 0
+                        },
+                        "contentCreated": {
+                            "type": "string"
+                        },
+                        "contentModified": {
+                            "type": "string"
+                        },
+                        "subject": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "conceptSet": {
+                    "type": "object",
+                    "properties": {
+                        "concept": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "conceptId": {
+                                        "type": "object",
+                                        "additionalProperties": false
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "broader": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    },
+                                    "eventDetails": {
+                                        "type": "object",
+                                        "properties": {
+                                            "dates": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "start": {
+                                                        "type": "string"
+                                                    },
+                                                    "end": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "registration": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "a": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "participationRequirement": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "definition": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "accessStatus": {
+                                                "type": "object",
+                                                "additionalProperties": false
+                                            },
+                                            "organiser": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "organisationDetails": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "founded": {
+                                                                "type": "integer",
+                                                                "maximum": 65535,
+                                                                "minimum": 0
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "contactInfo": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "email": {
+                                                        "type": "string"
+                                                    },
+                                                    "note": {
+                                                        "type": "string"
+                                                    },
+                                                    "web": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "location": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "related": {
+                                                        "type": "object",
+                                                        "additionalProperties": false
+                                                    },
+                                                    "POIDetails": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "contactInfo": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "web": {
+                                                                        "type": "string"
+                                                                    }
+                                                                },
+                                                                "additionalProperties": false
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "participant": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "definition": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "additionalProperties": false
+                                                }
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                },
+                                "required" : ["conceptId"],
+                                "additionalProperties": false
+                            }
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

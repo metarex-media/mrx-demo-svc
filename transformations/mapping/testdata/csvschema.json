@@ -1,0 +1,27 @@
+{
+    "$id": "https://qri.io/schema/",
+    "$comment" : "sample comment",
+    "title": "Person",
+    "type": "object",
+    "properties": { 
+        "in": {
+            "type": "string"
+        },
+        "out": {
+            "type": "string"
+        },
+        "segment": {
+            "description": "job",
+            "type": "string"
+        },
+        "source": {
+            "description": "job",
+            "type": "string"
+        },
+        "metadataTag" : {
+            "description": "job",
+            "type": "string"
+        }
+    },
+    "required": ["in", "out", "segment", "source", "metadataTag"]
+  }

@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "elapsed": {
+            "type": "string"
+        },
+        "in": {
+            "type": "integer"
+        },
+        "out": {
+            "type": "integer"
+        },
+        "chapter": {
+            "type": "string"
+        },
+        "storyline-importance": {
+            "type": "string"
+        },
+        "scene": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": true,
+    "required": [
+        "elapsed",
+        "in",
+        "out",
+        "chapter",
+        "storyline-importance",
+        "scene"
+    ]
+}

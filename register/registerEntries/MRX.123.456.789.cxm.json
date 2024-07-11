@@ -1,0 +1,23 @@
+{
+    "metarexId": "MRX.123.456.789.cxm",
+    "mediaType": "application/xml",
+    "name": "Demo Camera Position",
+    "description": "Example data of camera position as XML.",
+    "timingIs": "clocked",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/demo06output.xsd",
+        "mapping": {
+            "convertTypes": false,
+            "MissedFieldsKey": "",
+            "mappingDefinitions": {
+                "cameraRotation": [
+                    "rotation"
+                ],
+                "intrinsicMatrix": [
+                    "intrinsics"
+                ]
+            }
+        }
+    }
+}

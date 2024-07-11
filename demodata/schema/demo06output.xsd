@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="camera">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  maxOccurs="unbounded" name="cameraItem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="9" maxOccurs="9" name="intrinsicMatrix" type="xs:decimal" />
+              <xs:element name="SceneWidth" type="xs:integer" />
+              <xs:element name="SceneHeight" type="xs:integer" />
+              <xs:element minOccurs="4" maxOccurs="4" name="cameraRotation" type="xs:decimal" />
+              <xs:element minOccurs="3" maxOccurs="3" name="translation" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

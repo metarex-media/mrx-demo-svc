@@ -1,0 +1,22 @@
+{
+    "metarexId": "MRX.123.456.789.vqc",
+    "mediaType": "application/xml",
+    "name": "Venera quality control report",
+    "description": "quality",
+    "timingIs": "embedded",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/Pulsar_Report.xsd",
+        "services": [
+            {
+                "API": "http://localhost:9000/qcToGraph",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "image/png",
+                "description": "A service tha converts venera qc reports to a graphical representation",
+                "serviceID": "tograph"
+            }
+        ]
+    }
+}

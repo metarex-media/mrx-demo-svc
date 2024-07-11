@@ -1,0 +1,45 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name>dpa</name>
+        </copyrightHolder>
+        <copyrightNotice>Copyright 2019, dpa (www.dpa.de). Alle Rechte vorbehalten</copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="urn:newsml:dpa.com:20090101:190510-99-167362"></provider>
+        <versionCreated>2019-05-10T16:02:28+02:00</versionCreated>
+        <pubStatus qcode="stat:usable"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2019-05-10T16:02:28+02:00</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="de"></language>
+        <slugline></slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>Faktencheck Derby-Elfmeter: Hat Schiedsrichter Zwayer recht?</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p></p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

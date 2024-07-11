@@ -1,0 +1,74 @@
+{
+    "bodies": [
+        [
+            {
+                "role": "string",
+                "contenttype": "string",
+                "charcount": 1,
+                "wordcount": 1,
+                "value": "string"
+            }
+        ]
+    ],
+    "outs": [
+        [
+            {
+                "role": "outsstring",
+                "contenttype": "outsstring",
+                "charcount": 10,
+                "wordcount": 10,
+                "value": "outsstring"
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "name": "string",
+            "rel": "string",
+            "uri": "string",
+            "literal": "string",
+            "symbols": [
+                {
+                    "ticker": "string",
+                    "exchange": "string",
+                    "symboltype": "string",
+                    "symbol": "string"
+                }
+            ],
+            "contactinfo": [
+                {
+                    "type": "string",
+                    "role": "string",
+                    "lang": "string",
+                    "name": "string",
+                    "value": "string",
+                    "address": {
+                        "lines": [
+                            "string"
+                        ],
+                        "locality": "string",
+                        "area": "string",
+                        "postalcode": "string",
+                        "country": "string"
+                    }
+                },
+                {
+                    "type": "string",
+                    "role": "string",
+                    "lang": "string",
+                    "name": "string",
+                    "value": "string",
+                    "address": {
+                        "lines": [
+                            "string"
+                        ],
+                        "locality": "string",
+                        "area": "string",
+                        "postalcode": "string",
+                        "country": "string"
+                    }
+                }
+            ]
+        }
+    ]
+}

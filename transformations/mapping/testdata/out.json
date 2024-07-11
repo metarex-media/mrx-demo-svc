@@ -1,0 +1,580 @@
+[
+    {
+        "in": "0",
+        "metadataTag": {
+            "chapter": "logo",
+            "elapsed": "00:00:00",
+            "primary-topic": "intro",
+            "shot": "blender",
+            "storyline-importance": "1",
+            "subject": "titles"
+        },
+        "out": "292",
+        "segment": "logo"
+    },
+    {
+        "in": "292",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:00:11",
+            "primary-topic": "intro",
+            "secondary-topic": "0",
+            "shot": "titles",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "415",
+        "segment": "segment001"
+    },
+    {
+        "in": "415",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:00:16",
+            "primary-topic": "despair",
+            "secondary-topic": "0",
+            "shot": "sheep feet",
+            "storyline-importance": "10",
+            "subject": "first cycle",
+            "suicide": "33",
+            "threat": "33"
+        },
+        "out": "662",
+        "segment": "segment002"
+    },
+    {
+        "in": "662",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:00:26",
+            "primary-topic": "despair",
+            "secondary-topic": "0",
+            "shot": "suicide",
+            "storyline-importance": "8",
+            "subject": "first cycle",
+            "suicide": "100",
+            "threat": "100",
+            "violence": "100"
+        },
+        "out": "1106",
+        "segment": "segment003"
+    },
+    {
+        "in": "1106",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:00:44",
+            "primary-topic": "despair",
+            "secondary-topic": "0",
+            "shot": "main title",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "1397",
+        "segment": "segment004"
+    },
+    {
+        "in": "1397",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:00:55",
+            "primary-topic": "despair",
+            "secondary-topic": "isolation",
+            "shot": "log drag",
+            "storyline-importance": "8",
+            "subject": "first cycle"
+        },
+        "out": "1751",
+        "segment": "segment005"
+    },
+    {
+        "in": "1751",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:01:10",
+            "primary-topic": "despair",
+            "secondary-topic": "loneliness",
+            "shot": "sheep",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "2072",
+        "segment": "segment006"
+    },
+    {
+        "in": "2072",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:01:22",
+            "primary-topic": "despair",
+            "secondary-topic": "struggle",
+            "shot": "struggle",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "2375",
+        "segment": "segment007"
+    },
+    {
+        "in": "2375",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:01:35",
+            "primary-topic": "despair",
+            "secondary-topic": "struggle",
+            "shot": "struggle",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "3170",
+        "segment": "segment008"
+    },
+    {
+        "in": "3170",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:02:06",
+            "primary-topic": "despair",
+            "secondary-topic": "disturbance",
+            "shot": "excuse me",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "3574",
+        "segment": "segment009"
+    },
+    {
+        "in": "3574",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:02:22",
+            "primary-topic": "despair",
+            "secondary-topic": "disturbance",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "4011",
+        "segment": "segment010"
+    },
+    {
+        "in": "4011",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:02:40",
+            "primary-topic": "despair",
+            "secondary-topic": "victor",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "4318",
+        "segment": "segment011"
+    },
+    {
+        "in": "4318",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:02:52",
+            "primary-topic": "despair",
+            "secondary-topic": "victor",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "4557",
+        "segment": "segment012"
+    },
+    {
+        "in": "4557",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:03:02",
+            "primary-topic": "despair",
+            "secondary-topic": "victor",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "4748",
+        "segment": "segment013"
+    },
+    {
+        "in": "4748",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:03:09",
+            "primary-topic": "despair",
+            "secondary-topic": "victor",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "5793",
+        "segment": "segment014"
+    },
+    {
+        "in": "5793",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:03:51",
+            "primary-topic": "despair",
+            "secondary-topic": "one more minute",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "5949",
+        "segment": "segment015"
+    },
+    {
+        "in": "5949",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:03:57",
+            "primary-topic": "despair",
+            "secondary-topic": "won't regret this",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "6688",
+        "segment": "segment016"
+    },
+    {
+        "in": "6688",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:04:27",
+            "primary-topic": "despair",
+            "secondary-topic": "device",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "7080",
+        "segment": "segment017"
+    },
+    {
+        "in": "7080",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:04:43",
+            "primary-topic": "despair",
+            "secondary-topic": "bettter be good",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "7295",
+        "segment": "segment018"
+    },
+    {
+        "in": "7295",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:04:51",
+            "primary-topic": "despair",
+            "secondary-topic": "turn it on",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "7792",
+        "segment": "segment019"
+    },
+    {
+        "in": "7792",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:05:11",
+            "primary-topic": "despair",
+            "secondary-topic": "don't move",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "8100",
+        "segment": "segment020"
+    },
+    {
+        "in": "8100",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:05:24",
+            "primary-topic": "despair",
+            "secondary-topic": "come back",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "8586",
+        "segment": "segment021"
+    },
+    {
+        "in": "8586",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:05:43",
+            "primary-topic": "despair",
+            "secondary-topic": "loading",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "9511",
+        "segment": "segment022"
+    },
+    {
+        "in": "9511",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:06:20",
+            "primary-topic": "despair",
+            "secondary-topic": "cloud",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "9921",
+        "segment": "segment023"
+    },
+    {
+        "in": "9921",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:06:36",
+            "primary-topic": "despair",
+            "secondary-topic": "starting",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "10190",
+        "segment": "segment024"
+    },
+    {
+        "in": "10190",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:06:47",
+            "primary-topic": "despair",
+            "secondary-topic": "lights",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "10765",
+        "segment": "segment025"
+    },
+    {
+        "in": "10765",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:07:10",
+            "primary-topic": "despair",
+            "secondary-topic": "awe",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "10985",
+        "segment": "segment026"
+    },
+    {
+        "in": "10985",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:07:19",
+            "primary-topic": "despair",
+            "secondary-topic": "crowd",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "11301",
+        "segment": "segment027"
+    },
+    {
+        "in": "11301",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:07:32",
+            "primary-topic": "despair",
+            "secondary-topic": "run",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "11590",
+        "segment": "segment028"
+    },
+    {
+        "in": "11590",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:07:43",
+            "primary-topic": "despair",
+            "secondary-topic": "arise",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "11754",
+        "segment": "segment029"
+    },
+    {
+        "in": "11754",
+        "metadataTag": {
+            "chapter": "chapter001",
+            "elapsed": "00:07:50",
+            "primary-topic": "despair",
+            "secondary-topic": "arise",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "11949",
+        "segment": "segment030"
+    },
+    {
+        "in": "11949",
+        "metadataTag": {
+            "chapter": "chapter002",
+            "elapsed": "00:07:57",
+            "primary-topic": "hope",
+            "secondary-topic": "awake",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "12543",
+        "segment": "segment031"
+    },
+    {
+        "in": "12543",
+        "metadataTag": {
+            "chapter": "chapter002",
+            "elapsed": "00:08:21",
+            "primary-topic": "hope",
+            "secondary-topic": "discovery",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "12722",
+        "segment": "segment032"
+    },
+    {
+        "in": "12722",
+        "metadataTag": {
+            "chapter": "chapter002",
+            "elapsed": "00:08:28",
+            "primary-topic": "hope",
+            "secondary-topic": "discovery",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "13028",
+        "segment": "segment033"
+    },
+    {
+        "in": "13028",
+        "metadataTag": {
+            "chapter": "chapter002",
+            "elapsed": "00:08:41",
+            "primary-topic": "hope",
+            "secondary-topic": "discovery",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "13227",
+        "segment": "segment034"
+    },
+    {
+        "in": "13227",
+        "metadataTag": {
+            "chapter": "chapter002",
+            "elapsed": "00:08:49",
+            "primary-topic": "hope",
+            "secondary-topic": "zoom",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "13469",
+        "segment": "segment035"
+    },
+    {
+        "in": "13469",
+        "metadataTag": {
+            "chapter": "chapter003",
+            "elapsed": "00:08:58",
+            "primary-topic": "hope",
+            "secondary-topic": "pan",
+            "shot": "frank",
+            "storyline-importance": "6",
+            "subject": "first cycle"
+        },
+        "out": "13692",
+        "segment": "segment036"
+    },
+    {
+        "in": "13692",
+        "metadataTag": {
+            "chapter": "chapter003",
+            "elapsed": "00:09:07",
+            "primary-topic": "hope",
+            "secondary-topic": "pan",
+            "shot": "frank",
+            "storyline-importance": "10",
+            "subject": "first cycle"
+        },
+        "out": "13891",
+        "segment": "segment037"
+    },
+    {
+        "in": "13891",
+        "metadataTag": {
+            "chapter": "chapter003",
+            "elapsed": "00:09:15",
+            "primary-topic": "hope",
+            "secondary-topic": "pan",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "13954",
+        "segment": "segment038"
+    },
+    {
+        "in": "13954",
+        "metadataTag": {
+            "chapter": "chapter003",
+            "elapsed": "00:09:18",
+            "primary-topic": "hope",
+            "secondary-topic": "cliff hanger",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "14474",
+        "segment": "segment039"
+    },
+    {
+        "in": "14474",
+        "metadataTag": {
+            "chapter": "chapter003",
+            "elapsed": "00:09:38",
+            "primary-topic": "hope",
+            "secondary-topic": "end",
+            "shot": "frank",
+            "storyline-importance": "3",
+            "subject": "first cycle"
+        },
+        "out": "17532",
+        "segment": "segment040"
+    }
+]

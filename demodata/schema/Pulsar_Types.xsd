@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="FileTypes">
+		<xs:annotation>
+			<xs:documentation>File types</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Unknown"/>
+			<xs:enumeration value="TS"/>  
+			<xs:enumeration value="PS"/>
+			<xs:enumeration value="ES"/>
+			<xs:enumeration value="AVI"/>
+      <xs:enumeration value="MP4"/>
+      <xs:enumeration value="3GPP"/>
+      <xs:enumeration value="ISO"/>
+      <xs:enumeration value="MOV"/>
+			<xs:enumeration value="ASF"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="VideoCodecs">
+		<xs:annotation>
+			<xs:documentation>Name of video codecs</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MPEG2 Video"/>
+			<xs:enumeration value="H264"/>
+			<xs:enumeration value="MPEG4 Part-2"/>
+			<xs:enumeration value="H263"/>
+			<xs:enumeration value="VC-1"/>
+		</xs:restriction>
+	</xs:simpleType>
+  <xs:simpleType name="AudioCodecs">
+    <xs:annotation>
+      <xs:documentation>Name of audio codecs</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MPEG2 Layer-1"/>
+      <xs:enumeration value="MPEG2 Layer-2"/>
+      <xs:enumeration value="MPEG2 Layer-3"/>
+      <xs:enumeration value="MPEG2 AAC"/>
+      <xs:enumeration value="MPEG4 AAC"/>
+      <xs:enumeration value="MPEG4 HE-AAC"/>
+      <xs:enumeration value="AC3"/>
+      <xs:enumeration value="DD+"/>
+      <xs:enumeration value="DTS"/>
+      <xs:enumeration value="DTS HD"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="JobStatus">
+    <xs:annotation>
+      <xs:documentation>Audio codec name</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Completed with no error"/>
+      <xs:enumeration value="Completed with errors"/>
+      <xs:enumeration value="User aborted"/>
+      <xs:enumeration value="Application aborted"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="GOPTypeFound">
+    <xs:annotation>
+      <xs:documentation>Gop type found</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Open"/>
+      <xs:enumeration value="Closed"/>
+      <xs:enumeration value="Both"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Profiles">
+    <xs:annotation>
+      <xs:documentation>Gop type found</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Simple Profile"/>
+      <xs:enumeration value="Main Profile"/>
+      <xs:enumeration value="Advanced Profile"/>
+      <xs:enumeration value="High Profile"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Levels">
+    <xs:annotation>
+      <xs:documentation>Gop type found</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Level 1"/>
+      <xs:enumeration value="Level 2"/>
+      <xs:enumeration value="Level 3"/>
+      <xs:enumeration value="Level 4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ColorSpaceTypes">
+    <xs:annotation>
+      <xs:documentation>Gop type found</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="YUV420"/>
+      <xs:enumeration value="YUV411"/>
+      <xs:enumeration value="YUV422"/>
+      <xs:enumeration value="YUV444"/>
+    </xs:restriction>
+  </xs:simpleType> 
+</xs:schema>

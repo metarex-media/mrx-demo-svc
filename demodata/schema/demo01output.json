@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Metarex NAB Demo 01 output schema",
+  "description": "The Schema for the shorthand news item to be written in markdown",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "shortSummary": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "shortSummary",
+    "slug"
+  ]
+}

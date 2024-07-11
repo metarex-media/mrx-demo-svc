@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://w3.org/2001/SMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://w3.org/2001/SMLSchema-instance"/>
+  <xs:include schemaLocation ="./Pulsar_Types.xsd" />
+  <xs:element name="PulsarReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StreamInfo">
+          <xs:complexType>
+            <xs:attribute name="Filepath" type="xs:string" use="required" />
+            <xs:attribute name="FileType" type="FileTypes" use="required" />
+            <xs:attribute name="VideoCodec" type="VideoCodecs" use="optional" />
+            <xs:attribute name="AudioCodec" type="AudioCodecs" use="optional" />
+            <xs:attribute name="Length" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="JobInfo">
+          <xs:complexType>
+            <xs:attribute name="Start" type="xs:dateTime" use="required" />
+            <xs:attribute name="End" type="xs:dateTime" use="required" />
+            <xs:attribute name="Status" type="JobStatus" use="required" />
+            <xs:attribute name="TotalErrors" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="TotalWarnings" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name ="ESVideo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SummaryReport">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="GOPStructure" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="Type" type="GOPTypeFound" use="required" />
+                        <xs:attribute name="MinLength" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="MaxLength" type="xs:unsignedShort" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SequenceInfo">
+                      <xs:complexType>
+                        <xs:attribute name="Profile" type="Profiles" use="required" />
+                        <xs:attribute name="Level" type="Levels" use="required" />
+                        <xs:attribute name="Colorspace" type="ColorSpaceTypes" use="required" />
+                        <xs:attribute name="Colordepth" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="Width" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="Height" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="Framerate" type="xs:decimal" use="optional" />
+                        <xs:attribute name="MaxFrameSize" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="MinFrameSize" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="AspectRatio" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="QuantValue">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Max">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="PicIndex" type="xs:unsignedByte" />
+                              </xs:sequence>
+                              <xs:attribute name="Value" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Min">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="PicIndex" type="xs:unsignedByte" />
+                              </xs:sequence>
+                              <xs:attribute name="Value" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="LumaValue">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Max">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="PicIndex" type="xs:unsignedByte" />
+                              </xs:sequence>
+                              <xs:attribute name="Value" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Min">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="PicIndex" type="xs:unsignedByte" />
+                              </xs:sequence>
+                              <xs:attribute name="Value" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ChromaValue">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Max">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="PicIndex" type="xs:unsignedByte" />
+                              </xs:sequence>
+                              <xs:attribute name="Value" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Min">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="PicIndex" type="xs:unsignedByte" />
+                              </xs:sequence>
+                              <xs:attribute name="Value" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ComplianceCheck">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Errors">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Error">
+                            <xs:complexType>
+                              <xs:attribute name="RuleNumber" type="xs:string" use="required" />
+                              <xs:attribute name="GOPNumber" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="PicIndex" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Message" type="xs:string" use="required" />
+                              <xs:attribute name="JpgImagepath" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Warnings">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Warning">
+                            <xs:complexType>
+                              <xs:attribute name="RuleNumber" type="xs:string" use="required" />
+                              <xs:attribute name="GOPNumber" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="PicIndex" type="xs:unsignedShort" use="required" />
+                              <xs:attribute name="Message" type="xs:string" use="required" />
+                              <xs:attribute name="JpgImagepath" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="ErrorsNum" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="WarningsNum" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="UserDefinedCheck">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Errors" />
+                    <xs:element name="Warnings" />
+                  </xs:sequence>
+                  <xs:attribute name="ErrorsNum" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="WarningsNum" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="QualityCheck">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Errors" />
+                    <xs:element name="Warnings" />
+                  </xs:sequence>
+                  <xs:attribute name="ErrorsNum" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="WarningsNum" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ID" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="Codec" type="VideoCodecs" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

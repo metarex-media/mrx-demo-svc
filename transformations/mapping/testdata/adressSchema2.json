@@ -1,0 +1,82 @@
+{
+    "$id": "https://qri.io/schema/",
+    "$comment": "sample comment",
+    "title": "Person",
+    "type": "object",
+    "properties": {
+        "stringCheck": {
+            "type": "string"
+        },
+        "boolCheck": {
+            "type": "boolean"
+        },
+        "intCheck": {
+            "type": "integer"
+        },
+        "floatCheck": {
+            "type": "number"
+        },
+        "stringArrayCheck": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "integerArrayCheck": {
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "integerArrays": {
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+        }, 
+        "boolArrayCheck": {
+            "type": "array",
+            "items": {
+                "type": "boolean"
+            }
+        }, 
+        "floatArrayCheck": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "float2d": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "objectArrayCheck": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "field1": {
+                        "type": "string"
+                    },
+                    "field2": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "Reversefield1": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Reversefield2": {
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+        }
+    }
+}

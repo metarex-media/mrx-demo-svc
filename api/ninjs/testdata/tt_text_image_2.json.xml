@@ -1,0 +1,48 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name>TT</name>
+        </copyrightHolder>
+        <copyrightNotice></copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="http://tt.se/media/text/210526-militarovning-a0f2d045"></provider>
+        <versionCreated>2021-05-26T13:40:18+02:00</versionCreated>
+        <pubStatus qcode="stat:usable"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2021-05-26T13:40:18+02:00</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="sv"></language>
+        <subject qcode="http://tt.se/spec/subref/1.0/16000000">
+            <name>Krig, konflikter och oroligheter</name>
+        </subject>
+        <slugline>militärövning</slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>Militärövning i jätteformat hålls 2023</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p>Militärövning i jätteformat hålls 2023&#xA;Försvar TT&#xA;Pandemin satte stopp för den stora internationella militärövningen Aurora 2020 förra våren. Redan då sade Försvarsmakten att den skulle genomföras senare och nu står det klart att det blir 2023, rapporterar Sydöstran.&#xA;– Aurora 2023 kommer att genomföras ungefär samma period som Aurora 20 var tänkt, det vill säga i april-maj, med fokus på södra Sverige och Gotland. Men hela landet kommer i olika omfattning att beröras, säger Jonas Svensson, kommunikationschef för Aurora 23, till TT.&#xA;Aurora 20 skulle omfatta 25 000 deltagare från totalt 13 nationer och bli den största svenska försvarsövningen på decennier. Mycket är fortfarande oklart när det gäller Aurora 23 då planeringen pågår just nu, berättar Jonas Svensson.&#xA;– Precis som den gången har vi inlett en dialog med ett antal internationella partners, inte minst Finland. Men det är alldeles för tidigt att säga i vilken omfattning och vilka internationella partners som deltar.</p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

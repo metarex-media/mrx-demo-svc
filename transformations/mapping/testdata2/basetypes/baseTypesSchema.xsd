@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="baseTypes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="string"/>
+                <xs:element type="xs:decimal" name="float"/>
+                <xs:element type="xs:integer" name="integer"/>
+                <xs:element type="xs:boolean" name="bool"/>
+                <xs:element maxOccurs="unbounded" type="xs:string" name="stringArray"/>
+                <xs:element maxOccurs="unbounded" type="xs:integer" name="integerArray"/>
+                <xs:element maxOccurs="unbounded" type="xs:boolean" name="boolArray"/>
+                <xs:element maxOccurs="unbounded" type="xs:decimal" name="floatArray"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute default="http://json-schema.org/draft-04/schema#" name="$schema" type="xs:string"/>
+</xs:schema> 

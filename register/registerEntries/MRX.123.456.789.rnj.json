@@ -1,0 +1,11 @@
+{
+    "metarexId": "MRX.123.456.789.rnj",
+    "mediaType": "application/json",
+    "name": "NAB RNF json",
+    "description": "An input json of tagged media metadata",
+    "timingIs": "embedded",
+    "treatAs": "text",
+    "mrx": {
+        "specification": "http://localhost:8080/schema/demo04rny.json"
+    }
+}

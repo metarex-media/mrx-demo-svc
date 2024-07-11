@@ -1,0 +1,8 @@
+/tmp/*
+gl-mrx-demo-svc
+api/api
+demodata/output.mrx
+vendor/*
+xslxer/*
+**/*.mxf
+libxml/*

@@ -1,0 +1,75 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="" version="11" standard="NewsML-G2" standardversion="2.24">
+    <rightsInfo>
+        <copyrightHolder uri="">
+            <name></name>
+        </copyrightHolder>
+        <copyrightNotice>Copyright 2019 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</copyrightNotice>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass></itemClass>
+        <provider uri="http://api.ap.org/media/v/content/0cc82c1e6d284848bf862fdfae3c43c4?qt=H1Kdh42orF&amp;et=0a3aza9c0"></provider>
+        <versionCreated>2019-11-14T18:50:57Z</versionCreated>
+        <pubStatus qcode="stat:usable"></pubStatus>
+    </itemMeta>
+    <contentMeta>
+        <contentModified>2019-11-14T18:50:57Z</contentModified>
+        <located>
+            <name></name>
+        </located>
+        <creator uri="">
+            <name></name>
+        </creator>
+        <infoSource>
+            <name></name>
+        </infoSource>
+        <language tag="en"></language>
+        <subject>
+            <name>National</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/9c0bd01cd7c84527bad1319c99abb3ea">
+            <name>Bribery, graft and conflicts of interest</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/48612b807c2b4b93bbbacbf54f547ad5">
+            <name>Crime</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/f25af2d07e4e100484f5df092526b43e">
+            <name>General news</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/6e70a850885f10048d0dcb8225d5863e">
+            <name>Military legal affairs</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/3b7438807d7010048477ba7fa5283c3e">
+            <name>Military and defense</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/">
+            <name>Government and politics</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/86aad5207dac100488ecba7fa5283c3e">
+            <name>Political corruption</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/86bc3e287dac1004895dba7fa5283c3e">
+            <name>Political issues</name>
+        </subject>
+        <subject qcode="http://cv.ap.org/id/86c17a007dac1004898fba7fa5283c3e">
+            <name>Impeachments</name>
+        </subject>
+        <slugline>US Pelosi McCarthy (CR)</slugline>
+        <headline></headline>
+    </contentMeta>
+    <contentSet>
+        <inlineXML contenttype="application/nitf+xml">
+            <nitf>
+                <body>
+                    <body.head>
+                        <hedline>
+                            <hl1>House leaders double down on impeachment positions</hl1>
+                        </hedline>
+                    </body.head>
+                    <body.content>
+                        <p></p>
+                    </body.content>
+                </body>
+            </nitf>
+        </inlineXML>
+    </contentSet>
+</newsItem>
