@@ -2,7 +2,7 @@
 # needs secrets.MRX_DOCKER_USR - account username for docker hub
 # needs secrets.MRX_DOCKER_PAT - account access token for docker hub
 # needs    vars.MRX_DOCKER_NS  - account namespace for docker hub e.g. mrmxf
-name: Build Metarex demo service to container
+name: build & push
 
 on:
   # Runs on push to main branch
@@ -14,7 +14,8 @@ on:
 
 # global environment
 env:
-  IMAGE: www-metarex-media
+  # This overrides the values in clogrc/_cfg.sh
+  IMAGE: mrx-demo-svc
   vNODE: 20.15
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -39,17 +40,18 @@ jobs:
           fetch-depth: 0
       -
         name: set the ENV
-        run:  |
-              source clogrc/_cfg.sh
-              echo "building version $vCODE ($bMSG)"
+        run: |
+              echo "Deploying website version ($vCODE) from branch ($BRANCH)"
+              echo "vCODE=$vCODE"     >> $GITHUB_ENV
+              echo "BRANCH=$BRANCH"   >> $GITHUB_ENV
+              echo "PROJECT=$PROJECT" >> $GITHUB_ENV
+              echo "pushing to hub: ${{ vars.MRX_DOCKER_NS  }}/${{ env.IMAGE  }}:$vCODE"
       -
         name: Bark some context vairables
         uses: mrmxf/action-bark@0.2.05
       -
         name: check the ENV
-        run:  |
-              source clogrc/_cfg.sh ;
-              echo "building version $vCODE ($bMSG)"
+        run:  source clogrc/_cfg.sh &&  echo "building version $vCODE ($bMSG)"
       -
         name: Set up Go
         uses: actions/setup-go@v4
@@ -76,16 +78,6 @@ jobs:
         with:
           username: ${{ secrets.MRX_DOCKER_USR }}
           password: ${{ secrets.MRX_DOCKER_PAT }}
-      -
-        name: Message version
-        run: |
-              echo "Deploying website version ($vCODE) from branch ($BRANCH)"
-              echo "vCODE=$vCODE"     >> $GITHUB_ENV
-              echo "BRANCH=$BRANCH"   >> $GITHUB_ENV
-              echo "PROJECT=$PROJECT" >> $GITHUB_ENV
-              echo "pushing to hub: ${{ vars.MRX_DOCKER_NS  }}/$PROJECT:$vCODE"
-              echo "--- Dockerfile -------------------------------------------"
-              cat Dockerfile
       -
         name: Build and push - ARM
         uses: docker/build-push-action@v5

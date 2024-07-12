@@ -13,7 +13,7 @@ export vCodeSrc="releases.yaml"
 # export & assign separately: don't mask errors in $() that crash  cicd jobs
 vCODE=$(cat $vCodeSrc | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
 # vCODEmajor is used in github actions so that only the first major version is needed
-vCODEmajor=$(echo "$vCODE" | grep -oE 'v{0,1}[0-9]+' | head -1)
+# vCODEmajor=$(echo "$vCODE" | grep -oE 'v{0,1}[0-9]+' | head -1)
 bMSG=$(cat $vCodeSrc | grep note | head -1 | sed -nr "s/note: (.*)/\1/p" | xargs)
 export vCODE
 export vCODEmajor
