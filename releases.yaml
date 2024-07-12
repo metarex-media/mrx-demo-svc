@@ -1,5 +1,8 @@
 ---
 history:
+  - version: 0.5.1
+    date: 2024-07-12
+    note: alpha public release (linted)
   - version: 0.5.0
     date: 2024-07-11
     note: alpha public release
