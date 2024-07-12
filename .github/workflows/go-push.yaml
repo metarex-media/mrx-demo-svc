@@ -41,6 +41,7 @@ jobs:
       -
         name: set the ENV
         run: |
+              source clogrc/_cfg.sh
               echo "Deploying website version ($vCODE) from branch ($BRANCH)"
               echo "vCODE=$vCODE"     >> $GITHUB_ENV
               echo "BRANCH=$BRANCH"   >> $GITHUB_ENV
@@ -51,7 +52,8 @@ jobs:
         uses: mrmxf/action-bark@0.2.05
       -
         name: check the ENV
-        run:  source clogrc/_cfg.sh &&  echo "building version $vCODE ($bMSG)"
+        run:  |
+              echo "pushing to hub: ${{ vars.MRX_DOCKER_NS  }}/${{ env.IMAGE  }}:${{ env.vCODE }}"
       -
         name: Set up Go
         uses: actions/setup-go@v4
