@@ -11,8 +11,8 @@
 [ -f clogrc/_cfg.sh ] && source clogrc/_cfg.sh
 
 if [ -n "$(which mga-linter-runner)" ]; then
-  mega-linter-runner
+	mega-linter-runner
 else
-  echo "megalinter not found, install node & docker, then try:"
-  echo "  npm install mega-linter-runner -g"
+	echo "megalinter not found, install node & docker, then try:"
+	echo "  npm install mega-linter-runner -g"
 fi

@@ -21,11 +21,11 @@ git tag -a "$vCODE" HEAD -m "$CommitMSG"
 [ $? -eq 0 ] && fOk "HEAD is now$cW $vCODE$cT ($cS$CommitMSG$cT)$cX"
 git push --delete origin "$vCODE" 2>/dev/null
 if [ -n "$vCODEmajor" ]; then
-  # also tag the major version to this push
-  git tag -d "$vCODEmajor"
-  git tag -a "$vCODEmajor" HEAD -m "$CommitMSG"
-  [ $? -eq 0 ] && fOk "HEAD is now also$cW $vCODEmajor$cT ($cS$CommitMSG$cT)$cX"
-  git push --delete origin "$vCODEmajor" 2>/dev/null
+	# also tag the major version to this push
+	git tag -d "$vCODEmajor"
+	git tag -a "$vCODEmajor" HEAD -m "$CommitMSG"
+	[ $? -eq 0 ] && fOk "HEAD is now also$cW $vCODEmajor$cT ($cS$CommitMSG$cT)$cX"
+	git push --delete origin "$vCODEmajor" 2>/dev/null
 fi
 # push with all tags
 git push origin --follow-tags

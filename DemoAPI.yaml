@@ -1,3 +1,4 @@
+---
 openapi: 3.0.0
 servers:
   - description: SwaggerHub API Auto Mocking
@@ -11,7 +12,7 @@ info:
     email: you@your-company.com
   license:
     name: Apache 2.0
-    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 
 paths:
   /battery:
@@ -27,20 +28,20 @@ paths:
       operationId: batteryToPNG
       description: convert a battery percentage to an image
       responses:
-        '200':
+        "200":
           description: auto elt completed
           content:
             image/png:
               schema:
                 type: string
                 format: binary
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/batteryFormat'
+              $ref: "#/components/schemas/batteryFormat"
         description: battery to PNG
   /batteryStagger:
     post:
@@ -55,20 +56,20 @@ paths:
       operationId: batteryToPNGe
       description: convert a battery percentage to an image
       responses:
-        '200':
+        "200":
           description: auto elt completed
           content:
             image/png:
               schema:
                 type: string
                 format: binary
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/batteryFormat'
+              $ref: "#/components/schemas/batteryFormat"
         description: battery to PNG
   /batteryFault:
     post:
@@ -76,20 +77,20 @@ paths:
       operationId: batteryToJPEG
       description: convert a battery percentage to an image
       responses:
-        '200':
+        "200":
           description: auto elt completed
           content:
             image/jpeg:
               schema:
                 type: string
                 format: binary
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/batteryFormat'
+              $ref: "#/components/schemas/batteryFormat"
         description: battery to JPEG
   /gps:
     post:
@@ -97,7 +98,7 @@ paths:
       operationId: gps
       description: convert gps xml to json
       responses:
-        '200':
+        "200":
           description: auto elt completed
           content:
             application/json:
@@ -105,8 +106,8 @@ paths:
                 type: array
                 items:
                   type: object
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/xml:
@@ -119,19 +120,19 @@ paths:
       operationId: ninjsmd
       description: convert ninjs to markdown
       responses:
-        '200':
+        "200":
           description: auto elt completed
           content:
             application/json:
               schema:
                 type: object
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/json:
             schema:
-                  type: object
+              type: object
         description: json to markdown
   /mxfContents:
     post:
@@ -139,14 +140,14 @@ paths:
       operationId: mxfExtract
       description: extract the header metadata from an MRX file as JSON
       responses:
-        '200':
+        "200":
           description: header extraction completed
           content:
             application/json:
               schema:
                 type: object
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/octet-stream:
@@ -160,19 +161,19 @@ paths:
       operationId: rnffmpeg
       description: extract the metadata from the csv to create the values
       responses:
-        '200':
+        "200":
           description: ffmpeg generated
           content:
             text/plain:
               schema:
                 type: string
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           text/csv:
             schema:
-                type: string
+              type: string
         description: rnf csv format
   /ninjsToNewsml:
     post:
@@ -180,14 +181,14 @@ paths:
       operationId: NinjsToNewsml
       description: manually convert ninjs to ffmpeg
       responses:
-        '200':
+        "200":
           description: newsml generated
           content:
             application/xml:
               schema:
                 type: object
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/json:
@@ -200,14 +201,14 @@ paths:
       operationId: jpeg2c2pa
       description: extract c2pa metadata as a service
       responses:
-        '200':
+        "200":
           description: c2pa metadata extracted
           content:
             application/json:
               schema:
                 type: object
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/octet-stream:
@@ -221,15 +222,15 @@ paths:
       operationId: soundwave
       description: audio to png visualisation
       responses:
-        '200':
+        "200":
           description: image generated
           content:
             image/png:
               schema:
                 type: string
                 format: binary
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           audio/wav:
@@ -243,23 +244,21 @@ paths:
       operationId: tograph
       description: xml to graph visualisation
       responses:
-        '200':
+        "200":
           description: image generated
           content:
             image/png:
               schema:
                 type: string
                 format: binary
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
       requestBody:
         content:
           application/xml:
-              schema:
-                type: object
+            schema:
+              type: object
         description: xml qc report
-
-
 
 components:
   securitySchemes:
