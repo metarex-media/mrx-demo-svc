@@ -18,7 +18,7 @@ func TestQC(t *testing.T) {
 
 		if strings.Contains(f.Name(), ".xml") {
 			b, _ := os.ReadFile("../../demodata/demo05/" + f.Name())
-			genBytes, err := QCBarChart(b)
+			genBytes, err := GenBarChart(b)
 
 			expecBytes, _ := os.ReadFile(fmt.Sprintf("./testdata/%v.png", f.Name()))
 

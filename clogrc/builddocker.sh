@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ## Save all the local projects
 go mod vendor
 # set up multi arch

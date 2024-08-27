@@ -9,7 +9,7 @@ import (
 )
 
 // TestGenJsons generates the jsons to be used by demo 09
-func TestGenJsons(t *testing.T) {
+func TestGenJsons(_ *testing.T) {
 	// mrxsunbath_7680x4320_yuv420p
 	names := []string{"mrxsunbath_7680x4320_yuv420p", "mrxfish_7680x4320_yuv420p", "mrxfire_7680x4320_yuv420p", "mrxroar_7680x4320_yuv420p"}
 	for _, n := range names {

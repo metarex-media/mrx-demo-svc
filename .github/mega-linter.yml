@@ -23,13 +23,16 @@ DISABLE_LINTERS:
   - SPELL_PROSELINT
   - SPELL_MISSPELL
   - SPELL_VALE
+  - YAML_PRETTIER
 DISABLE_ERRORS_LINTERS:
   - PYTHON_BANDIT
   - REPOSITORY_DEVSKIM
   - REPOSITORY_GRYPE
   - REPOSITORY_SEMGREP
   - REPOSITORY_TRUFFLEHOG
-  - SPELL_LYCHEE
+  - SPELL_LYCHEE # lot of the links are demo links which aren't expected to work
+  - COPYPASTE_JSCPD # so many demo files to scour through
+  - SPELL_CSPELL
 PRINT_ALL_FILES: false
 FILTER_REGEX_EXCLUDE: '(\.automation/test|\.automation/generated|\.venv|\.github/workflows|docs/javascripts|docs/overrides|docs/json-schemas|flavors|clj-kondo|TEMPLATES)'
 JSON_JSONLINT_FILTER_REGEX_EXCLUDE: '(\.vscode/)'
@@ -55,6 +58,10 @@ FILEIO_REPORTER: false
 JSON_REPORTER: false
 MARKDOWN_SUMMARY_REPORTER: true
 GITHUB_STATUS_REPORTER: true
+GO_GOLANGCI_LINT_ARGUMENTS: "--timeout=60m"
+GO_REVIVE_CONFIG_FILE: ".github/.revive.toml"
+COPYPASTE_JSCPD_CONFIG_FILE: ".github/.jscpd.json"
+SPELL_CSPELL_CONFIG_FILE: ".github/.cspell.json"
 # PLUGINS:
 #   - https://raw.githubusercontent.com/oxsecurity/megalinter/main/.automation/test/mega-linter-plugin-test/test.megalinter-descriptor.yml
 # PRE_COMMANDS:

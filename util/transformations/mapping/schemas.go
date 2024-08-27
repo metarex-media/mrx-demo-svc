@@ -1,3 +1,5 @@
+// Package mapping is for best guess data transforms, where
+// some sort of mapping has been provided to help fill in the blanks.
 package mapping
 
 import (
@@ -25,15 +27,15 @@ func jsonSchemaExtract(jsonSchema string) (map[string]map[int][]mdProperties, er
 	}
 
 	// fmt.Println(schema)
-	mdPaths := ExtractJsonMetaDatapaths(schema)
+	mdPaths := ExtractJSONMetaDatapaths(schema)
 	return mdPaths, nil
 }
 
-// ExractMDPaths gets all the metadata paths from a json schema.
+// ExtractJSONMetaDatapaths gets all the metadata paths from a json schema.
 // These are flat dotpaths along with their corresponding type.
 // Needs to have all array types implemented
-func ExtractJsonMetaDatapaths(schema map[string]any) map[string]map[int][]mdProperties {
-	s := schemaJson{WholeSchema: schema}
+func ExtractJSONMetaDatapaths(schema map[string]any) map[string]map[int][]mdProperties {
+	s := schemaJSON{WholeSchema: schema}
 	// says any but should only be int, because of type constrains
 	return s.validMDPaths(schema, "", make(map[string]map[int][]mdProperties), []any{}, 0)
 }
@@ -44,8 +46,8 @@ const (
 	schemaType = "type"
 )
 
-// schemaJson is the layout for the schmea to be decoded
-type schemaJson struct {
+// schemaJSON is the layout for the schmea to be decoded
+type schemaJSON struct {
 	// The whole schema,
 	// or at least the segments as it is being
 	// recursed down
@@ -59,7 +61,7 @@ type schemaJson struct {
 // These are flat dotpaths along with their corresponding type.
 // Needs to have arrays implemented
 // path, depth then properties
-func (s *schemaJson) validMDPaths(schema map[string]any, parent string, found map[string]map[int][]mdProperties, dimensions []any, depth int) map[string]map[int][]mdProperties {
+func (s *schemaJSON) validMDPaths(schema map[string]any, parent string, found map[string]map[int][]mdProperties, dimensions []any, depth int) map[string]map[int][]mdProperties {
 
 	// arbitary depth to stop recursion
 	if depth > 10 {
@@ -120,7 +122,7 @@ func (s *schemaJson) validMDPaths(schema map[string]any, parent string, found ma
 		default:
 			// extract the properties recursively from the child
 			// such as array properties
-			found = s.extractProperties(schema, parent, found, dimensions, depth, k, v)
+			found = s.extractProperties(parent, found, dimensions, k, v)
 
 		}
 	}
@@ -130,7 +132,7 @@ func (s *schemaJson) validMDPaths(schema map[string]any, parent string, found ma
 
 // extractProperties sorts if the schema value is an array or object and processes
 // accordingly
-func (s *schemaJson) extractProperties(schema map[string]any, parent string, found map[string]map[int][]mdProperties, dimensions []any, depth int, field string, value any) map[string]map[int][]mdProperties {
+func (s *schemaJSON) extractProperties(parent string, found map[string]map[int][]mdProperties, dimensions []any, field string, value any) map[string]map[int][]mdProperties {
 
 	switch children := value.(type) {
 	case map[string]any:
@@ -195,7 +197,7 @@ func (s *schemaJson) extractProperties(schema map[string]any, parent string, fou
 					switch arrProps := ArrPropertiesValid["items"].(type) {
 					case []any:
 						for _, arrProp := range arrProps {
-							//@ TODO fix the immediate problem of
+							// @ TODO fix the immediate problem of
 							// several items but only one key
 
 							// in case of an array of arrays
@@ -289,7 +291,7 @@ func xmlSchemaExtract(xsdSchema string) (map[string]map[int][]mdProperties, *xML
 	for _, tr := range tree {
 		child := tr.Children
 		for _, c := range child {
-			//fmt.Println(c.Copy().Name.Local, "COPYER")
+			// fmt.Println(c.Copy().Name.Local, "COPYER")
 			if c.Copy().Name.Local == "element" {
 
 				properties := make(map[string]string)
@@ -397,14 +399,14 @@ func (x *xMLEncoderInformation) xmlDataPaths(parentSchema xsd.Schema, root xsd.T
 }
 
 // ExtractReference gets the object at the end of a reference path
-func (s *schemaJson) ExtractReference(path string) map[string]any {
+func (s *schemaJSON) ExtractReference(path string) map[string]any {
 
 	// @TODO include http extraction
 	// return a complete path and update s if at a new location
 	if path[0] == '#' {
 
 		paths := strings.Split(path, "/")
-		//find the end map
+		// find the end map
 		dest := s.WholeSchema
 		// recursively search the map
 		// @TODO add error checking to prevent
@@ -419,7 +421,7 @@ func (s *schemaJson) ExtractReference(path string) map[string]any {
 	return nil
 }
 
-func xmlTypeStringSwitcher(xmlString string, Array bool) string {
+func xmlTypeStringSwitcher(xmlString string, array bool) string {
 	base := ""
 	switch xmlString {
 	case "String":
@@ -434,7 +436,7 @@ func xmlTypeStringSwitcher(xmlString string, Array bool) string {
 		return "any"
 	}
 
-	if Array {
+	if array {
 		return base + "array"
 	}
 

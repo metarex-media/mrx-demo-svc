@@ -56,7 +56,7 @@ deploy:
     - echo "$MRX_DOCKER_PWD" | docker login -u "$MRX_DOCKER_USR" --password-stdin
     - docker info
   script:
-    #create env from upstream dependencies
+    # create env from upstream dependencies
     - source clogrc/_cfg.sh
     - echo "Deploying website version ($vCODE) from branch ($BRANCH)"
 
@@ -65,7 +65,7 @@ deploy:
     - TARGETamd="$MRX_DOCKER_NS/$IMAGE-amd:dev$vCODE"
     - TARGETarm="$MRX_DOCKER_NS/$IMAGE-arm:dev$vCODE"
 
-    #- docker buildx build -t $TARGET --push --platform linux/amd64,linux/arm64,linux/arm/v7 .
+    # - docker buildx build -t $TARGET --push --platform linux/amd64,linux/arm64,linux/arm/v7 .
     - echo "Build & push to $TARGETamd"
     - docker buildx build -t "$TARGETamd" --push --platform linux/amd64 .
     - docker buildx imagetools inspect "$TARGETamd"

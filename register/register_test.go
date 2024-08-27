@@ -10,16 +10,23 @@ import (
 	"gorm.io/gorm"
 )
 
-func TestPrintRegisters(t *testing.T) {
+func TestPrintRegisters(_ *testing.T) {
 	// create a blank file to stop duplication
-	os.Create("registerEntries/register.db")
+	_, err := os.Create("registerEntries/register.db")
+	if err != nil {
+		panic("failed to create database file: " + err.Error())
+	}
+
 	db, err := gorm.Open(sqlite.Open("registerEntries/register.db"), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
 	}
 
 	// Migrate the Metarex schema
-	db.AutoMigrate(&MetarexRegister{})
+	err = db.AutoMigrate(&MetarexRegister{})
+	if err != nil {
+		panic("failed to migrate schema to database: " + err.Error())
+	}
 
 	// Save each register as an individual file
 	for ID, reg := range register {

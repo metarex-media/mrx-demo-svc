@@ -1,4 +1,4 @@
-// package wavdraw converts wave files to images
+// Package wavdraw converts wave files to images
 package wavdraw
 
 import (

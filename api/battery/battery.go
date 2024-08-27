@@ -1,4 +1,4 @@
-// package battery handles all the battery metadata to image transformations
+// Package battery handles all the battery metadata to image transformations
 package battery
 
 import (
@@ -94,14 +94,14 @@ func BatteryToPNGStagger(input []byte, _ ...string) ([]byte, error) {
 	return outputBytes.Bytes(), nil
 }*/
 
-// BatteryToPNG draws a scaled visual representation
+// ToPNG draws a scaled visual representation
 // of the percentage. With different colors for different
 // percent ranges.
 // Red is < 30
 // 30 < yellow < 60
 // green is > 60
 // It returns the png bytes
-func BatteryToPNG(input []byte, _ ...string) ([]byte, error) {
+func ToPNG(input []byte, _ ...string) ([]byte, error) {
 
 	var batt batteryELT
 	err := json.Unmarshal(input, &batt)
@@ -140,9 +140,9 @@ func batteryImage(battery batteryELT) ([]byte, error) {
 
 	var baseColour color.Color
 	switch {
-	case battery.Percentage < 30: //red
+	case battery.Percentage < 30: // red
 		baseColour = color.NRGBA{186, 33, 9, 0xff}
-	case battery.Percentage < 60: //yellow
+	case battery.Percentage < 60: // yellow
 		baseColour = color.NRGBA{194, 166, 73, 0xff}
 	default: // green
 		baseColour = color.NRGBA{145, 182, 69, 0xff}
@@ -160,14 +160,14 @@ func batteryImage(battery batteryELT) ([]byte, error) {
 }
 
 const (
-	//Firecode is the error code for the battery being on fire
+	// Firecode is the error code for the battery being on fire
 	Firecode = "E00F"
 	// Puncturecode is the error code for the battery being punctured
 	Puncturecode = "E00P"
 )
 
-// BatteryFault returns an error image based on the error code.
-func BatteryFault(input []byte, _ ...string) ([]byte, error) {
+// FaultToJPEG returns an error image based on the error code.
+func FaultToJPEG(input []byte, _ ...string) ([]byte, error) {
 
 	var batt batteryELT
 	err := json.Unmarshal(input, &batt)

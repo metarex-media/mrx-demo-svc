@@ -1,4 +1,4 @@
-// package rnf handles the transformations to the RNF metadata and the outputs
+// Package rnf handles the transformations to the RNF metadata and the outputs
 package rnf
 
 import (
@@ -76,9 +76,8 @@ func GenerateFFmpeg(base []byte, destination ...string) ([]byte, error) {
 
 		for _, k := range keys {
 			v := metadata[k]
-			if k == "elapsed" || k == "oute" {
-				// ignore demo metadata
-			} else {
+			// if it is not demo data
+			if k != "elapsed" && k != "oute" {
 				key := strings.Split(k, ".")
 				k = key[len(key)-1]
 				// handle metadata to be formed into part of the rnf name
@@ -153,28 +152,26 @@ func framesToDur(frame, fps int) string {
 
 	hour := frame / hourSize
 	if hour >= 1 {
-		frame = frame - (hour * hourSize)
+		frame -= (hour * hourSize)
 	}
 
 	minute := frame / minuteSize
 	if minute >= 1 {
-		frame = frame - (minute * minuteSize)
+		frame -= (minute * minuteSize)
 	}
 
 	second := frame / fps
 	if second >= 1 {
-		frame = frame - (second * fps)
+		frame -= (second * fps)
 	}
 
 	subSecond := int((float64(frame) - 1) * float64(1000.0/float64(fps)))
 
 	if frame == 0 {
 		return fmt.Sprintf("%02d:%02d:%02d.000", hour, minute, second)
-	} else {
-
-		return fmt.Sprintf("%02d:%02d:%02d.%03d", hour, minute, second, subSecond)
 	}
 
+	return fmt.Sprintf("%02d:%02d:%02d.%03d", hour, minute, second, subSecond)
 }
 
 type inputs struct {
@@ -192,7 +189,7 @@ type clipPropertiesAPI struct {
 	Size          int    `json:"size" yaml:"size"`
 	Framerate     int    `json:"framerate" yaml:"framerate"`
 	Title         string `json:"title" yaml:"title"`
-	OutputFolder  string `json:"OutputFolder" yaml:"OutputFolder"` //output folder is rnf/bbb or springwatch1 etc
+	OutputFolder  string `json:"OutputFolder" yaml:"OutputFolder"` // output folder is rnf/bbb or springwatch1 etc
 	SegmentFolder string
 	SegmentsToGen []int `json:"SegmentsToGen"`
 }
@@ -244,8 +241,8 @@ func ffmpegSegmentScript(key key, clipInfo clipPropertiesAPI, start, end, segmen
 		inputs.InputAudio, starter, durere, fmt.Sprintf(outputAudio, clipInfo.OutputFolder, segment))
 
 	ff2 += fmt.Sprintf("ffmpeg -y -start_number %v -framerate %v -i %s -i %s -frames:v %v -vcodec mpeg4 -r %v -q:v 0 %s \n",
-		start, clipInfo.Framerate, inputs.InputFrames, fmt.Sprintf(outputAudio, clipInfo.SegmentFolder, segment), end, clipInfo.Framerate, fmt.Sprintf(outputVideoTag, clipInfo.OutputFolder, clipInfo.Title, segment, key)) //fmt.Sprintf(outputVid, clipInfo.OutputFolder, segment))
-	//fmt.Println(cmd.Args)
+		start, clipInfo.Framerate, inputs.InputFrames, fmt.Sprintf(outputAudio, clipInfo.SegmentFolder, segment), end, clipInfo.Framerate, fmt.Sprintf(outputVideoTag, clipInfo.OutputFolder, clipInfo.Title, segment, key)) // fmt.Sprintf(outputVid, clipInfo.OutputFolder, segment))
+	// fmt.Println(cmd.Args)
 
 	return ff2, nil
 }

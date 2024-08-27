@@ -1,3 +1,5 @@
+// Package mapping is for best guess data transforms, where
+// some sort of mapping has been provided to help fill in the blanks.
 package mapping
 
 import (
@@ -28,21 +30,21 @@ func jsonEncode(toBuild []map[string]any) ([]byte, error) {
 		}
 
 		return json.Marshal(dest)
-	} else {
-		destArr := make([]map[string]any, len(toBuild))
-		for i, build := range toBuild {
-			dest := make(map[string]any)
-
-			for buildKey, b := range build {
-				path := strings.Split(buildKey, ".")
-				recurseMapBuild(dest, path, b)
-			}
-			destArr[i] = dest
-		}
-
-		return json.MarshalIndent(destArr, "", "    ")
-		// create an array
 	}
+
+	destArr := make([]map[string]any, len(toBuild))
+	for i, build := range toBuild {
+		dest := make(map[string]any)
+
+		for buildKey, b := range build {
+			path := strings.Split(buildKey, ".")
+			recurseMapBuild(dest, path, b)
+		}
+		destArr[i] = dest
+	}
+
+	return json.MarshalIndent(destArr, "", "    ")
+	// create an array
 }
 
 // yamlEncode takes a flat dotpath map and
@@ -58,22 +60,25 @@ func yamlEncode(toBuild []map[string]any) ([]byte, error) {
 			recurseMapBuild(dest, path, b)
 		}
 
-		return yaml.Marshal(dest)
-	} else {
-		destArr := make([]map[string]any, len(toBuild))
-		for i, build := range toBuild {
-			dest := make(map[string]any)
-
-			for buildKey, b := range build {
-				path := strings.Split(buildKey, ".")
-				recurseMapBuild(dest, path, b)
-			}
-			destArr[i] = dest
-		}
-
-		return yaml.Marshal(destArr)
-		// create an array
+		outs, err := yaml.Marshal(dest)
+		return append([]byte("---\n"), outs...), err
 	}
+
+	destArr := make([]map[string]any, len(toBuild))
+	for i, build := range toBuild {
+		dest := make(map[string]any)
+
+		for buildKey, b := range build {
+			path := strings.Split(buildKey, ".")
+			recurseMapBuild(dest, path, b)
+		}
+		destArr[i] = dest
+	}
+
+	outs, err := yaml.Marshal(destArr)
+	return append([]byte("---\n"), outs...), err
+	// create an array
+
 }
 
 func csvEncode(metaDataInput []map[string]any, paths map[string]map[int][]mdProperties) ([]byte, error) {
@@ -98,7 +103,10 @@ func csvEncode(metaDataInput []map[string]any, paths map[string]map[int][]mdProp
 	bwrite := bytes.NewBuffer([]byte{})
 	cwrite := csv.NewWriter(bwrite)
 
-	cwrite.Write(headerOrder)
+	err := cwrite.Write(headerOrder)
+	if err != nil {
+		return nil, err
+	}
 
 	for i, dataLine := range metaDataInput {
 		line := make([]string, len(headerOrder))
@@ -106,7 +114,11 @@ func csvEncode(metaDataInput []map[string]any, paths map[string]map[int][]mdProp
 			line[i] = fmt.Sprintf("%v", dataLine[head])
 
 		}
-		cwrite.Write(line)
+		err := cwrite.Write(line)
+		if err != nil {
+			return nil, err
+		}
+
 		// flush all the values every 100 lines
 		if i%100 == 0 {
 			cwrite.Flush()
@@ -181,7 +193,7 @@ func recurseArrayBuild(body []any, path []string, value any) []any {
 			}
 
 			body[pos] = recurseArrayBuild(body[pos].([]any), path[1:], value)
-		} else { //treat is back as a map 
+		} else { // treat is back as a map
 
 			if body[pos] == nil {
 				body[pos] = make(map[string]any)
@@ -191,7 +203,7 @@ func recurseArrayBuild(body []any, path []string, value any) []any {
 
 		}
 
-		//recurseMapBuild2(arr[pos], path[2:], value)
+		// recurseMapBuild2(arr[pos], path[2:], value)
 	}
 	return body
 }
@@ -242,7 +254,7 @@ func NewMap() *OrderedMap {
 
 // XMLMapEntry is part of the xml encoder structure,
 // it's used for encoding values that are not arrays or maps
-type XmlMapEntry struct {
+type XMLMapEntry struct {
 	XMLName xml.Name
 	Value   any `xml:",chardata"`
 }
@@ -275,11 +287,16 @@ func (o *OrderedMap) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 
 		switch input := v.(type) {
 		case *OrderedMap:
+			var err error
 			if attr, ok := o.attributes[k]; ok {
-				input.MarshalXML(e, xml.StartElement{Name: xml.Name{Local: k}, Attr: attr})
+				err = input.MarshalXML(e, xml.StartElement{Name: xml.Name{Local: k}, Attr: attr})
 			} else {
-				input.MarshalXML(e, xml.StartElement{Name: xml.Name{Local: k}})
+				err = input.MarshalXML(e, xml.StartElement{Name: xml.Name{Local: k}})
 			}
+			if err != nil {
+				return err
+			}
+
 		case []any:
 
 			inputArray := XMLArray(input)
@@ -301,7 +318,7 @@ func (o *OrderedMap) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 			arrEncoder(e, input, k)
 
 		default:
-			e.Encode(XmlMapEntry{XMLName: xml.Name{Local: k}, Value: v})
+			e.Encode(XMLMapEntry{XMLName: xml.Name{Local: k}, Value: v})
 		}
 	}
 	if !reflect.DeepEqual(start, xml.StartElement{Name: xml.Name{Local: "OrderedMap"}}) {
@@ -314,22 +331,22 @@ func (o *OrderedMap) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 // encodes an Array of any type, to be used for when type != any ironically.
 func arrEncoder[T any](e *xml.Encoder, input []T, k string) {
 	for _, v := range input {
-		e.Encode(XmlMapEntry{XMLName: xml.Name{Local: k}, Value: v})
+		e.Encode(XMLMapEntry{XMLName: xml.Name{Local: k}, Value: v})
 	}
 }
 
-// XML Array  implements a XML encoder
+// XMLArray  implements a XML encoder
 // it's used in conjunction with the ordered map
 type XMLArray []any
 
 // MarshalXML marshals the map to XML, with each key in the map being a
 // tag and it's corresponding value being it's contents.
-func (A XMLArray) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
-	if len(A) == 0 {
+func (xa XMLArray) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
+	if len(xa) == 0 {
 		return nil
 	}
 
-	for _, v := range A {
+	for _, v := range xa {
 		switch input := v.(type) {
 		case *OrderedMap:
 			input.MarshalXML(e, start)
@@ -340,7 +357,11 @@ func (A XMLArray) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 			if err != nil {
 				return err
 			}
-			inputArray.MarshalXML(e, start)
+
+			err = inputArray.MarshalXML(e, start)
+			if err != nil {
+				return err
+			}
 		/*
 			create an xml marshall array for arrays
 		*/
@@ -350,7 +371,7 @@ func (A XMLArray) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 			}
 		*/
 		default:
-			e.Encode(XmlMapEntry{XMLName: start.Name, Value: v})
+			e.Encode(XMLMapEntry{XMLName: start.Name, Value: v})
 		}
 	}
 
@@ -420,7 +441,7 @@ func xmlBuild(toBuild []map[string]any, xmlProperties xMLEncoderInformation) ([]
 	for _, buildKey := range orderKeys {
 		path := strings.Split(buildKey.path, ".")
 		val := toBuild[0][buildKey.path]
-		//fmt.Println(path)
+		// fmt.Println(path)
 		recurseMapBuildOrder(dest, path, val, buildKey.attribute)
 	}
 
@@ -429,9 +450,9 @@ func xmlBuild(toBuild []map[string]any, xmlProperties xMLEncoderInformation) ([]
 	// group attriubtes by parent string.
 	// create the array then assign
 
-	//fmt.Println(dest.m["knowledgeItem"].(*OrderedMap).m["conceptSet"])
+	// fmt.Println(dest.m["knowledgeItem"].(*OrderedMap).m["conceptSet"])
 
-	//fmt.Println(string(b))
+	// fmt.Println(string(b))
 	return xml.MarshalIndent(dest, "", "    ")
 }
 
@@ -502,7 +523,7 @@ func recurseArrayBuildOrder(body []any, path []string, value any, attribute bool
 			}
 
 			body[pos] = recurseArrayBuildOrder(body[pos].([]any), path[1:], value, attribute)
-		} else { //treat is back as a map
+		} else { // treat is back as a map
 
 			if body[pos] == nil {
 				body[pos] = NewMap()
@@ -512,7 +533,7 @@ func recurseArrayBuildOrder(body []any, path []string, value any, attribute bool
 
 		}
 
-		//recurseMapBuild2(arr[pos], path[2:], value)
+		// recurseMapBuild2(arr[pos], path[2:], value)
 	}
 	return body
 }

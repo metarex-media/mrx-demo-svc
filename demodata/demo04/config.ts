@@ -12,9 +12,9 @@ export const fetchList = [
 ]
 
 export const regCache:MrxRegisterCache = [
+{mrxId: "MRX.123.456.789.rny", reg: rny},
 {mrxId: "MRX.123.456.789.rnc", reg: rnc},
 {mrxId: "MRX.123.456.789.rnj", reg: rnj},
-{mrxId: "MRX.123.456.789.rny", reg: rny},
 ]
 
 export const dataCache = [

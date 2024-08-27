@@ -1,10 +1,12 @@
+// Package mapping is for best guess data transforms, where
+// some sort of mapping has been provided to help fill in the blanks.
 package mapping
 
 import (
 	"strconv"
 )
 
-// converts any number to an integer, including floats with truncations
+// AnyToInt converts any number to an integer, including floats with truncations
 // Non numbers are returned as 0
 func AnyToInt(in any) int {
 	switch dint := in.(type) {
@@ -36,7 +38,7 @@ func AnyToInt(in any) int {
 
 }
 
-// convert an any to a float. Non numbers are returned as 0
+// AnyToFloat64 converts an any to a float. Non numbers are returned as 0
 func AnyToFloat64(in any) float64 {
 
 	switch float := in.(type) {
