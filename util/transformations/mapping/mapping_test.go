@@ -133,7 +133,7 @@ func TestBaseTypes(t *testing.T) {
 		outBytes, err := t2.Transform(inBytes, nil)
 
 		fbase, errExpec := os.ReadFile(fmt.Sprintf("./testdata2/objects/%vout.json", in))
-		//fmt.Println(err)
+		// fmt.Println(err)
 		got := sha256.New()
 		got.Write(outBytes)
 		expected := sha256.New()
@@ -253,7 +253,7 @@ func TestOutput(t *testing.T) {
 		outBytes, err := t2.Transform(inBytes, nil)
 
 		fbase, errExpec := os.ReadFile(fmt.Sprintf("./testdata2/basetypes/allin.%v", ty))
-		//fmt.Println(err)
+		// fmt.Println(err)
 		got := sha256.New()
 		got.Write(outBytes)
 		expected := sha256.New()
