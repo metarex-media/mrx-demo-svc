@@ -1,3 +1,4 @@
+// Package main sets up the register transformations
 package main
 
 import (
@@ -8,17 +9,16 @@ import (
 	"net/http"
 	"os/exec"
 
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
-	"github.com/metarex-media/mrx-demo-handlers/mrxhandle/mrxlog"
-	"github.com/metarex-media/mrx-demo-handlers/mrxhandle/mrxlog/utils"
-	"github.com/metarex-media/mrx-demo-svc/transformations"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
+	"github.com/metarex-media/mrx-demo-svc/util/mrxlog"
+	"github.com/metarex-media/mrx-demo-svc/util/transformations"
 )
 
 func init() {
 	// set up logging
 	// utils.JSON(&slog.HandlerOptions{AddSource: true, Level: slog.LevelDebug}, "./tmp/")
-	utils.ColourConsole(&slog.HandlerOptions{AddSource: true, Level: slog.LevelDebug})
+	mrxlog.ColourConsole(&slog.HandlerOptions{AddSource: true, Level: slog.LevelDebug})
 
 	// set the flags
 	//	transformFlags()
@@ -117,16 +117,16 @@ func main() {
 			err := encode.EncodeSingleDataStream(f, in, demoConfig)
 			fmt.Println(err)*/
 
-	//rootCmd.SetUsageTemplate("empty" + rootCmd.UsageTemplate())
+	// rootCmd.SetUsageTemplate("empty" + rootCmd.UsageTemplate())
 
 	// rootCmd.DebugFlags()
-	//cobra.CheckErr(rootCmd.Execute())
+	// cobra.CheckErr(rootCmd.Execute())
 	// inOut(dataSender{}, "./demodata/xyzDemo.mrx", "MRX.123.456.789.mph")
 	// inOut(dataSender{}, "./demodata/xyzDemo.mrx", "MRX.123.456.789.vel")
 }
 
 func test(c echo.Context) error {
-	//go clean -testcache
+	// go clean -testcache
 	cmd := exec.Command("go", "clean", "-testcache")
 
 	_, err := cmd.Output()
@@ -149,7 +149,7 @@ func test(c echo.Context) error {
 		return c.Blob(http.StatusBadRequest, echo.MIMETextPlain, clean)
 	}
 
-	//fmt.Println(string(testRes))
+	// fmt.Println(string(testRes))
 	return c.Blob(http.StatusOK, echo.MIMETextPlain, clean)
 }
 
@@ -246,15 +246,19 @@ func autoELT(c echo.Context) error {
 			}
 		}
 
+		var pass bool
 		// if success save the data and move on
 		if err == nil {
 			bodyBytes = outputData
 			ActionHistory = ActionHistory.PushChild(*mrxlog.NewMRX(outputID))
 			ActionHistory.LogInfo(fmt.Sprintf("Register path %v succesfully converted %v to %v", i, name, outputID))
-			break
-		} else {
+			pass = true
+		}
+
+		if !pass {
 			return c.JSON(http.StatusBadRequest, err.Error())
 		}
+
 	}
 
 	return c.Blob(http.StatusOK, dataActions.OutputFormat, bodyBytes)

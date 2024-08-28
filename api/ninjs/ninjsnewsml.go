@@ -1,3 +1,4 @@
+// Package ninjs handles all news metadata and their transformations, such as ninjs and newsml
 package ninjs
 
 import (
@@ -10,8 +11,8 @@ const (
 	timeFormat = "2006-01-02T15:04:05Z"
 )
 
-// NinjsToNewsMl converts a ninjs byte stream to a newsml []byte stream
-func NinjsToNewsml(input []byte, _ ...string) ([]byte, error) {
+// ToNewsMl converts a ninjs byte stream to a newsml []byte stream
+func ToNewsMl(input []byte, _ ...string) ([]byte, error) {
 
 	var newItem NinJS
 	err := json.Unmarshal(input, &newItem)
@@ -113,8 +114,8 @@ func NinjsToNewsml(input []byte, _ ...string) ([]byte, error) {
 type NewsItem struct {
 	XMLName         xml.Name    `xml:"newsItem"`
 	Text            string      `xml:",chardata"`
-	Xmlns           string      `xml:"xmlns,attr"` //"http://iptc.org/std/nar/2006-10-01/"
-	Guid            string      `xml:"guid,attr"`
+	Xmlns           string      `xml:"xmlns,attr"` // "http://iptc.org/std/nar/2006-10-01/"
+	GUID            string      `xml:"guid,attr"`
 	Version         string      `xml:"version,attr"`
 	Standard        string      `xml:"standard,attr"`
 	Standardversion string      `xml:"standardversion,attr"`
@@ -124,39 +125,39 @@ type NewsItem struct {
 	ContentSet      ContentSet  `xml:"contentSet"`
 }
 
-// Newsml ContentSet
+// ContentSet field of NewsML
 type ContentSet struct {
 	Text      string `xml:",chardata"`
 	InlineXML Inline `xml:"inlineXML"`
 }
 
-// Newsml Inline
+// Inline field of NewsML
 type Inline struct {
 	Text        string `xml:",chardata"`
 	Contenttype string `xml:"contenttype,attr"`
 	Nitf        Nitf   `xml:"nitf"`
 }
 
-// Newsml Nitf
+// Nitf field of NewsML
 type Nitf struct {
 	Text string   `xml:",chardata"`
 	Body []Bodies `xml:"body"`
 }
 
-// Newsml Bodies
+// Bodies field of NewsML
 type Bodies struct {
 	Text        string  `xml:",chardata"`
 	BodyHead    Head    `xml:"body.head"`
 	BodyContent Content `xml:"body.content"`
 }
 
-// Newsml Content
+// Content field of NewsML
 type Content struct {
 	Text string   `xml:",chardata"`
 	P    []string `xml:"p"`
 }
 
-// Newsml Head
+// Head field of NewsML
 type Head struct {
 	Text    string  `xml:",chardata"`
 	Hedline Hedline `xml:"hedline"`
@@ -166,13 +167,13 @@ type Head struct {
 	} `xml:"byline"`*/
 }
 
-// Newsml Hedline
+// Hedline field of NewsML
 type Hedline struct {
 	Text string `xml:",chardata"`
 	Hl1  string `xml:"hl1"`
 }
 
-// Newsml Contentmeta
+// Contentmeta field of NewsML
 type Contentmeta struct {
 	Text            string     `xml:",chardata"`
 	ContentCreated  string     `xml:"contentCreated,omitempty"`
@@ -186,48 +187,48 @@ type Contentmeta struct {
 	Headline        string     `xml:"headline"`
 }
 
-// Newsml Subject
+// Subject field of NewsML
 type Subject struct {
 	Text  string `xml:",chardata"`
 	Qcode string `xml:"qcode,attr,omitempty"`
 	Name  string `xml:"name"`
 }
 
-// Newsml Lang
+// Lang field of NewsML
 type Lang struct {
 	Text string `xml:",chardata"`
 	Tag  string `xml:"tag,attr"`
 }
 
-// Newsml InfoSource
+// InfoSource field of NewsML
 type InfoSource struct {
 	Text  string `xml:",chardata"`
 	Qcode string `xml:"qcode,attr,omitempty"`
 	Name  string `xml:"name"`
 }
 
-// NewsML Creator
+// Creator field of NewsML
 type Creator struct {
 	Text string `xml:",chardata"`
 	URI  string `xml:"uri,attr"`
 	Name string `xml:"name"`
 }
 
-// Newsml Located
+// Located field of NewsML
 type Located struct {
 	Text  string `xml:",chardata"`
 	Qcode string `xml:"qcode,attr,omitempty"`
 	Name  string `xml:"name"`
 }
 
-// Newsml RightInfo
+// RightsInfo field of NewsML
 type RightsInfo struct {
 	Text            string    `xml:",chardata"`
 	CopyrightHolder copyright `xml:"copyrightHolder"`
 	CopyrightNotice string    `xml:"copyrightNotice"`
 }
 
-// Newsml ItemMeta
+// ItemMeta field of NewsML
 type itemMeta struct {
 	Text           string    `xml:",chardata"`
 	ItemClass      ItemClass `xml:"itemClass"`
@@ -236,25 +237,25 @@ type itemMeta struct {
 	PubStatus      PubStatus `xml:"pubStatus"`
 }
 
-// Newsml ItemClass
+// ItemClass field of NewsML
 type ItemClass struct {
 	Text  string `xml:",chardata"`
 	Qcode string `xml:"qcode,attr,omitempty"`
 }
 
-// Newsml Provider
+// Provider field of NewsML
 type Provider struct {
 	Text string `xml:",chardata"`
 	URI  string `xml:"uri,attr"`
 }
 
-// Newsml PubStatus
+// PubStatus field of NewsML
 type PubStatus struct {
 	Text  string `xml:",chardata"`
 	Qcode string `xml:"qcode,attr,omitempty"`
 }
 
-// Newsml Copyright
+// Copyright field of NewsML
 type copyright struct {
 	Text string `xml:",chardata"`
 	URI  string `xml:"uri,attr"`

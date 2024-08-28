@@ -1,10 +1,10 @@
-// package register is the local version of the metarex register (metarex.media/ui/reg)
+// Package register is the local version of the metarex register (metarex.media/ui/reg)
 package register
 
 import (
 	"encoding/json"
 
-	"github.com/metarex-media/mrx-demo-svc/transformations/mapping"
+	"github.com/metarex-media/mrx-demo-svc/util/transformations/mapping"
 
 	"gorm.io/gorm"
 )
@@ -28,7 +28,7 @@ type MetarexReg struct {
 // and the information about the specification
 type Mrx struct {
 	Spec     string           `json:"specification"`
-	Mapping  *mapping.Mapping `json:"mapping,omitempty"`
+	Mapping  *mapping.Options `json:"mapping,omitempty"`
 	Services []Services       `json:"services,omitempty"`
 	Schema   []string         `json:"schema,omitempty"`
 }
@@ -58,6 +58,8 @@ var (
 	register map[string]MetarexReg
 )
 
+// MetarexRegister is the SQL databse entry for
+// a metarex id.
 type MetarexRegister struct {
 	gorm.Model
 	MRXID   string `gorm:"column:MRXID"`

@@ -17,6 +17,8 @@ info:
 paths:
   /battery:
     post:
+      tags:
+        - public
       parameters:
         - in: query
           name: serviceID
@@ -45,6 +47,8 @@ paths:
         description: battery to PNG
   /batteryStagger:
     post:
+      tags:
+        - public
       parameters:
         - in: query
           name: serviceID
@@ -73,6 +77,8 @@ paths:
         description: battery to PNG
   /batteryFault:
     post:
+      tags:
+        - public
       summary: convert a battery percentage to an image
       operationId: batteryToJPEG
       description: convert a battery percentage to an image
@@ -94,6 +100,8 @@ paths:
         description: battery to JPEG
   /gps:
     post:
+      tags:
+        - public
       summary: convert gps xml to json
       operationId: gps
       description: convert gps xml to json
@@ -104,6 +112,7 @@ paths:
             application/json:
               schema:
                 type: array
+                maxItems: 1000000
                 items:
                   type: object
         "400":
@@ -116,6 +125,8 @@ paths:
         description: xml to json
   /ninjsToMD:
     post:
+      tags:
+        - public
       summary: convert ninjs to markdown
       operationId: ninjsmd
       description: convert ninjs to markdown
@@ -136,6 +147,8 @@ paths:
         description: json to markdown
   /mxfContents:
     post:
+      tags:
+        - public
       summary: extract the header metadata from an MRX file
       operationId: mxfExtract
       description: extract the header metadata from an MRX file as JSON
@@ -157,6 +170,8 @@ paths:
         description: MXF file
   /ffmpeg:
     post:
+      tags:
+        - public
       summary: rnf csv to the ffmpeg actions that created it
       operationId: rnffmpeg
       description: extract the metadata from the csv to create the values
@@ -177,6 +192,8 @@ paths:
         description: rnf csv format
   /ninjsToNewsml:
     post:
+      tags:
+        - public
       summary: ninjs to Newsml
       operationId: NinjsToNewsml
       description: manually convert ninjs to ffmpeg
@@ -197,6 +214,8 @@ paths:
         description: ninjs
   /C2PAExtract:
     post:
+      tags:
+        - public
       summary: jpeg c2pa extraction
       operationId: jpeg2c2pa
       description: extract c2pa metadata as a service
@@ -218,6 +237,8 @@ paths:
         description: wav sound file
   /waveform:
     post:
+      tags:
+        - public
       summary: audio to png visualisation
       operationId: soundwave
       description: audio to png visualisation
@@ -240,6 +261,8 @@ paths:
         description: jpeg image
   /qcToGraph:
     post:
+      tags:
+        - public
       summary: xml to png graph visualisation
       operationId: tograph
       description: xml to graph visualisation
@@ -260,12 +283,8 @@ paths:
               type: object
         description: xml qc report
 
-components:
-  securitySchemes:
-    BasicAuth:
-      type: http
-      scheme: basic
 
+components:
   schemas:
     batteryFormat:
       type: object
@@ -277,3 +296,17 @@ components:
           maximum: 100
         status:
           type: string
+
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://example.com/oauth/authorize
+          tokenUrl: https://example.com/oauth/token
+          scopes:
+            read: Grants read access
+            write: Grants write access
+security:
+  - OAuth2:
+      - write

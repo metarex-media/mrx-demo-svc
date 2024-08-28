@@ -1,4 +1,4 @@
-// package ninjs handles all news metadata and their transformations, such as ninjs and newsml
+// Package ninjs handles all news metadata and their transformations, such as ninjs and newsml
 package ninjs
 
 import (
@@ -7,9 +7,9 @@ import (
 
 // https://github.com/iptc/newsinjson/tree/main/examples - ninjs example data here
 
-// NinJSToMD takes a ninjs file and translates it to a json format that
+// ToMD takes a ninjs file and translates it to a json format that
 // can be used to write markdown files.
-func NinJSToMD(ninput []byte, _ ...string) ([]byte, error) {
+func ToMD(ninput []byte, _ ...string) ([]byte, error) {
 
 	var ninjs NinJS
 	err := json.Unmarshal(ninput, &ninjs)
@@ -89,7 +89,7 @@ type NinJS struct {
 	Subjects           []Subjects     `json:"subjects"`
 }
 
-// Ninjs Subjects
+// Subjects are the ninjs subjects
 type Subjects struct {
 	Literal    string `json:"literal"`
 	Name       string `json:"name"`
@@ -100,13 +100,13 @@ type Subjects struct {
 	Confidence int    `json:"confidence"`
 }
 
-// Ninjs Headline
+// Headline for ninjs
 type Headline struct {
 	Role  string `json:"role"`
 	Value string `json:"value"`
 }
 
-// Ninjs Body
+// Body of ninjs
 type Body struct {
 	Role        string `json:"role"`
 	Charcount   int    `json:"charcount"`
@@ -114,33 +114,33 @@ type Body struct {
 	Value       string `json:"value"`
 }
 
-// Ninjs Description
+// Description for ninjs
 type Description struct {
 	Role  string `json:"role"`
 	Value string `json:"value"`
 }
 
-// NinJs AltID
+// AltID for the ninjs segment
 type AltID struct {
 	Role  string `json:"role"`
 	Value string `json:"value"`
 }
 
-// Ninjs Genre
+// Genre field of the ninjs object
 type Genre struct {
 	Literal string `json:"literal"`
 	URI     string `json:"uri"`
 	Name    string `json:"name"`
 }
 
-// Ninjs EventDetails
+// EventDetails field of the ninjs object
 type EventDetails struct {
 	Eventstatus string    `json:"eventstatus"`
 	Dates       Dates     `json:"dates"`
 	Organiser   Organiser `json:"organiser"`
 }
 
-// Ninjs Organiser
+// Organiser field of the ninjs object
 type Organiser struct {
 	Name    string    `json:"name"`
 	Rel     string    `json:"rel"`
@@ -149,7 +149,7 @@ type Organiser struct {
 	Symbols []Symbols `json:"symbols"`
 }
 
-// Ninjs Symbols
+// Symbols field of the ninjs object
 type Symbols struct {
 	Ticker     string `json:"ticker"`
 	Exchange   string `json:"exchange"`
@@ -157,7 +157,7 @@ type Symbols struct {
 	Symbol     string `json:"symbol"`
 }
 
-// Ninjs Dates
+// Dates field of the ninjs object
 type Dates struct {
 	Startdate string `json:"startdate"`
 	Enddate   string `json:"enddate"`

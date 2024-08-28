@@ -1,10 +1,9 @@
-// package mapping is for best guess data transforms, where
+// Package mapping is for best guess data transforms, where
 // some sort of mapping has been provided to help fill in the blanks.
 package mapping
 
 import (
 	"encoding/json"
-	"encoding/xml"
 	"fmt"
 	"io"
 	"math"
@@ -17,9 +16,9 @@ import (
 	"strings"
 )
 
-// Mapping is the json layout for the mapping information
+// Options is the json layout for the mapping information
 // in the Metarex register.
-type Mapping struct {
+type Options struct {
 	// Are types converted - yet to be implemented
 	ConvertTypes bool `json:"convertTypes"`
 	// The key to store missed fields.
@@ -30,16 +29,16 @@ type Mapping struct {
 	// MaxDepth may also be required
 }
 
-// MappingAction contains all the information for the
+// Action contains all the information for the
 // mapping metadata from one type to another action.
-type MappingAction struct {
+type Action struct {
 	// The location of the output schema
 	OutputSchema string
 	// Any other useful information
 	MrxID                     string
 	InputFormat, OutputFormat string // data Types
 	InputTiming               string // how to process the data generically - embedded or clocked
-	Mapping                   Mapping
+	Mapping                   Options
 }
 
 // mdProperties gives the information about a target field
@@ -55,12 +54,12 @@ type mdProperties struct {
 }
 
 // ActionType describes the mapping's action for logging
-func (m *MappingAction) ActionType() string {
+func (m *Action) ActionType() string {
 	return fmt.Sprintf("mapping to %v", m.MrxID)
 }
 
 // DataID gives the metarex ID of the data being transformed
-func (m *MappingAction) DataID() string {
+func (m *Action) DataID() string {
 	return m.MrxID
 }
 
@@ -92,7 +91,7 @@ Default transformations type:
   - single values are appended to an array, of same type.
   - arrays types follow the same rules as the single values. e.g. floats are floor() into an integer array.
 */
-func (m *MappingAction) Transform(input []byte, _ url.Values) ([]byte, error) {
+func (m *Action) Transform(input []byte, _ url.Values) ([]byte, error) {
 
 	// convert each data point at a time
 
@@ -143,7 +142,7 @@ func (m *MappingAction) Transform(input []byte, _ url.Values) ([]byte, error) {
 
 		// check that required properties all have values
 		// @todo include for json schemas as well
-		//if xmlProperties != nil {
+		// if xmlProperties != nil {
 		translatedData[j] = requiredPropertiesCheck(mdPaths, translatedData[j])
 
 		if xmlProperties != nil {
@@ -284,7 +283,7 @@ func dataTranslate(source map[string]any, destination map[string]map[int][]mdPro
 		if ok {
 
 			//	find the closest path that matches the field
-			props = fieldPathMatch(fullfield, paths) //paths[0]
+			props = fieldPathMatch(fullfield, paths) // paths[0]
 			//	fmt.Println(props, "PROPS")
 		}
 
@@ -324,7 +323,7 @@ func dataTranslate(source map[string]any, destination map[string]map[int][]mdPro
 		}
 
 		// if properties are found apply them
-		if !reflect.DeepEqual(props, mdProperties{}) { //(props != mdProperties{}) {
+		if !reflect.DeepEqual(props, mdProperties{}) { // (props != mdProperties{}) {
 			fullpath := props.fullpath
 
 			// build the arrays
@@ -411,7 +410,7 @@ func fieldPathMatch(path string, choices []mdProperties) mdProperties {
 			}
 			// @TODO update by having string lowercase and measuring the distance between them
 			if choice.fullpath[i] != char {
-				compareScore += 1
+				compareScore++
 			}
 		}
 
@@ -439,7 +438,7 @@ func buildNDimensionalData(destination map[string]any, data any, props mdPropert
 	// @TODO add more ways to traverse through the multidimensional objects
 	case []any:
 
-		//get length
+		// get length
 		dataDimension := 1
 		if len(da) > 1 {
 			depth := true
@@ -454,7 +453,7 @@ func buildNDimensionalData(destination map[string]any, data any, props mdPropert
 				}
 			}
 		}
-		//only place the array if the target is an array
+		// only place the array if the target is an array
 		if dataDimension == 1 && strings.Contains(props.dataType, "array") {
 			dataAssign(da, props, destination, fmt.Sprintf(props.fullpath, props.dimension...))
 		} else {
@@ -506,7 +505,7 @@ func dataAssign(data any, props mdProperties, transformedData map[string]any, fu
 		switch b := data.(type) {
 		case bool:
 			transformedData[fullpath] = b
-		//case reflect.String:
+		// case reflect.String:
 		//	data.
 		case string:
 			if strings.ToLower(b) == "true" {
@@ -520,8 +519,8 @@ func dataAssign(data any, props mdProperties, transformedData map[string]any, fu
 		dataArr := data.([]any)
 		boolArr := make([]bool, len(dataArr))
 		for i, d := range dataArr {
-			switch boo := d.(type) {
-			case bool:
+			if boo, ok := d.(bool); ok {
+
 				boolArr[i] = boo
 			}
 		}
@@ -537,7 +536,7 @@ func dataAssign(data any, props mdProperties, transformedData map[string]any, fu
 
 		//	check if its an array or individual to add to the array
 		out, outOk := transformedData[fullpath]
-		if !outOk { //create a base
+		if !outOk { // create a base
 			out = []string{}
 		}
 
@@ -616,9 +615,10 @@ func dataAssign(data any, props mdProperties, transformedData map[string]any, fu
 // the xml otuput
 type xMLEncoderInformation struct {
 	// path of parent and array of children
-	attr            map[string]bool
-	keyorder        []string
-	namespaces      xml.Attr
+	attr     map[string]bool
+	keyorder []string
+	// @TODO add namespaces
+	// namespaces      xml.Attr
 	targetNameSpace string
 	rootElement     string
 }
@@ -630,9 +630,9 @@ func httpRead(input string) ([]byte, error) {
 	if err == nil {
 
 		return io.ReadAll(resp.Body)
-	} else {
-		return os.ReadFile(input)
 	}
+
+	return os.ReadFile(input)
 }
 
 // requiredPropertiesCheck checks all required properties are included,

@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
@@ -38,7 +38,7 @@ func TestDemo(t *testing.T) {
 		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.wav&outputMRXID=ToWaveform", input: "../demodata/demo03/European Robin - short.wav",
 			expected: "./testdata/expected/European Robin - short_out.png", dataType: "audio/wav"},
 
-		//Demo 4
+		// Demo 4
 		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.rnc&outputMRXID=MRX.123.456.789.rnf&mapping=true", input: "../demodata/demo04/lostpast.csv",
 			expected: "./testdata/expected/lostpast_out.csv", dataType: "text/csv"},
 		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.rnj&outputMRXID=MRX.123.456.789.rnf&mapping=true", input: "../demodata/demo04/cosmos-laundromat.json",
@@ -62,7 +62,7 @@ func TestDemo(t *testing.T) {
 		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.bat&outputMRXID=fault", input: "../demodata/demo07/fire.json",
 			expected: "./testdata/expected/fire_out.jpg", dataType: echo.MIMEApplicationJSON},
 
-		//demo 8
+		// demo 8
 		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.jpg&outputMRXID=extractHeaderc2pa", input: "../demodata/demo08/truepic-20230212-library.jpg",
 			expected: "./testdata/expected/truepic-20230212-library_out.json", dataType: "image/jpeg"},
 

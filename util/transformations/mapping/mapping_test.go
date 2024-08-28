@@ -27,7 +27,7 @@ func TestCamera(t *testing.T) {
 	fmt.Println(string(o[0]))
 } */
 
-var mapDefs = Mapping{MappingDefinitions: map[string][]string{
+var mapDefs = Options{MappingDefinitions: map[string][]string{
 	"string":        {"string"},
 	"integer":       {"integer"},
 	"float":         {"float"},
@@ -78,7 +78,7 @@ func TestBaseTypes(t *testing.T) {
 		"stringArray", "floatArray", "integerArray",
 		"all"}
 
-	t2 := MappingAction{Mapping: mapDefs,
+	t2 := Action{Mapping: mapDefs,
 		InputFormat: "application/json", OutputFormat: "application/json",
 		OutputSchema: "./testdata2/basetypes/baseTypesSchema.json",
 	}
@@ -125,7 +125,7 @@ func TestBaseTypes(t *testing.T) {
 		$
 	*/
 	t2.OutputSchema = "./testdata2/objects/objectSchema.json"
-	objects := []string{"arraysToObj", "objToArrays", "float2d", "float2ds"} //, "float2dTo1d"}
+	objects := []string{"arraysToObj", "objToArrays", "float2d", "float2ds"} // , "float2dTo1d"}
 
 	for _, in := range objects {
 		inBytes, errFile := os.ReadFile(fmt.Sprintf("./testdata2/objects/%v.json", in))
@@ -133,7 +133,7 @@ func TestBaseTypes(t *testing.T) {
 		outBytes, err := t2.Transform(inBytes, nil)
 
 		fbase, errExpec := os.ReadFile(fmt.Sprintf("./testdata2/objects/%vout.json", in))
-		fmt.Println(err)
+		// fmt.Println(err)
 		got := sha256.New()
 		got.Write(outBytes)
 		expected := sha256.New()
@@ -232,7 +232,7 @@ func TestBaseTypes(t *testing.T) {
 
 func TestOutput(t *testing.T) {
 
-	t2 := MappingAction{Mapping: mapDefs,
+	t2 := Action{Mapping: mapDefs,
 		InputFormat: "application/json", OutputFormat: "application/json",
 		OutputSchema: "./testdata2/basetypes/baseTypesSchema.json",
 	}
@@ -253,12 +253,14 @@ func TestOutput(t *testing.T) {
 		outBytes, err := t2.Transform(inBytes, nil)
 
 		fbase, errExpec := os.ReadFile(fmt.Sprintf("./testdata2/basetypes/allin.%v", ty))
-		fmt.Println(err)
+		// fmt.Println(err)
 		got := sha256.New()
 		got.Write(outBytes)
 		expected := sha256.New()
 		expected.Write(fbase)
-
+		//	fmt.Println(outBytes)
+		//	fmt.Println("break")
+		//	fmt.Println(fbase)
 		// to generate a file to compare outputs when things go wrong
 		/*if fmt.Sprintf("%032x", got.Sum(nil)) != fmt.Sprintf("%032x", expected.Sum(nil)) {
 
@@ -269,7 +271,7 @@ func TestOutput(t *testing.T) {
 		//
 		Convey(fmt.Sprintf("Checking that %s formats are correctly written to", ty), t, func() {
 			Convey("the file type is written", func() {
-				Convey("The hash matches the expected output", func() {
+				Convey("The hash matches the expected output of ", func() {
 					So(errFile, ShouldBeNil)
 					So(errExpec, ShouldBeNil)
 					So(err, ShouldBeNil)
@@ -283,7 +285,7 @@ func TestOutput(t *testing.T) {
 
 func TestExtraction(t *testing.T) {
 
-	t2 := MappingAction{Mapping: mapDefs,
+	t2 := Action{Mapping: mapDefs,
 		InputFormat: "application/json", OutputFormat: "application/json",
 		OutputSchema: "./testdata2/basetypes/baseTypesSchema.json",
 	}
@@ -298,7 +300,7 @@ func TestExtraction(t *testing.T) {
 		outBytes, err := t2.Transform(inBytes, nil)
 
 		fbase, errExpec := os.ReadFile("./testdata2/basetypes/allin.json")
-		fmt.Println(err)
+		//	fmt.Println(err)
 		got := sha256.New()
 		got.Write(outBytes)
 		expected := sha256.New()
@@ -356,7 +358,7 @@ func TestExtraction(t *testing.T) {
 	outBytes, err := t2.Transform(inBytes, nil)
 
 	fbase, errExpec := os.ReadFile("./testdata2/basetypes/simpleout.json")
-	fmt.Println(err)
+	// fmt.Println(err)
 	got := sha256.New()
 	got.Write(outBytes)
 	expected := sha256.New()
@@ -377,7 +379,7 @@ func TestExtraction(t *testing.T) {
 
 func TestSchemaReading(t *testing.T) {
 
-	t2 := MappingAction{Mapping: mapDefs,
+	t2 := Action{Mapping: mapDefs,
 		InputFormat: "application/json", OutputFormat: "application/json",
 		OutputSchema: "./testdata2/basetypes/baseTypesSchema.json",
 	}

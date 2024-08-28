@@ -21,7 +21,7 @@ func TestToNewsML(t *testing.T) {
 
 		if strings.Contains(f.Name(), ".json") {
 			b, _ := os.ReadFile("../../demodata/demo10/" + f.Name())
-			genBytes, err := NinjsToNewsml(b)
+			genBytes, err := ToNewsMl(b)
 
 			expecBytes, _ := os.ReadFile(fmt.Sprintf("./testdata/%v.xml", f.Name()))
 
@@ -55,7 +55,7 @@ func TestToMD(t *testing.T) {
 
 		if strings.Contains(f.Name(), ".json") {
 			b, _ := os.ReadFile("../../demodata/demo10/" + f.Name())
-			genBytes, err := NinJSToMD(b)
+			genBytes, err := ToMD(b)
 
 			expecBytes, _ := os.ReadFile(fmt.Sprintf("./testdata/%v.json", f.Name()))
 
@@ -82,12 +82,17 @@ func TestToMD(t *testing.T) {
 var parseOptions = xsdvalidate.ParsErrDefault
 
 func validate(xmldoc []byte, schemaFile string) error {
-	xsdvalidate.Init()
+	err := xsdvalidate.Init()
+
+	if err != nil {
+		return err
+	}
+
 	defer xsdvalidate.Cleanup()
 
 	in, err := os.Open(schemaFile)
 	if err != nil {
-		return fmt.Errorf("header: %s\nError: %s\n", xml.Header, err)
+		return fmt.Errorf("header: %s\nError: %s", xml.Header, err)
 	}
 
 	schema, _ := io.ReadAll(in)
@@ -113,7 +118,7 @@ func validate(xmldoc []byte, schemaFile string) error {
 	err = xsdHandler.ValidateMem(xmldoc, parseOptions)
 
 	if err != nil {
-		return fmt.Errorf("header: %s\nError: %s\n", xml.Header, err)
+		return fmt.Errorf("header: %s\nError: %s", xml.Header, err)
 	}
 
 	return nil

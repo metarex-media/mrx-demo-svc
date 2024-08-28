@@ -16,7 +16,7 @@ func TestBatteryOut(t *testing.T) {
 	for _, g := range good {
 
 		b, _ := os.ReadFile("../../demodata/demo07/" + g)
-		genBytes, err := BatteryToPNG(b)
+		genBytes, err := ToPNG(b)
 
 		expecBytes, _ := os.ReadFile(fmt.Sprintf("./testdata/%v.png", g))
 
@@ -45,7 +45,7 @@ func TestBatteryOut(t *testing.T) {
 
 		b, _ := os.ReadFile("../../demodata/demo07/" + g)
 
-		genBytes, err := BatteryFault(b)
+		genBytes, err := FaultToJPEG(b)
 
 		expecBytes, _ := os.ReadFile(fmt.Sprintf("./testdata/%v.jpg", g))
 

@@ -1,4 +1,4 @@
-// package battery handles all the gps style metadata and their transformations
+// Package gps handles all the gps style metadata and their transformations
 package gps
 
 import (
@@ -51,7 +51,7 @@ func waypointToW3C(w Waypoint) W3C {
 	}
 }
 
-// GPX xml layout structs
+// Gpx is the GPX xml layout structs
 type Gpx struct {
 	XMLName xml.Name   `xml:"gpx"`
 	Text    string     `xml:",chardata"`
@@ -86,7 +86,7 @@ type TrackSegment struct {
 	Trkpt []Waypoint `xml:"trkpt"`
 }
 
-// w3c json output structs
+// W3C is the w3c gps format json output structs
 type W3C struct {
 	Coords    Coords `json:"coords"`
 	Timestamp int64  `json:"timestamp,omitempty"`

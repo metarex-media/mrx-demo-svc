@@ -1,4 +1,4 @@
-// package qc handles Venera qc metadata
+// Package qc handles Venera qc metadata
 package qc
 
 import (
@@ -11,10 +11,10 @@ import (
 	"github.com/wcharczuk/go-chart/v2/drawing"
 )
 
-// QCBarChart converts a venera qc report into a simple bar chart with
+// GenBarChart converts a venera qc report into a simple bar chart with
 // Critical Alert, warning and error fields.
 // if all are 0 then the report has passed
-func QCBarChart(input []byte, _ ...string) ([]byte, error) {
+func GenBarChart(input []byte, _ ...string) ([]byte, error) {
 
 	doc, err := xmlquery.Parse(bytes.NewReader(input))
 
@@ -26,9 +26,9 @@ func QCBarChart(input []byte, _ ...string) ([]byte, error) {
 	PR := xmlquery.Find(doc, "//PulsarReport")
 	fields := []string{"CriticalAlert", "Warning", "Error"}
 
-	//testPass := colour.CNRGBA64{0x91 << 8, 0xB6 << 8, 0x45 << 8, 0xffff, colour.ColorSpace{}}
-	//cb := context.Background()
-	//img := image.NewNRGBA(image.Rect(0, 0, 800, 300))
+	// testPass := colour.CNRGBA64{0x91 << 8, 0xB6 << 8, 0x45 << 8, 0xffff, colour.ColorSpace{}}
+	// cb := context.Background()
+	// img := image.NewNRGBA(image.Rect(0, 0, 800, 300))
 	max := 0
 	counts := make([]float64, len(fields))
 	messSample := make([]string, len(fields)*3)
@@ -65,7 +65,7 @@ func QCBarChart(input []byte, _ ...string) ([]byte, error) {
 	ticks := make([]chart.Tick, 6)
 	step := int(math.RoundToEven(float64(max) / 5))
 	for i := 0; i < 6; i++ {
-		ticks[i] = chart.Tick{float64(i * step), fmt.Sprintf("%v", i*step)}
+		ticks[i] = chart.Tick{Value: float64(i * step), Label: fmt.Sprintf("%v", i*step)}
 	}
 
 	graph := chart.BarChart{
@@ -77,11 +77,11 @@ func QCBarChart(input []byte, _ ...string) ([]byte, error) {
 		Height: 300,
 	}
 
-	red := drawing.Color{0xff, 0, 0, 0xff}
-	orange := drawing.Color{0xff, 0x80, 0, 0xff}
-	yellow := drawing.Color{0xff, 0xff, 0, 0xff}
+	red := drawing.Color{R: 0xff, G: 0, B: 0, A: 0xff}
+	orange := drawing.Color{R: 0xff, G: 0x80, B: 0, A: 0xff}
+	yellow := drawing.Color{R: 0xff, G: 0xff, B: 0, A: 0xff}
 	colours := []drawing.Color{red, orange, yellow}
-	empty := drawing.Color{0xff, 0xff, 0, 0x00}
+	empty := drawing.Color{R: 0xff, G: 0xff, B: 0, A: 0x00}
 	values := make([]chart.Value, 3)
 
 	for i, c := range counts {
@@ -104,7 +104,10 @@ func QCBarChart(input []byte, _ ...string) ([]byte, error) {
 
 	buf := bytes.NewBuffer([]byte{})
 	err = graph.Render(chart.PNG, buf)
-	fmt.Println(err)
+
+	if err != nil {
+		return nil, err
+	}
 
 	return buf.Bytes(), nil
 

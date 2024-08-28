@@ -5,8 +5,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 
 	// services
 	"github.com/metarex-media/mrx-demo-svc/api/battery"
@@ -18,6 +18,7 @@ import (
 	"github.com/metarex-media/mrx-demo-svc/api/wavdraw"
 )
 
+// ErrorMessage is the error message format returned by the API as json
 type ErrorMessage struct {
 	Error string `json:"error"`
 }
@@ -30,16 +31,16 @@ func main() {
 	e.Use(middleware.Recover())
 
 	// Battery Paths
-	e.POST("/battery", HandlerBuild(battery.BatteryToPNG, "image/png"))
+	e.POST("/battery", HandlerBuild(battery.ToPNG, "image/png"))
 	//	e.POST("/batteryStagger", HandlerBuild(battery.BatteryToPNGStagger, "image/png"))
-	e.POST("/batteryFault", HandlerBuild(battery.BatteryFault, "image/jpeg"))
+	e.POST("/batteryFault", HandlerBuild(battery.FaultToJPEG, "image/jpeg"))
 
 	// NinJS Paths
-	e.POST("/ninjsToMD", HandlerBuild(ninjs.NinJSToMD, echo.MIMEApplicationJSON))
-	e.POST("/ninjsToNewsml", HandlerBuild(ninjs.NinjsToNewsml, echo.MIMEApplicationXML))
+	e.POST("/ninjsToMD", HandlerBuild(ninjs.ToMD, echo.MIMEApplicationJSON))
+	e.POST("/ninjsToNewsml", HandlerBuild(ninjs.ToNewsMl, echo.MIMEApplicationXML))
 
 	// QC
-	e.POST("/qcToGraph", HandlerBuild(qc.QCBarChart, "image/png"))
+	e.POST("/qcToGraph", HandlerBuild(qc.GenBarChart, "image/png"))
 
 	// MXF Extract
 	//	e.POST("/mxfContents", HandlerBuild(mrx.MXFHeaderContents, echo.MIMEApplicationJSON))
@@ -56,12 +57,13 @@ func main() {
 	e.Logger.Fatal(e.Start(":9000"))
 }
 
-type APIHandle func([]byte, ...string) ([]byte, error)
+// APIHandle is format for all the api functions to be built as part of the API.
+type APIHandle func(requestBody []byte, apiParams ...string) ([]byte, error)
 
-// handler build generates a boilerplate Echo Handler
+// HandlerBuild generates a boilerplate Echo Handler
 // the parameter titles are in the order they are expected
 // in the sub function
-func HandlerBuild(APIFunc APIHandle, outputMime string, params ...string) echo.HandlerFunc {
+func HandlerBuild(apiFunc APIHandle, outputMime string, params ...string) echo.HandlerFunc {
 	return func(c echo.Context) error {
 
 		var bodyBytes []byte
@@ -80,7 +82,7 @@ func HandlerBuild(APIFunc APIHandle, outputMime string, params ...string) echo.H
 			apiParams[i] = c.QueryParam(param)
 		}
 
-		output, err := APIFunc(bodyBytes, apiParams...)
+		output, err := apiFunc(bodyBytes, apiParams...)
 
 		if err != nil {
 			return c.JSON(http.StatusBadRequest, ErrorMessage{err.Error()})

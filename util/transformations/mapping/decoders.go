@@ -1,3 +1,5 @@
+// Package mapping is for best guess data transforms, where
+// some sort of mapping has been provided to help fill in the blanks.
 package mapping
 
 import (
@@ -23,25 +25,26 @@ func jsonDecode(input []byte, timing string) ([]map[string]any, error) {
 		if err != nil {
 			return nil, err
 		}
-		//do some recusrive searching
+		// do some recusrive searching
 		for i, m := range jsonLayout {
 			jsonLayout[i] = mapExtract(m, make(map[string]any), "")
 		}
 
 		return jsonLayout, nil
 
-	} else {
-		var jsonLayout map[string]any
-		err := json.Unmarshal(input, &jsonLayout)
-
-		if err != nil {
-			return nil, err
-		}
-		//do some recursive searching
-		flatMap := mapExtract(jsonLayout, make(map[string]any), "")
-
-		return []map[string]any{flatMap}, nil
 	}
+
+	var jsonLayout map[string]any
+	err := json.Unmarshal(input, &jsonLayout)
+
+	if err != nil {
+		return nil, err
+	}
+	// do some recursive searching
+	flatMap := mapExtract(jsonLayout, make(map[string]any), "")
+
+	return []map[string]any{flatMap}, nil
+
 }
 
 // yamlDecode returns the data as a flat map
@@ -55,26 +58,27 @@ func yamlDecode(input []byte, timing string) ([]map[string]any, error) {
 		if err != nil {
 			return nil, err
 		}
-		//do some recusrive searching
+		// do some recusrive searching
 		for i, m := range yamlLayout {
 			yamlLayout[i] = mapExtract(m, make(map[string]any), "")
 		}
 
 		return yamlLayout, nil
 
-	} else {
-		var yamlLayout map[string]any
-		err := yaml.Unmarshal(input, &yamlLayout)
-
-		if err != nil {
-			return nil, err
-		}
-		// fmt.Println(yamlLayout)
-		//do some recursive searching
-		flatMap := mapExtract(yamlLayout, make(map[string]any), "")
-		// fmt.Println(flatMap)
-		return []map[string]any{flatMap}, nil
 	}
+
+	var yamlLayout map[string]any
+	err := yaml.Unmarshal(input, &yamlLayout)
+
+	if err != nil {
+		return nil, err
+	}
+	// fmt.Println(yamlLayout)
+	// do some recursive searching
+	flatMap := mapExtract(yamlLayout, make(map[string]any), "")
+	// fmt.Println(flatMap)
+	return []map[string]any{flatMap}, nil
+
 }
 
 // mapExtract recursively searches the data for all non object and array values

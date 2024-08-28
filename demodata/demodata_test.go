@@ -10,7 +10,7 @@ import (
 
 var headlines map[int][]string
 
-type headlinesJson struct {
+type headlinesJSON struct {
 	Headlines []string `json:"headlines"`
 }
 
@@ -22,14 +22,18 @@ func init() {
 	results := []string{beach, fire, dino, fishing}
 
 	for i, r := range results {
-		var h headlinesJson
-		json.Unmarshal([]byte(r), &h)
+		var h headlinesJSON
+		err := json.Unmarshal([]byte(r), &h)
+		if err != nil {
+			panic(err)
+
+		}
 		headlines[i] = h.Headlines
 	}
 
 }
 
-func TestServices(t *testing.T) {
+func TestServices(_ *testing.T) {
 
 	MakeTS(regDetails{
 		register: map[string]register{"json": {MrxID: "MRX.123.456.789.njs", outputs: []string{"toNewsMD"}}}},
@@ -250,7 +254,7 @@ func MakeTS(reg regDetails, demoNumber string) {
 	// fmt.Println(config)
 
 	f, _ := os.Create(fmt.Sprintf("./%v/config.ts", demoNumber))
-	f.Write([]byte(config))
+	_, _ = f.Write([]byte(config))
 }
 
 // Headlines for Demo 01

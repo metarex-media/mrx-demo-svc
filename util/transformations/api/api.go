@@ -1,4 +1,4 @@
-// package api handles api calls for data transformations
+// Package api handles the array of api calls for data transformations
 package api
 
 import (
@@ -10,9 +10,9 @@ import (
 	"net/url"
 )
 
-// API Action carries all the information required to
+// Action carries all the information required to
 // make an API call
-type ApiAction struct {
+type Action struct {
 	// THe URI of the API
 	API string
 	// MRX ID of the API
@@ -23,7 +23,7 @@ type ApiAction struct {
 	APIParams         []Parameter
 }
 
-// The optional parameters for
+// Parameter is the parameters for
 // calling an API
 type Parameter struct {
 	Key         string `json:"key"`
@@ -33,7 +33,7 @@ type Parameter struct {
 
 // Transform takes an array of Bytes and  makes a series of
 // API calls to transform them into the target metadata.
-func (a *ApiAction) Transform(in []byte, params url.Values) ([]byte, error) {
+func (a *Action) Transform(in []byte, params url.Values) ([]byte, error) {
 
 	// set up and extra parameters to send to the target URL
 	apiParameters := ""
@@ -55,41 +55,41 @@ func (a *ApiAction) Transform(in []byte, params url.Values) ([]byte, error) {
 		}
 	}
 
-	out, err := ApiExtractBytes(in, a.API+apiParameters, a.APISchemaLocation, a.ResponseMIMEType)
-
+	// out, err := APIExtractBytes(in, a.API+apiParameters, a.APISchemaLocation, a.ResponseMIMEType)
+	out, err := ExtractBytes(in, a.API+apiParameters, a.ResponseMIMEType)
 	// do any extra things here
 	return out, err
 }
 
 // ActionType describes the API's action for logging
-func (a *ApiAction) ActionType() string {
+func (a *Action) ActionType() string {
 	return fmt.Sprintf("Making a POST Request to %v", a.API)
 }
 
 // DataID gives the metarex ID of the data being transformed
-func (a *ApiAction) DataID() string {
+func (a *Action) DataID() string {
 	return a.MrxID
 }
 
-// the json format for any error messages
+// ErrMessage is the json format for any error messages
 // returned by the api
 type ErrMessage struct {
 	Error string `json:"error"`
 }
 
-// API Extract takes bytes and makes the API call returning the bytes
+// ExtractBytes takes bytes and makes the API call returning the bytes
 // It validates the inputs and outputs against the OpenAPI specification of that API
-func ApiExtractBytes(toTransform []byte, API, APISpec, dataFormat string) ([]byte, error) {
-
+func ExtractBytes(toTransform []byte, api, dataFormat string) ([]byte, error) {
+	// @TODO fix openAPI spec
 	// Load the OpenAPI Spec
-	//loader := openapi3.NewLoader()
-	//doc, err := loader.LoadFromFile(APISpec)
-	//if err != nil {
+	// loader := openapi3.NewLoader()
+	// doc, err := loader.LoadFromFile(APISpec)
+	// if err != nil {
 	//	return nil, fmt.Errorf("error validating against API schema :%v", err.Error())
 	//
 
 	// convert to jsonbytes then make the call
-	resp, err := http.Post(API, dataFormat, bytes.NewReader(toTransform))
+	resp, err := http.Post(api, dataFormat, bytes.NewReader(toTransform))
 	if err != nil {
 		return nil, fmt.Errorf("error making POST request: %v", err.Error())
 	}
@@ -169,7 +169,11 @@ func ApiExtractBytes(toTransform []byte, API, APISpec, dataFormat string) ([]byt
 
 	if resp.StatusCode != http.StatusOK {
 		var e ErrMessage
-		json.Unmarshal(resBody, &e)
+		err := json.Unmarshal(resBody, &e)
+		if err != nil {
+			return nil, fmt.Errorf("error extracting error message: %v", err.Error())
+		}
+
 		return nil, fmt.Errorf("%v", e.Error)
 	}
 
