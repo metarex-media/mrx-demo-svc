@@ -11,6 +11,7 @@ import (
 	// services
 	"github.com/metarex-media/mrx-demo-svc/api/battery"
 	"github.com/metarex-media/mrx-demo-svc/api/gps"
+	"github.com/metarex-media/mrx-demo-svc/api/isxd"
 	"github.com/metarex-media/mrx-demo-svc/api/mrx"
 	"github.com/metarex-media/mrx-demo-svc/api/ninjs"
 	"github.com/metarex-media/mrx-demo-svc/api/qc"
@@ -23,6 +24,10 @@ type ErrorMessage struct {
 	Error string `json:"error"`
 }
 
+const (
+	PNGMime = "image/png"
+)
+
 func main() {
 	e := echo.New()
 
@@ -31,7 +36,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	// Battery Paths
-	e.POST("/battery", HandlerBuild(battery.ToPNG, "image/png"))
+	e.POST("/battery", HandlerBuild(battery.ToPNG, PNGMime))
 	//	e.POST("/batteryStagger", HandlerBuild(battery.BatteryToPNGStagger, "image/png"))
 	e.POST("/batteryFault", HandlerBuild(battery.FaultToJPEG, "image/jpeg"))
 
@@ -40,7 +45,7 @@ func main() {
 	e.POST("/ninjsToNewsml", HandlerBuild(ninjs.ToNewsMl, echo.MIMEApplicationXML))
 
 	// QC
-	e.POST("/qcToGraph", HandlerBuild(qc.GenBarChart, "image/png"))
+	e.POST("/qcToGraph", HandlerBuild(qc.GenBarChart, PNGMime))
 
 	// MXF Extract
 	//	e.POST("/mxfContents", HandlerBuild(mrx.MXFHeaderContents, echo.MIMEApplicationJSON))
@@ -48,10 +53,14 @@ func main() {
 
 	// Dawn Chorus
 	e.POST("/gps", HandlerBuild(gps.ConvertGPX, echo.MIMEApplicationJSON))
-	e.POST("/waveform", HandlerBuild(wavdraw.Visualise, "image/png"))
+	e.POST("/waveform", HandlerBuild(wavdraw.Visualise, PNGMime))
 
 	// RNF demos
 	e.POST("/ffmpeg", HandlerBuild(rnf.GenerateFFmpeg, echo.MIMETextPlain, rnf.GetFFmpegParams()...))
+
+	// ISXD demos
+	e.POST("/mxfGraph", HandlerBuild(isxd.Visualise, PNGMime))
+	e.POST("/mxfReport", HandlerBuild(isxd.Report, "application/yaml"))
 
 	// Start server
 	e.Logger.Fatal(e.Start(":9000"))

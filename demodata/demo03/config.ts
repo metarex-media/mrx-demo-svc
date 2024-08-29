@@ -1,7 +1,7 @@
 import type { DemoSource, MrxETLService, MrxRegisterCache } from '$lib/nabTypes';
 
-import gpx from '$lib/reg/MRX.123.456.789.gpx/register.json';
 import wav from '$lib/reg/MRX.123.456.789.wav/register.json';
+import gpx from '$lib/reg/MRX.123.456.789.gpx/register.json';
 
 export const fetchList = [
 {type: "gpx", id: "Alt_Portsmouth", url: "demo03/Alt_Portsmouth.gpx" },

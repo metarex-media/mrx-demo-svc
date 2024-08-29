@@ -1,0 +1,31 @@
+{
+    "metarexId": "MRX.123.456.789.mxf",
+    "mediaType": "application/mxf",
+    "name": "MXF metadata file",
+    "description": "An mxf file",
+    "timingIs": "embedded",
+    "treatAs": "binary",
+    "mrx": {
+        "specification": "",
+        "services": [
+            {
+                "API": "http://localhost:9000/mxfGraph",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "image/png",
+                "description": "Convert an mxf file to a graph detailing its test report",
+                "serviceID": "MXFToGraph"
+            },
+            {
+                "API": "http://localhost:9000/mxfReport",
+                "method": "",
+                "metarexId": "",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "application/yaml",
+                "description": "Run a series of tests on the mxf file, with the report given as a yaml",
+                "serviceID": "MXFToReport"
+            }
+        ]
+    }
+}

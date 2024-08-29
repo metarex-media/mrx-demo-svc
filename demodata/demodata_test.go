@@ -84,6 +84,10 @@ func TestServices(_ *testing.T) {
 		},
 		register: map[string]register{"csv": {MrxID: "MRX.123.456.789.rnf", outputs: []string{"generateFFmpeg"}}}},
 		"demo12")
+
+	MakeTS(regDetails{
+		register: map[string]register{"mxf": {MrxID: "MRX.123.456.789.mxf", outputs: []string{"MXFToGraph", "MXFToReport"}}}},
+		"demo13")
 }
 
 var (
