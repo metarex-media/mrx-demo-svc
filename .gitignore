@@ -9,3 +9,6 @@ xslxer/*
 **/*.mxf
 libxml/*
 megalinter-reports/
+
+
+!/demodata/demo13/*.mxf

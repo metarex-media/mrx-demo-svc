@@ -1,3 +1,8 @@
+---
+ignore:
+  - demotest/testdata/expected/goodISXD_out.yaml
+  - api/isxd/testdata/
+
 rules:
   document-end: disable
   document-start:

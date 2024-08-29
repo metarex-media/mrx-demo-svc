@@ -81,6 +81,7 @@ func init() {
 		regRNFInputJSON, regMRXC2p,
 		regQC, regVnova,
 		regUnrealCamera, regOtherCamera,
+		regMXF,
 	}
 
 	for _, rv := range registerValues {
@@ -425,5 +426,32 @@ var regRNF = `{
                 "storyline-importance": ["storyline-importance", "Storyline-importance", "Importance", "Story"]
              }
          }
+    }
+}`
+
+var regMXF = `{
+    "metarexId": "MRX.123.456.789.mxf",
+    "name": "MXF metadata file",
+    "description": "An mxf file",
+    "mediaType": "application/mxf",
+    "timingIs": "embedded",
+    "treatAs": "binary",
+    "mrx": {
+        "services": [
+            {
+                "serviceID": "MXFToGraph",
+                "API": "http://localhost:9000/mxfGraph",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "image/png",
+                "description": "Convert an mxf file to a graph detailing its test report"
+            },
+            {
+                "serviceID": "MXFToReport",
+                "API": "http://localhost:9000/mxfReport",
+                "APISchema": "./DemoAPI.yaml",
+                "output": "application/yaml",
+                "description": "Run a series of tests on the mxf file, with the report given as a yaml"
+            }
+        ]
     }
 }`

@@ -73,6 +73,11 @@ func TestDemo(t *testing.T) {
 		// demo 12
 		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.rnf&outputMRXID=generateFFmpeg&title=IET", input: "../demodata/demo12/IET.csv",
 			expected: "./testdata/expected/IET_out.txt", dataType: "text/csv"},
+		// demo 13
+		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.mxf&outputMRXID=MXFToGraph", input: "../demodata/demo13/badISXD.mxf",
+			expected: "./testdata/expected/badISXD_out.png", dataType: "image/png"},
+		{url: "http://localhost:8080/autoelt?inputMRXID=MRX.123.456.789.mxf&outputMRXID=MXFToReport", input: "../demodata/demo13/goodISXD.mxf",
+			expected: "./testdata/expected/goodISXD_out.yaml", dataType: "application/yaml"},
 	}
 
 	for _, test := range tests {
