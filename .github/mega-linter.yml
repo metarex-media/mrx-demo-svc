@@ -63,6 +63,7 @@ GO_GOLANGCI_LINT_ARGUMENTS: "--timeout=60m"
 GO_REVIVE_CONFIG_FILE: ".github/.revive.toml"
 COPYPASTE_JSCPD_CONFIG_FILE: ".github/.jscpd.json"
 SPELL_CSPELL_CONFIG_FILE: ".github/.cspell.json"
+YAML_YAMLLINT_CONFIG_FILE: ".github/linters/.yaml-lint.yml"
 # PLUGINS:
 #   - https://raw.githubusercontent.com/oxsecurity/megalinter/main/.automation/test/mega-linter-plugin-test/test.megalinter-descriptor.yml
 # PRE_COMMANDS:
