@@ -2,7 +2,7 @@
 
 | [ETL](#etl) | [build](#bld) | [transform](#xfm) | [demos](#demos)
 | [1](#d1) | [2](#d2) | [3](#d3) | [4](#d4) | [5](#d5) | [6](#d6)
-| [7](#d7) | [8](#d8) | [9](#d9) | [10](#d10) | [11](#d11) | [12](#d12) |
+| [7](#d7) | [8](#d8) | [9](#d9) | [10](#d10) | [11](#d11) | [12](#d12)
 | [13](#d13)
 
 Welcome to `mrx-demo-svc` a web service for performing **ETL** (**E**xtract
@@ -559,8 +559,6 @@ is converted with a POST request to `http://localhost:8080/inputMRXID=MRX.123.45
 ![A test report image](./demotest/testdata/expected/badISXD_out.png "A failed bar chart")
 
 <a id="d13"></a>
-
-
 
 [01]:  https://metarex.media
 [01c]: https://metarex.media/contact/
