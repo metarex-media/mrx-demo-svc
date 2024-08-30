@@ -3,6 +3,7 @@
 | [ETL](#etl) | [build](#bld) | [transform](#xfm) | [demos](#demos)
 | [1](#d1) | [2](#d2) | [3](#d3) | [4](#d4) | [5](#d5) | [6](#d6)
 | [7](#d7) | [8](#d8) | [9](#d9) | [10](#d10) | [11](#d11) | [12](#d12) |
+| [13](#d13)
 
 Welcome to `mrx-demo-svc` a web service for performing **ETL** (**E**xtract
 **T**ransfom **L**oad) operations in the MetaRex Website demos. To find out
@@ -537,6 +538,29 @@ ffmpeg -y -i ./rnf/bbb/audio.wav -ss 00:47:12.280 -t 00:47:12.320 -acodec pcm_s1
 ffmpeg -y -start_number 70808 -framerate 25 -i ./rnf/bbb/frame%05d.jpg -i /segment0082.wav -frames:v 70808 -vcodec mpeg4 -r 25 -q:v 0 ./rnf/IET_Panel_0082_Next-Gen-Audio,loudness,logo,close.mp4
 
 ```
+
+### Demo 13
+
+This demo takes an [mxf file](./register/registerEntries/MRX.123.456.789.mxf.json) and transforms it into one of the following
+formats:
+
+* A YAML test report of the mxf file
+
+e.g. [goodISXD.mxf](./demodata/demo13/goodISXD.mxf)
+is converted with a POST request to `http://localhost:8080/autoETL?inputMRXID=MRX.123.456.789.mxf&outputMRXID=MXFToReport`
+
+[A MXF file test test report](./demotest/testdata/expected/goodISXD_out.yaml)
+
+* A graphical representation of the test report of the mxf file
+
+e.g. [badISXD.mxf](./demodata/demo13/badISXD.mxf)
+is converted with a POST request to `http://localhost:8080/inputMRXID=MRX.123.456.789.mxf&outputMRXID=MXFToGraph`
+
+![A test report image](./demotest/testdata/expected/badISXD_out.png "A failed bar chart")
+
+<a id="d13"></a>
+
+
 
 [01]:  https://metarex.media
 [01c]: https://metarex.media/contact/
